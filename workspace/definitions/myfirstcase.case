@@ -1,0 +1,27 @@
+<definitions>
+    <caseFileItemDefinition name="X" definitionType="http://www.omg.org/spec/CMMN/DefinitionType/Unspecified"/>
+    <case id="MyFirstCase.case.case_MyFirstCase" name="MyFirstCase" description="">
+        <caseFileModel>
+            <caseFileItem id="cfi_csdrg_0" name="X" multiplicity="ExactlyOne" definitionRef="X"/>
+        </caseFileModel>
+        <casePlanModel id="cm_MyFirstCase.case_MyFirstCase_0" name="MyFirstCase">
+            <planItem id="cm_csdrg_4" name="Taak" definitionRef="pid_cm_csdrg_4"/>
+            <humanTask id="pid_cm_csdrg_4" name="Taak" isBlocking="true">
+                <extensionElements mustUnderstand="false"
+                    xmlns:cafienne="org.cafienne"/>
+                </humanTask>
+            </casePlanModel>
+            <extensionElements>
+                <cafienne:start-case-model
+                    xmlns:cafienne="org.cafienne">{
+  "schema":{
+    "title": "",
+    "type": "object",
+    "properties":{
+    }
+  }
+}
+                </cafienne:start-case-model>
+            </extensionElements>
+        </case>
+    </definitions>

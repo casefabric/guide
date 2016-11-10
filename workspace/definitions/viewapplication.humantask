@@ -1,0 +1,43 @@
+<humantask id="id_zMiE" name="viewApplication" description="" isBlocking="true">
+    <cafienne:implementation xmlns:cafienne="org.cafienne" class="org.cafienne.cmmn.definition.task.WorkflowTaskDefinition">
+  {
+                            "schema": {
+                                "title": "Parking permit",
+                                "type": "object",
+                                "properties": {
+                                    "Applicant": {
+                                        "title": "Applicant details",
+                                        "type": "object",
+                                        "properties": {
+                                            "Name": {
+                                                "type": "string",
+                                                "title": "Name"
+                                            },
+                                            "Zip code": {
+                                                "type": "string",
+                                                "title": "Zip code"
+                                            },
+                                            "House number": {
+                                                "type": "integer",
+                                                "title": "House number"
+                                            },
+                                            "House number addition": {
+                                                "type": "string",
+                                                "title": "House number addition"
+                                            },
+                                          "License plate": {
+                                                "type": "string",
+                                                "title": "License plate"
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "uiSchema": {
+                                "Parking permit": {
+                                    "ui:widget": "textarea"
+                                }
+                            }
+                        }  
+  </cafienne:implementation>
+</humantask>
