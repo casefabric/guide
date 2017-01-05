@@ -1,0 +1,24 @@
+<humantask id="id_fzip" name="ViewPPRequest" description="ViewPPRequest" isBlocking="true">
+    <cafienne:implementation xmlns:cafienne="org.cafienne" class="org.cafienne.cmmn.instance.task.WorkflowTaskDefinition">
+      		<input id="PPRequest" name="PPRequest"/>
+        <output id="PPRequest" name="PPRequest"/>
+     	 <task-model>
+           {
+  			"schema": {
+    				"type": "object",
+    					"properties": {
+      						"PPRequest": {
+       							 "$ref": "#/definitions/PPRequest"
+     									 }
+   									  },
+   								 "definitions": {
+     										 "Name": {
+      										 "title": "Name",
+     										 "type": "string"
+   												     }
+  											    }
+					  }
+		   }
+		</task-model>
+    </cafienne:implementation>
+</humantask>

@@ -1,77 +1,60 @@
 <definitions>
+    <caseFileItemDefinition name="PPRequest" definitionType="http://www.omg.org/spec/CMMN/DefinitionType/Unspecified">
+        <property name="Name" type="http://www.omg.org/spec/CMMN/PropertyType/string"/>
+        <property name="ZIPcode" type="http://www.omg.org/spec/CMMN/PropertyType/string"/>
+        <property name="Housenumber" type="http://www.omg.org/spec/CMMN/PropertyType/string"/>
+        <property name="Licenseplatenumber" type="http://www.omg.org/spec/CMMN/PropertyType/string"/>
+    </caseFileItemDefinition>
+    <caseFileItemDefinition name="Name" definitionType="http://www.omg.org/spec/CMMN/DefinitionType/Unspecified">
+        <property name="" type="http://www.omg.org/spec/CMMN/PropertyType/string"/>
+    </caseFileItemDefinition>
     <case id="pp1.case.case_PP1" name="PP1" description="PP1">
-        <caseFileModel/>
+        <caseFileModel>
+            <caseFileItem id="cfi_csHoW_0" name="PPRequest" multiplicity="ExactlyOne" definitionRef="PPRequest"/>
+        </caseFileModel>
         <casePlanModel id="cm_cs8CZ_10" name="PP1">
-            <planItem id="cm_cs8CZ_12" name="Request PP" definitionRef="pid_cm_cs8CZ_12"/>
-            <humanTask id="pid_cm_cs8CZ_12" name="Request PP" isBlocking="true" performerRef="role_cs8CZ_0">
+            <planItem id="cm_csDMQ_19" name="ViewPPRequest" definitionRef="pid_cm_csDMQ_19"/>
+            <humanTask id="pid_cm_csDMQ_19" name="ViewPPRequest" isBlocking="true" humanTaskRef="viewpprequest.humantask">
+                <inputs id="inTP_cm_csDMQ_19_0" name="permit" bindingRef="cfi_csHoW_0"/>
                 <extensionElements mustUnderstand="false"
                     xmlns:cafienne="org.cafienne"/>
                 </humanTask>
             </casePlanModel>
             <caseRoles id="role_cs8CZ_0" name="Requestor" description="Requestor"/>
+            <input id="csDMQ_inCPs_1" name="permit" bindingRef="cfi_csHoW_0"/>
             <extensionElements>
                 <cafienne:start-case-model
                     xmlns:cafienne="org.cafienne">{
-      "type": "object",
-      "properties": {"PPRequest": {"$ref": "#/definitions/PPRequest"}},
-      "definitions": {
-          "PPRequest": {
-              "type": "object",
-              "properties": {
-                  "RequestDetails": {"$ref": "#/definitions/RequestDetails"},
-                  "VehicleOwner": {"$ref": "#/definitions/VehicleOwner"},
-                  "Vehicle": {"$ref": "#/definitions/Vehicle"}
-              }
-          },
-          "RequestDetails":{
-            "title": "Request Details",
-            "type": "object",
-            "required": ["Requestor", "RequestDate"],
-            "properties": {
-              "RequestDate": {
-                  "title": "Request date",
-                  "type": "string",
-                  "format": "date",
-                  "defaultValue": "$today"
-              },
-              "Requestor": {
-                  "title": "Requestor",
-                  "type": "string",
-                  "default": "$CURRENT_USER"
-              }
-            }
-          },
-          "VehicleOwner":{
-            "title": "Owner of the vehicle",
-            "type": "object",
-            "required": ["Name", "PostalCode", "HouseNumber"],
-            "properties": {
-              "Name": {
-                "title": "Name",
-                "type": "string"
-              },
-              "PostalCode": {
-                "title": "Postal code",
-                "type": "string"
-              },
-              "HouseNumber": {
-                "title": "House number",
-                "type": "string"
-              }
-            }
-          },
-          "Vehicle": {
-              "title": "Vehicle details",
-              "type": "object",
-              "properties": {
-                  "LicensePlateNumber": {
-                      "title": "License plate number",
-                      "type": "string"
-                  }
-              }
-          }
-      }
-  }
+ "schema":{
+   "title": "Request parking permit",
+   "type": "object",
+   "properties":{
+     "permit":{
+     "title": " ",
+     "type": "object",
+     "required": ["Name", "Zipcode", "HouseNumber","LicensePlate"],
+     "properties": {
+       "Name":{
+           "type": "string",
+           "title": "Your name"
+     },
+         "Zipcode":{
+           "type": "string",
+           "title": "Zipcode"
+     },
+         "HouseNumber":{
+              "type": "integer",
+           "title": "House number"
+     },
+         "LicensePlate":{
+              "type": "string",
+               "title": "License plate"
+     }
+     }
+   }
+   }
+ }
+}
                 </cafienne:start-case-model>
             </extensionElements>
         </case>
