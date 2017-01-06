@@ -13,15 +13,15 @@
             <caseFileItem id="cfi_csHoW_0" name="PPRequest" multiplicity="ExactlyOne" definitionRef="PPRequest"/>
         </caseFileModel>
         <casePlanModel id="cm_cs8CZ_10" name="PP1">
-            <planItem id="cm_csDMQ_19" name="ViewPPRequest" definitionRef="pid_cm_csDMQ_19"/>
-            <humanTask id="pid_cm_csDMQ_19" name="ViewPPRequest" isBlocking="true" humanTaskRef="viewpprequest.humantask">
-                <inputs id="inTP_cm_csDMQ_19_0" name="permit" bindingRef="cfi_csHoW_0"/>
+            <planItem id="cm_csDMQ_19" name="Request PP" definitionRef="pid_cm_csDMQ_19"/>
+            <humanTask id="pid_cm_csDMQ_19" name="Request PP" isBlocking="true" performerRef="role_cs8CZ_0" humanTaskRef="viewpprequest.humantask">
+                <inputs id="inTP_cm_cs3Ks_50_0" name="permit" bindingRef="cfi_csHoW_0"/>
                 <extensionElements mustUnderstand="false"
                     xmlns:cafienne="org.cafienne"/>
                 </humanTask>
             </casePlanModel>
             <caseRoles id="role_cs8CZ_0" name="Requestor" description="Requestor"/>
-            <input id="csDMQ_inCPs_1" name="permit" bindingRef="cfi_csHoW_0"/>
+            <input id="cs3Ks_inCPs_0" name="permit" bindingRef="cfi_csHoW_0"/>
             <extensionElements>
                 <cafienne:start-case-model
                     xmlns:cafienne="org.cafienne">{
@@ -32,21 +32,21 @@
      "permit":{
      "title": " ",
      "type": "object",
-     "required": ["Name", "Zipcode", "HouseNumber","LicensePlate"],
+     "required": ["Name", "ZIPcode", "Housenumber","Licenseplatenumber"],
      "properties": {
        "Name":{
            "type": "string",
            "title": "Your name"
      },
-         "Zipcode":{
+         "ZIPcode":{
            "type": "string",
            "title": "Zipcode"
      },
-         "HouseNumber":{
+         "Housenumber":{
               "type": "integer",
            "title": "House number"
      },
-         "LicensePlate":{
+         "Licenseplatenumber":{
               "type": "string",
                "title": "License plate"
      }
