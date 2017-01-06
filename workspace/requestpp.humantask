@@ -1,0 +1,39 @@
+<humantask id="id_AkM2" name="RequestPP" description="" isBlocking="true">
+    <cafienne:implementation xmlns:cafienne="org.cafienne" class="org.cafienne.cmmn.instance.task.WorkflowTaskDefinition">
+      <input id="PPRequest" name="PPRequest"/>
+        <output id="PPRequest" name="PPRequest"/>
+     	 <task-model>
+           {
+ "schema":{
+   "title": "Request parking permit",
+   "type": "object",
+   "properties":{
+     "permit":{
+     "title": " ",
+     "type": "object",
+     "required": ["Name", "ZIPcode", "HouseNumber","LicensePlateNumber"],
+     "properties": {
+       "Name":{
+           "type": "string",
+           "title": "Your name"
+     },
+         "ZIPcode":{
+           "type": "string",
+           "title": "Zipcode"
+     },
+         "HouseNumber":{
+              "type": "integer",
+           "title": "House number"
+     },
+         "LicensePlateNumber":{
+              "type": "string",
+               "title": "License plate"
+     }
+     }
+   }
+   }
+ }
+}
+		</task-model>
+    </cafienne:implementation>
+</humantask>

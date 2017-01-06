@@ -1,0 +1,57 @@
+<definitions>
+    <caseFileItemDefinition name="PPRequest" definitionType="http://www.omg.org/spec/CMMN/DefinitionType/Unspecified">
+        <property name="Name" type="http://www.omg.org/spec/CMMN/PropertyType/string"/>
+        <property name="ZIPcode" type="http://www.omg.org/spec/CMMN/PropertyType/string"/>
+        <property name="HouseNumber" type="http://www.omg.org/spec/CMMN/PropertyType/string"/>
+        <property name="LicensePlateNumber" type="http://www.omg.org/spec/CMMN/PropertyType/string"/>
+    </caseFileItemDefinition>
+    <case id="parkingpermit.case.case_ParkingPermit" name="ParkingPermit" description="">
+        <caseFileModel>
+            <caseFileItem id="cfi_cssPs_0" name="PPRequest" multiplicity="ExactlyOne" definitionRef="PPRequest"/>
+        </caseFileModel>
+        <casePlanModel id="cm_ParkingPermit.case_ParkingPermit_0" name="ParkingPermit">
+            <planItem id="cm_cskNj_16" name="Request PP" definitionRef="pid_cm_cskNj_16"/>
+            <humanTask id="pid_cm_cskNj_16" name="Request PP" isBlocking="true" performerRef="role_cssPs_0">
+                <extensionElements mustUnderstand="false"
+                    xmlns:cafienne="org.cafienne"/>
+                </humanTask>
+            </casePlanModel>
+            <caseRoles id="role_cssPs_0" name="Requestor" description=""/>
+            <input id="cssPs_inCPs_0" name="permit" bindingRef="cfi_cssPs_0"/>
+            <extensionElements>
+                <cafienne:start-case-model
+                    xmlns:cafienne="org.cafienne">{
+ "schema":{
+   "title": "Request parking permit",
+   "type": "object",
+   "properties":{
+     "permit":{
+     "title": " ",
+     "type": "object",
+     "required": ["Name", "ZIPcode", "HouseNumber","LicensePlateNumber"],
+     "properties": {
+       "Name":{
+           "type": "string",
+           "title": "Your name"
+     },
+         "ZIPcode":{
+           "type": "string",
+           "title": "Zipcode"
+     },
+         "HouseNumber":{
+              "type": "integer",
+           "title": "House number"
+     },
+         "LicensePlateNumber":{
+              "type": "string",
+               "title": "License plate"
+     }
+     }
+   }
+   }
+ }
+}
+                </cafienne:start-case-model>
+            </extensionElements>
+        </case>
+    </definitions>
