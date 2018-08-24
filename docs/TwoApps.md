@@ -7,7 +7,7 @@ sidebar_label: Two business applications
 ## HelloWorld
 The first business application is called Hello World. A business user can sent a greeting to another business user using the following user interface that is based on the JSON shown in [Cafienne UI](http://localhost:3000/docs/CafienneUI.html).
 
-![Image](assets/startUIHelloWorld.png)
+![Image](assets/startUIhelloWorld.png)
 
 In the UI above some user that is known as The administrator sends Lana the greeting “goedemorgen”. Lana can read this message once she has logged in into Cafienne UI. There she will see a Task “Receive Greeting and respond” assigned to her. She can now respond to The administrator. The administrator will receive the response and after that he or she can only complete the case. The myCases UI will show the following:
 
