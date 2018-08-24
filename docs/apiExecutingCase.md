@@ -4,7 +4,7 @@ title: Executing the case
 sidebar_label: Executing the case
 ---
 
-Executing a case means that all required planned items are completed and that other tasks at least have been available but did not need to be executed according the case team. 
+Executing a case means that case workers execute tasks, post the completion of the task to Cafienne. This will procees untill all required planned items are completed; other not required or discretionary tasks may have been available but did not need to be executed according the case team. 
 
 First, you need to know which tasks are avaliable. For this,  retrieve all **discretionary tasks**. Next, you can plan the discretionary task which will become a *planned item*. Then, you can retrieve all **planned items**.
 
@@ -42,6 +42,6 @@ Once you request the completion of a task, Cafienne will evaluate which other pl
 
 ### ...and other plan items
 
-You also can apply life cycle transactions on other plan items as stages, milestones and event listeners. For this, you can use `put/tasks/{taskId}/{transition}` or `post/cases/{caseInstanceId}/planitems/{planItemId}/{transition}`.
+You also can apply life cycle transactions on other plan items as stages, milestones and event listeners. For this, you can use `post/cases/{caseInstanceId}/planitems/{planItemId}/{transition}`.
 
 

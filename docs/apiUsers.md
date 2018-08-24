@@ -23,6 +23,6 @@ As your case models evolves, more roles can be added. Also, your employees can f
 
 ## Set a case team for a case instance
 
-Roles are designed in a case model and therefore part of each case that is instantiated from that model. A user fulfilling a role designed in the model –implemented with `post/users` – is therefore authorized to each case that is instantiated from this model.
+Roles are designed in a case model and therefore they are part of each case that is instantiated from that model. A user fulfilling a role designed in the model –implemented with `post/users` – is authorized to each case that is instantiated from this model.
 
 If you want to restrict an instance of a case to just one or two users that fullfil the case role, you can set a case team for that instance using `.../cases/{caseinstanceID}/caseteam`. There are three methods: `post` for setting  a new case team, `put` for updating the team and `delete` for deleting a case team member. These methods uses the same body as `post/users`.

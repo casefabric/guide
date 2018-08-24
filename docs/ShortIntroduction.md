@@ -5,11 +5,11 @@ sidebar_label: A short introduction
 ---
 
 ## When to use Cafienne
-You can use Cafienne when you work with Cases, building Case Files and cooperating in a team. 
+You can use Cafienne when your organisation works with Cases, building up Case Files and cooperates in a team. 
 
-You can use Cafienne when your User Interface in a glance should give you an overview of the whole case. Of what has been done, what can be done and what must be done. Of all the information that is in the Case File and that is related to the work that you are doing. 
+You can use Cafienne when your User Interface should in a glance give you an overview of the whole case, of what has been done, what can be done and what must be done, of all the information that is in the Case File and that is related to the work that you are doing. 
 
-You should use Cafienne if you want to build up your case team, and –as a case manager– want to keep all of them involved in the proceeding of the case.
+You should use Cafienne if you want to build up a case team, and –as a case manager– want to keep all of them involved in the proceeding of the case.
 
 You want to use Cafienne if you want to build up an auditable track of what case workers contributed to solving the case.
 
@@ -17,13 +17,13 @@ You want to use Cafienne if you want to build up an auditable track of what case
 ## Cafienne is a case engine
 Cafienne is a case engine. Cafienne interprets a case model that is designed according to the [CMMN](https://www.omg.org/spec/CMMN/About-CMMN/) specifications. Doing this, it offers the user tasks he must perform, tasks he may perform and tasks he may choose to perform. And, the case engine keeps track of all the information that is added to the Case File during its lifecycle.
 
-Also, you can create a team of case workers, specific to the specific case. To this team, you can add people from within your own organisation but also from outside it.
+Also, you can create a team of case workers for the specific case. To this team, you can add people from within your own organisation but also from outside it.
 
 ## Cafienne is open source
 Cafienne is fully open source and has an active community. This way we can ensure that we have a continuous development for the product and a good focus on quality and interoperability.
 
 ## Cafienne Background
-We think Cafienne has a two-fold background. First, there is a background in business process modelling, and next, Cafienne has learned of the evolution of the ways we deploy business applications on IT-infrastructure.
+Cafienne has a two-fold background. First, there is a background in business process modelling, and next, Cafienne has learned of the evolution of the ways business applications are deployed on IT-infrastructure.
 
 ### Business Processes
 Ten companies responded to a 2009 OMG (Object Management Group) call to standardize a Data Centric Business Process Management, or Emerging Case Management Standard to be published in 2012. The OMG call draws on several influences, among them the Case Management literature (van der Aalst, 2008), Business Artifacts (Nigam and Caswell, 2003), Guard-Stage-Milestone (GSM, Hull et al 2011), and Dynamic planning for Case Management (de Man, 2009).

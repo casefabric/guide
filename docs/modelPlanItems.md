@@ -18,6 +18,7 @@ In CMMN, Stages, Tasks, EventListeners and Milestones are Plan Items.
 
 All tasks use parameters to pass information. These parameters refer to Case File Items. A Human Task needs a performer and therefore the Role concept us used. Also, a Human Task can have a Planning Table and therefore Appicability Rules to a Task.
 
+**In Cafienne** Case Modeler you can drag the Task Icon to the canvas and model its properties using the Properties Palette.
 ​
 
 ## EventListener
@@ -33,6 +34,8 @@ For this reason, CMMN introduces EventListeners, which specialise into TimerEven
 A Milestone represents an achievable target. They can be used to show that a certain goal has been reached in the case. The conditions that must be met to achieve a milestone can be clearly defined by attaching a sentry to it. A Milestone can also be used as an entry criteria for other plan items. 
 
 Milestones are beneficial plan items in a case, because they allow us to assess a case’s progress. They are not associated with work like a task is, but rather indicate certain conditions have been reached within a case.
+
+**In Cafienne** Case Modeler you can drag the Milestone Icon to the canvas and model its properties using the Properties Palette.
 
 ## Plan item Properties
 
