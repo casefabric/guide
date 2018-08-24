@@ -9,7 +9,7 @@ The first business application is called Hello World. A business user can sent a
 
 ![Image](assets/startUIhelloWorld.png)
 
-In the UI above some user that is known as The administrator sends Lana the greeting “goedemorgen”. Lana can read this message once she has logged in into Cafienne UI. There she will see a Task “Receive Greeting and respond” assigned to her. She can now respond to The administrator. The administrator will receive the response and after that he or she can only complete the case. The myCases UI will show the following:
+In the UI above some user that is known as The administrator sends Lana the greeting “goedemorgen”. Lana can read this message once she has logged in into Cafienne UI. There she will see a Task “Receive Greeting and respond” assigned to her. She can now respond to The administrator. The administrator will receive the response and after that he or she can complete the case. The myCases UI will show the following:
 
 ![Image](assets/helloWorldCompleted.png)
 
@@ -18,7 +18,7 @@ You can try it yourself once you obtained Cafienne-demo. Note that in Cafienne-d
 ## Travel Request
 Travel Request has a more elaborated case model. It supports a common procedure in many organizations: business travel. One of the team members needs to organize a trip to visit a client. They would have to fill in a form, email it to their supervisor, and get the approved form back from the supervisor. After the trip, they would need to fill in another form detailing travel expenses, submit this form for approval, and finally submit their approved expenses to accounting for reimbursement. This example relies heavily on the requester to manage the entire process by keeping track of where they are in the process and moving it along manually. 
 
-> Note however, travel request is not so much a case and more like a business process. So, you can use Cafienne to build business processes also. 
+> Note however, travel request is not so much a case and more like a business process. So, you can use Cafienne to build business processes too. 
 
 Using Cafienne, you can break down this request into smaller processes: Requesting Travel, Approving Travel, and Submitting the Expenses, as shown in the model below.
 
@@ -64,7 +64,8 @@ Hank can now see his Cases by calling on the method get/cases. He can also look 
 
 ```sh
 {
-  "casefile": "..",    "lastModifiedBy": "hank",
+  "casefile": "..",
+  "lastModifiedBy": "hank",
   "definition": "HelloWorld",
   "planitems": [ 
     {
@@ -87,7 +88,7 @@ Hank can now see his Cases by calling on the method get/cases. He can also look 
   }  
 }
 ```
-> You can read the it all using your browser inspector
+> You can follow the API-calls using your browser inspector
 
 Note that the engine returns a JSON in which all plan items and case file items are comprised. This case file, identified by a key, has a definition ‘HelloWorld” and is last modified by Hank. The case file compromises all the plan items of the case. The first plan item in the list is the Case itself, described with name “HelloWorld’ and type “CasePlan”. The two Human Tasks in the model are also loaded into the JSON of this Case Instance. The data on currentState, historyState, and transition reflect the lifecycle of each Plan Item. Publishing all modeled Plan Items in the Case Instance implicates that the Case Plan is immutable: the plan of the instance is not aware of later changes in the plan of the model.
 Next to the Plan Items, the JSON comprises the team, which is not populated by Hank, a description of the attached casefile, and the file itself, which reflects the Case File Items and its properties.

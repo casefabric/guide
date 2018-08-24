@@ -4,10 +4,10 @@ title: Cafienne Demo
 sidebar_label: Introducing Cafienne Demo
 ---
 
-We have prepared for you Cafienne Demo. It is just not yet the open source application we want to offer. But, using Cafienne Demo you can build your business application based on Case Management.
+We have prepared for you Cafienne Demo. 
 
-Cafienne-demo contains [Cafienne Modeller](modelCases.md), the binaries of Cafienne including the [API](apiAuthentication.md). We, at SpronQ, consider this to be the core of Cafienne.
+Cafienne-demo contains [Cafienne Modeller](modelCases.md), the binaries of Cafienne including the [API](apiAuthentication.md). We, at SpronQ, consider this to be the core of Cafienne. With this core you can build real business applications.
 
-On top of this core we built [CafienneUI](CafienneUI.md). Cafienne UI consists of two types of user interfaces. First, there is the user interface “My Cases and Tasks” that give the user an overview of the cases he or she is involved with and tasks that are assigned to him or her or to open for a Case Role he or she fulfills. Next, there are Task UIs. Based on a JSON structure that reflects the Case File a simple React/Redux UI is generated. Using this UI a case worker can complete the task. The completion of the task is sent to the case engine, and next My Cases and Tasks will be updated.
+Upon this core, we built [CafienneUI](CafienneUI.md). Using Cafienne UI you can build a user interface that helps demo-ing the application.
 
-Cafienne Demo goes with [two business applications](TwoApps.md) which show you how you can use the Modeller, the API and Cafienne UI.
+Cafienne UI goes with [two business applications](TwoApps.md) which show you how you can use the Modeller and the API.
