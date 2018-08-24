@@ -26,13 +26,13 @@ Most of the execution semantics is desribed by the lifecycle for *plan items* an
 
 The following diagram illustrates the lifecycle of a Case instance. Note that a Case can be active or closed and that intermediate states are completed, terminated, failed or suspended. These states are the results of transitions lik create, complete, re-activate or close.
 
-![Image](assets/caseLifecycle.png)
+![Image](assets/caseLifeCycle.png)
 
 ### Plan item Lifecycle
 
 The following diagram illustrates the lifecycel of a Stage or a Task instance. A Task or Stage can be Available, Enabled, Active, and Completed. A “sunny path”. They can also be Disabled (a case worker has decided the Stage or Task instance should not be executed), Failed (a software failure?!) or Suspended, or Terminated.
 
-![Image](assets/taskStageLifecycle.png)
+![Image](assets/taskStageLifeCycle.png)
 
 To go form one state to another state, a transition takes place. For example, the transition create will transition from “null” to Available, start from Available to Active.
 
@@ -42,7 +42,7 @@ As you will learn in Cafienne API, this “from-to” transition is in the respo
 
 The following diagram illustrates the lifecycle of a CaseFile item instance (see CMMN1.1). It has two states: Available and Discarded. These states can be reached the transitions create, update, replace and delete. In case, the CaseFile item is nested in another, the transitions possible are add or remove child.
 
-![Image](assets/cfiLifecycle.png)
+![Image](assets/cfiLifeCycle.png)
 
 Note that Cafienne as yet does not support references of CaseFile items.
 
