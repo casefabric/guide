@@ -5,7 +5,7 @@ sidebar_label: Two business applications
 ---
 
 ## HelloWorld
-The first business application is called Hello World. A business user can sent a greeting to another business user using the following user interface that is based on the JSON shown in [Cafienne UI](http://localhost:3000/docs/CafienneUI.html).
+The first business application is called Hello World. A business user can sent a greeting to another business user using the following user interface that is based on the JSON shown in [Cafienne UI](CafienneUI.md).
 
 ![Image](assets/startUIhelloWorld.png)
 

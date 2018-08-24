@@ -36,7 +36,7 @@ The following diagram illustrates the lifecycel of a Stage or a Task instance. A
 
 To go form one state to another state, a transition takes place. For example, the transition create will transition from “null” to Available, start from Available to Active.
 
-As you will learn in Cafienne API, this “from-to” transition is in the response of API-calls that [retrieve information](http://localhost:3000/docs/apiRetrieving.html#a-case-instance) on plan item: historyState, CurrentState, transition.
+As you will learn in Cafienne API, this “from-to” transition is in the response of API-calls that [retrieve information](apiRetrieving.md#a-case-instance) on plan item: historyState, CurrentState, transition.
 
 ### CaseFile item Lifecycle
 
@@ -46,7 +46,7 @@ The following diagram illustrates the lifecycle of a CaseFile item instance (see
 
 Note that Cafienne as yet does not support references of CaseFile items.
 
-In Cafienne, you can perform a transition on a CaseFile item by [completing a task](http://localhost:3000/docs/apiExecutingCase.html#http://localhost:3000/docs/apiExecutingCase.html#planned-human-tasks) that has a CaseFile item in its output, or by performing a CaseFile item transaction [directly](http://localhost:3000/docs/apiCaseFile.html).
+In Cafienne, you can perform a transition on a CaseFile item by [completing a task](apiExecutingCase.md#planned-human-tasks) that has a CaseFile item in its output, or by performing a CaseFile item transaction [directly](apiCaseFile.md).
 
 ### Sentries
 
@@ -66,4 +66,4 @@ The behaviral rules are:
 * Applicability
 * Stage.autocomplete
 
-For a discussion, see section [Cafienne Modeller](http://localhost:3000/docs/modelPlanItems.html#plan-item-properties).
+For a discussion, see section [Cafienne Modeller](modelPlanItems.md#plan-item-properties).
