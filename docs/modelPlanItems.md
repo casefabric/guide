@@ -18,7 +18,20 @@ In CMMN, Stages, Tasks, EventListeners and Milestones are Plan Items.
 
 All tasks use parameters to pass information. These parameters refer to Case File Items. A Human Task needs a performer and therefore the Role concept us used. Also, a Human Task can have a Planning Table and therefore Appicability Rules to a Task.
 
-**In Cafienne** Case Modeler you can drag the Task Icon to the canvas and model its properties using the Properties Palette.
+**In Cafienne**, you can model a human task, a process task and a case task. In the Case Modeler you can drag the Icons for this task to the canvas and model its properties using the Properties Palette.
+
+### Implementation of Human Task and Process Task
+**In Cafienne** for both the Human Task and the Process Task, you can add an implementation. Note that **in CMMN** an implementation of a Process Task –a reference to a Process– is specified, whereas an implementation for a Human Task is not.
+
+You can create an implementation in the Modeler, clicking on labels `Processes` or `Human Task Model` and create it by entering a Name and Description, and next using the button Create+Open.
+
+For both implementations you can add using their `Editors` the input and output parameters. Then you can add the implementation to the properties of the Human Task or the Process Task.
+
+> Note that in Cafienne Modeler you must use this implementation to add a Case File Item to the input and output parameters of a Human or Process Task
+
+Next, in the *process task implementation* you can add an URI that calls the real implementation, eg using `<cafienne:implementation xmlns:cafienne="org.cafienne" class="org.cafienne.cmmn.instance.process.http.HTTPCallDefinition" async="true"/>`.
+
+For using the Human Task Model, see [How to use task UI rendering](cafienneUIHTM.md).
 ​
 
 ## EventListener
