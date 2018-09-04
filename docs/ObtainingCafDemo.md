@@ -4,7 +4,7 @@ title: Obtaining Cafienne Demo
 sidebar_label: Obtaining Cafienne Demo
 ---
 
-Here we explain how you can obtain the binaries for Cafienne-demo to get started. There is currently one way: clone the github repository from https://github.com/cafienne/cafienne-demo. For that you have to ask us authorization. Contact us using info@cafienne.io. Note that Cafienne runs in dockers, so Docker has to be installed too. You need at least version Docker 17.03-ce / Docker for Mac/Win 17.03-ce +.
+Here we explain how you can obtain the binaries for Cafienne-demo to get started. There is currently one way: clone the github repository from https://github.com/cafienne/cafienne-demo. For that you have to ask us authorization. Contact us using the form on [cafienne.io](https://cafienne.io/guide). Note that Cafienne runs in dockers, so Docker has to be installed too. You need at least version Docker 17.03-ce / Docker for Mac/Win 17.03-ce +.
 
 ## Clone the repository and get started
 When authorized, you can clone the repository from Github by running the following command in a terminal: `git clone https://github.com/cafienne/cafienne-demo.git`. Note that the clone is in an folder cafienne-demo on your Home directory. 
