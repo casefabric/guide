@@ -22,7 +22,7 @@ After starting up de Cafienne Demo environment, the following URL allow you to a
 
 * Cafienne modeler environment: http://localhost:2081
 * Cafienne task user interface: http://localhost:8081
-* Cafienne API (exposed through Swagger): http://localhost:18082
+* Cafienne API (exposed through Swagger): http://localhost:2027
 * MailCatcher web UI: http://localhost:1080
 
 You can logon to these parts by using `admin` for the username and `cafienne` for the password. Next to the admin there are four predefined users: Lara `lara/lara`, Hank `hank/hank`, Gerald `gerald/gerald` and Suzy `suzy/suzy`.
