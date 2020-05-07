@@ -49,27 +49,27 @@ const siteConfig = {
   // users,
 
   /* path to images for header/footer */
-  headerIcon: 'img/favicon-32x32.png',
+  headerIcon: 'img/cafienne.svg',
   footerIcon: 'img/favicon-32x32.png',
   favicon: 'img/favicon.png',
 
   /* colors for website */
   colors: {
-    primaryColor: '#6769d7',
+    primaryColor: 'rgb(46,49,145)',
     secondaryColor: '#2E3191'
   },
 
   /* custom fonts for website */
-  /*fonts: {
-    myFont: [
-      "Times New Roman",
-      "Serif"
-    ],
-    myOtherFont: [
-      "-apple-system",
-      "system-ui"
-    ]
-  },*/
+  // fonts: {
+  //   myFont: [
+  //     "SofiaProRegular",
+  //     "SofiaProRegular"
+  //   ],
+  //   myOtherFont: [
+  //     "SofiaProRegular",
+  //     "SofiaProRegular"
+  //   ]
+  // },
 
   // This copyright info is used in /core/Footer.js and blog rss/atom feeds.
   copyright: 'Copyright © ' + new Date().getFullYear() + ' Cafienne',
