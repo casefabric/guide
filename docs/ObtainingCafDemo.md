@@ -20,7 +20,7 @@ There are  two methods to stop and/or remove the environment.
 ## Exposed URLs of the Cafienne Demo environment
 After starting up de Cafienne Demo environment, the following URL allow you to access the various parts of the environment:
 
-* Cafienne modeler environment: http://localhost:3001
+* Cafienne modeler environment: http://localhost:2081
 * Cafienne task user interface: http://localhost:8081
 * Cafienne API (exposed through Swagger): http://localhost:18082
 * MailCatcher web UI: http://localhost:1080
