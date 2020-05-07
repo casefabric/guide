@@ -6,7 +6,7 @@ sidebar_label: All API-methods
 
 In this section, we present all API-methods:
 
-<table>
+<table style="font-size:smaller">
   <tr>
     <th style="text-align:left;">API-method</th>
     <th style="text-align:left;">Use Case</th>
