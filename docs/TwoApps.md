@@ -16,7 +16,7 @@ In the UI above some user that is known as The administrator sends Lana the gree
 You can try it yourself once you obtained Cafienne-demo. Note that in Cafienne-demo there are four predefined user next to the administrator that you can use in this demo: Lana, Gerald, Hank and Suzy.
 
 ## Travel Request
-Travel Request has a more elaborated case model. It supports a common procedure in many organizations: business travel. One of the team members needs to organize a trip to visit a client. They would have to fill in a form, email it to their supervisor, and get the approved form back from the supervisor. After the trip, they would need to fill in another form detailing travel expenses, submit this form for approval, and finally submit their approved expenses to accounting for reimbursement. This example relies heavily on the requester to manage the entire process by keeping track of where they are in the process and moving it along manually. 
+Travel Request has a more elaborated case model. It supports a common procedure in many organizations: business travel. One of the team members needs to organize a trip to visit a client. They would have to fill in a form, email it to their supervisor, and get the approved form back from the supervisor. After the trip, they would need to fill in another form detailing travel expenses, submit this form for approval, and finally submit their approved expenses to accounting for reimbursement. This example relies heavily on the requestor to manage the entire process by keeping track of where they are in the process and moving it along manually. 
 
 > Note however, travel request is not so much a case and more like a business process. So, you can use Cafienne to build business processes too. 
 
@@ -24,9 +24,9 @@ Using Cafienne, you can break down this request into smaller processes: Requesti
 
 ![Image](assets/modelTravel.png)
 
-We can make sure there are no more incomplete request forms by requiring specific information before it ever is submitted. We can define an approver role so that once the travel request is created, the appropriate supervisor is notified of the request. After approval, the process automatically moves onto the final step and lets the requestor know their request is approved. It assigns them a new task to submit their travel expenses after the trip.
+We can make sure there are no more incomplete request forms by requiring specific information before it is submitted. We can define an approver role so that once the travel request is created, the appropriate supervisor is notified of the request. After approval, the process automatically moves onto the final step and lets the requestor know their request is approved. It assigns them a new task to submit their travel expenses after the trip.
 
-The order of these tasks is important, and Cafienne manages the entire process. It delegates tasks to the correct team members since these roles can be clearly defined when designing the model. This removes the burden from the requester of figuring out who they should send a request to, remembering where they are in the process, and prevents them from sending it to the wrong team member.
+The order of these tasks is important, and Cafienne manages the entire process. It delegates tasks to the correct team members since these roles can be clearly defined when designing the model. This removes the burden from the requestor of figuring out who they should send a request to, remembering where they are in the process, and prevents them from sending it to the wrong team member.
 
 > You can try it yourself once you obtained Cafienne-demo.
 

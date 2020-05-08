@@ -4,10 +4,19 @@ title: Obtaining Cafienne Demo
 sidebar_label: Obtaining Cafienne Demo
 ---
 
-Here we explain how you can obtain the binaries for Cafienne to get started. There is currently one way: clone the github repository from https://github.com/cafienne/getting-started. For that you have to ask us authorization. Contact us using the form on [cafienne.io](https://cafienne.io). Note that Cafienne runs in dockers, so Docker has to be installed too. You need at least version Docker 17.03-ce / Docker for Mac/Win 17.03-ce +.
+In order to get access to the demo environment, you need to be registered with Cafienne. You can fill out the form at [cafienne.io](https://cafienne.io). 
+
+## Prerequisites
+In order to run Cafienne Demo, you need to have
+- [Docker](https://www.docker.com/) installation
+- a [GitHub](https://github.com/join) account
+
+The demo runs as a set of docker images, and the configuration of these images is available in a git repository.
+We assume you have some basic knowledge of working with GitHub and Docker.
+
 
 ## Clone the repository and get started
-When authorized, you can clone the repository from Github by running the following command in a terminal: `git clone https://github.com/cafienne/getting-started.git`. Note that the clone is in an folder cafienne-demo on your Home directory. 
+When authorized, you can clone the repository from Github by running the following command in a terminal: `git clone https://github.com/cafienne/getting-started`.
 
 Now, you can pull the latest Cafienne docker images by running `docker-compose pull` and bringing it up by running  `docker-compose up`. You can now start working with Cafienne.
 
@@ -26,3 +35,6 @@ After starting up the Cafienne Demo environment, the following URL allow you to 
 * MailCatcher web UI: http://localhost:1080
 
 You can logon to these parts by using `admin` for the username and `cafienne` for the password. Next to the admin there are four predefined users: Lara `lara@example.com/lara`, Hank `hank@example.com/hank`, Gerald `gerald@example.com/gerald` and Suzy `suzy@example.com/suzy`.
+
+## More information
+More information about running the Cafienne Demo environment is available in the documentation of the [getting-started](https://github.com/cafienne/getting-started) repository in GitHub.

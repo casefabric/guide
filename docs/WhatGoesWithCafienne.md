@@ -10,4 +10,4 @@ Cafienne is accompanied by Cafienne UI. This UI shows a business user all the ca
 
 Therefore, you can use Cafienne UI to create a simple executing path for your case model. It then comprises simple user interfaces in which case workers can complete tasks. In this way, Cafienne UI helps in the communication between IT, business analists and business people.
 
-To be introduced in Cafienne UI, continue reading [Cafienne Demo](CafienneDemo.md).
+To be introduced in Cafienne UI, continue reading [Getting Started](gettingStarted.md).

@@ -1,13 +1,13 @@
 {
   "docs": {
-    "General": [
+    "Overview": [
        "HowToUseThisGuide",
        "ShortIntroduction",
        "WhatGoesWithCafienne",
        "gettingStarted"
        ],
-    "Cafienne Demo": [
-       "CafienneDemo",
+    "Getting Started": [
+       "GettingStarted",
        "CafienneUI",
        "cafienneUIHTM",
        "TwoApps",
@@ -20,7 +20,7 @@
        "modelCaseRoles",
        "modelOther"
        ],
-    "Case engine": [
+    "Cafienne Engine": [
        "cafienneEngine"
        ],
     "Cafienne API": [

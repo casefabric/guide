@@ -37,10 +37,6 @@
         "title": "Cafienne background",
         "sidebar_label": "Cafienne background"
       },
-      "CafienneDemo": {
-        "title": "Getting started",
-        "sidebar_label": "Introducing Cafienne Demo"
-      },
       "cafienneEngine": {
         "title": "The Cafienne engine"
       },
@@ -52,9 +48,9 @@
         "title": "Human Task Model and Start Case Schema",
         "sidebar_label": "How to use task UI rendering"
       },
-      "gettingStarted": {
+      "GettingStarted": {
         "title": "Getting started",
-        "sidebar_label": "Getting started"
+        "sidebar_label": "Introducing Cafienne Demo"
       },
       "HowToUseThisGuide": {
         "title": "How to use this guide",
@@ -98,17 +94,17 @@
       }
     },
     "links": {
-      "General": "General",
-      "Cafienne Demo": "Cafienne Demo",
+      "Overview": "Overview",
+      "Getting Started": "Getting Started",
       "Cafienne IDE": "Cafienne IDE",
       "Case engine": "Case engine",
       "Cafienne API": "Cafienne API"
     },
     "categories": {
-      "General": "General",
-      "Cafienne Demo": "Cafienne Demo",
+      "Overview": "Overview",
+      "Getting Started": "Getting Started",
       "Cafienne IDE": "Cafienne IDE",
-      "Case engine": "Case engine",
+      "Cafienne Engine": "Cafienne Engine",
       "Cafienne API": "Cafienne API"
     }
   },
