@@ -4,121 +4,61 @@
     "next": "Next",
     "previous": "Previous",
     "tagline": "How to use Cafienne, a CMMN based case engine",
-    "docs": {
-      "apiAuthentication": {
-        "title": "Introducing the API",
-        "sidebar_label": "Introducing the API"
-      },
-      "apiCaseFile": {
-        "title": "CaseFile requests",
-        "sidebar_label": "Casefile requests"
-      },
-      "apiExecutingCase": {
-        "title": "Executing the case",
-        "sidebar_label": "Executing the case"
-      },
-      "apiMethods": {
-        "title": "All API-methods",
-        "sidebar_label": "All API-methods"
-      },
-      "apiRetrieving": {
-        "title": "Retrieving cases and tasks",
-        "sidebar_label": "Retrieving cases and tasks"
-      },
-      "apiStartCase": {
-        "title": "Start a Case",
-        "sidebar_label": "Start a Case"
-      },
-      "apiUsers": {
-        "title": "Users, roles and case team",
-        "sidebar_label": "Users, roles and case team"
-      },
-      "background": {
-        "title": "Cafienne background",
-        "sidebar_label": "Cafienne background"
-      },
-      "cafienneAuthentication": {
-        "title": "Cafienne Authentication Overview",
-        "sidebar_label": "Authentication"
-      },
-      "cafienneAuthorization": {
-        "title": "Cafienne Authorization Overview",
-        "sidebar_label": "Authorization"
-      },
-      "cafienneAuthorizationPictures": {
-        "title": "Cafienne Authorization Overview",
-        "sidebar_label": "Pictorial overview"
-      },
-      "cafienneEngine": {
-        "title": "The Cafienne engine"
-      },
-      "CafienneUI": {
-        "title": "Cafienne UI",
-        "sidebar_label": "Cafienne UI"
-      },
-      "cafienneUIHTM": {
-        "title": "Human Task Model and Start Case Schema",
-        "sidebar_label": "How to use task UI rendering"
-      },
-      "GettingStarted": {
-        "title": "Getting started",
-        "sidebar_label": "Introducing Cafienne Demo"
-      },
-      "HowToUseThisGuide": {
-        "title": "How to use this guide",
-        "sidebar_label": "How to use this Guide"
-      },
-      "modelCaseFile": {
-        "title": "Modelling the Case File",
-        "sidebar_label": "Modelling the Case File"
-      },
-      "modelCaseRoles": {
-        "title": "Modelling the Case Team",
-        "sidebar_label": "Modelling the Case Team"
-      },
-      "modelCases": {
-        "title": "Modelling Cases",
-        "sidebar_label": "Modelling Cases"
-      },
-      "modelOther": {
-        "title": "Other things to model",
-        "sidebar_label": "Other things to model"
-      },
-      "modelPlanItems": {
-        "title": "Modelling the Case Plan",
-        "sidebar_label": "Modelling the Case Plan"
-      },
-      "ObtainingCafDemo": {
-        "title": "Obtaining Cafienne Demo",
-        "sidebar_label": "Obtaining Cafienne Demo"
-      },
-      "ShortIntroduction": {
-        "title": "A short introduction",
-        "sidebar_label": "A short introduction"
-      },
-      "TwoApps": {
-        "title": "Two business applications",
-        "sidebar_label": "Two business applications"
-      },
-      "WhatGoesWithCafienne": {
-        "title": "What goes with Cafienne",
-        "sidebar_label": "What goes with Cafienne"
-      }
-    },
-    "links": {
-      "Overview": "Overview",
-      "Getting Started": "Getting Started",
-      "Cafienne IDE": "Cafienne IDE",
-      "Case engine": "Case engine",
-      "Cafienne API": "Cafienne API"
-    },
-    "categories": {
-      "Overview": "Overview",
-      "Getting Started": "Getting Started",
-      "Cafienne IDE": "Cafienne IDE",
-      "Cafienne Engine": "Cafienne Engine",
-      "Cafienne API": "Cafienne API"
-    }
+    "apiAuthentication": "Introducing the API",
+    "Introducing the API": "Introducing the API",
+    "apiCaseFile": "CaseFile requests",
+    "Casefile requests": "Casefile requests",
+    "apiExecutingCase": "Executing the case",
+    "Executing the case": "Executing the case",
+    "apiMethods": "All API-methods",
+    "All API-methods": "All API-methods",
+    "apiRetrieving": "Retrieving cases and tasks",
+    "Retrieving cases and tasks": "Retrieving cases and tasks",
+    "apiStartCase": "Start a Case",
+    "Start a Case": "Start a Case",
+    "apiUsers": "Users, roles and case team",
+    "Users, roles and case team": "Users, roles and case team",
+    "background": "Cafienne background",
+    "Cafienne background": "Cafienne background",
+    "cafienneAuthentication": "Cafienne Authentication Overview",
+    "Authentication": "Authentication",
+    "cafienneAuthorization": "Cafienne Authorization Overview",
+    "Authorization": "Authorization",
+    "cafienneAuthorizationPictures": "Cafienne Authorization Overview",
+    "Pictorial overview": "Pictorial overview",
+    "cafienneEngine": "The Cafienne Engine",
+    "CafienneUI": "Cafienne UI",
+    "Cafienne UI": "Cafienne UI",
+    "cafienneUIHTM": "Human Task Model and Start Case Schema",
+    "How to use task UI rendering": "How to use task UI rendering",
+    "GettingStarted": "Getting started",
+    "Introducing Cafienne Demo": "Introducing Cafienne Demo",
+    "HowToUseThisGuide": "How to use this guide",
+    "How to use this Guide": "How to use this Guide",
+    "modelCaseFile": "Modelling the Case File",
+    "Modelling the Case File": "Modelling the Case File",
+    "modelCaseRoles": "Modelling the Case Team",
+    "Modelling the Case Team": "Modelling the Case Team",
+    "modelCases": "Modelling Cases",
+    "Modelling Cases": "Modelling Cases",
+    "modelOther": "Other things to model",
+    "Other things to model": "Other things to model",
+    "modelPlanItems": "Modelling the Case Plan",
+    "Modelling the Case Plan": "Modelling the Case Plan",
+    "ObtainingCafDemo": "Obtaining Cafienne Demo",
+    "Obtaining Cafienne Demo": "Obtaining Cafienne Demo",
+    "ShortIntroduction": "A short introduction",
+    "A short introduction": "A short introduction",
+    "TwoApps": "Two business applications",
+    "Two business applications": "Two business applications",
+    "WhatGoesWithCafienne": "What goes with Cafienne",
+    "What goes with Cafienne": "What goes with Cafienne",
+    "Overview": "Overview",
+    "Getting Started": "Getting Started",
+    "Cafienne IDE": "Cafienne IDE",
+    "Case engine": "Case engine",
+    "Cafienne API": "Cafienne API",
+    "Cafienne Engine": "Cafienne Engine"
   },
   "pages-strings": {
     "Help Translate|recruit community translators for your project": "Help Translate",
