@@ -1,13 +1,20 @@
 ---
 id: CafienneDemo
-title: Cafienne Demo
+title: Getting started
 sidebar_label: Introducing Cafienne Demo
 ---
 
-We have prepared for you Cafienne Demo. 
+Cafienne Demo is an environment that holds [two examples](TwoApps.md).
 
-Cafienne-demo contains [Cafienne Modeller](modelCases.md), the binaries of Cafienne including the [API](apiAuthentication.md). We, at SpronQ, consider this to be the core of Cafienne. With this core you can build real business applications.
+- Hello World
+- Travel Request
 
-Upon this core, we built [CafienneUI](CafienneUI.md). Using Cafienne UI you can build a user interface that helps demo-ing the application.
+The Helloworld example is nothing more than what is says. It does not really show the power of CMMN, but it is more of a simplistic application that demonstrates that the environment is up and running.
 
-Cafienne UI goes with [two business applications](TwoApps.md) which show you how you can use the Modeller and the API.
+Travel Request shows a little more complex flow, including technical examples for sending emails, generating PDF documents and invoking REST services.
+
+The demo environment consists of
+
+- [Cafienne IDE](modelCases.md), a place to model cases
+- [Cafienne Engine](cafienneEngine.md), the heart of the system that executes case models (see the [REST API](apiAuthentication.md)).
+- [Generic UI](CafienneUI.md), providing a simple user interface that helps demostrating and debugging the flow of the case application.

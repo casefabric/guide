@@ -1,7 +1,7 @@
 ---
 id: modelCaseRoles
-title: Modelling the Case Roles
-sidebar_label: Modelling the Case Roles
+title: Modelling the Case Team
+sidebar_label: Modelling the Case Team
 ---
 
 **In CMMN**, CaseRoles authorize case workers or teams of case workers to perform HumanTasks, plan based on DiscretionaryItems, and raise user events. Example Roles of a case might be:

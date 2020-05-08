@@ -66,4 +66,4 @@ The behaviral rules are:
 * Applicability
 * Stage.autocomplete
 
-For a discussion, see section [Cafienne Modeller](modelPlanItems.md#plan-item-properties).
+For a discussion, see section [Cafienne IDE](modelPlanItems.md#plan-item-properties).
