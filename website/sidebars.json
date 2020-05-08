@@ -21,7 +21,10 @@
        "modelOther"
        ],
     "Cafienne Engine": [
-       "cafienneEngine"
+       "cafienneEngine",
+       "cafienneAuthentication",
+       "cafienneAuthorization",
+       "cafienneAuthorizationPictures"
        ],
     "Cafienne API": [
        "apiAuthentication",

@@ -1,6 +1,6 @@
 ---
 id: cafienneEngine
-title: The Cafienne engine
+title: The Cafienne Engine
 sidebar_label: 
 ---
 

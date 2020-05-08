@@ -37,6 +37,18 @@
         "title": "Cafienne background",
         "sidebar_label": "Cafienne background"
       },
+      "cafienneAuthentication": {
+        "title": "Cafienne Authentication Overview",
+        "sidebar_label": "Authentication"
+      },
+      "cafienneAuthorization": {
+        "title": "Cafienne Authorization Overview",
+        "sidebar_label": "Authorization"
+      },
+      "cafienneAuthorizationPictures": {
+        "title": "Cafienne Authorization Overview",
+        "sidebar_label": "Pictorial overview"
+      },
       "cafienneEngine": {
         "title": "The Cafienne engine"
       },
