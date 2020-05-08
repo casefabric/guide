@@ -22,6 +22,4 @@ workflows:
       - deploy-website:
           filters:
             branches:
-              only:
-                - master
-                - circleci-setup
+              only: master
