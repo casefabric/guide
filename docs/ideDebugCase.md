@@ -4,43 +4,60 @@ title: Introducing the Cafienne Debugger
 sidebar_label: Debugging
 ---
 
-Yes, Cafienne comes with an Integrated Development Environment (IDE).
+## Introduction
+The Cafienne Engine comes with an IDE in which you can design [`CMMN`](https://omg.org/spec/CMMN) based case models.
 
-But perhaps we should say "Integratable Development Environment" instead. Bottomline, the Cafienne IDE is nothing more than a Node.js application that serves a HTML website through which you can read and write CMMN diagrams (case models).
+The cycle of designing, running and debugging a complex model is not straightforward.
+Cafienne recommends to use all the well known software development tools that are available for this.
 
-There are no fancy tech features like source control integration, folder and hierarchy creation, file renaming, nor does it support fancy business analyst presentation modes.
+In addition, Cafienne Engine comes with a few special options to help in the area of debugging case models.
 
-It provides a means to quickly build, validate and deploy case models that fully integrates with your existing development and coding infrastructure. 
+This page explains how to setup these features.
 
-## Cafienne IDE fits into your development system
-
-<p align="center">
-  <img src="assets/cafienne-ide/devtools.png">
+<p align="center" style="padding-top:20px;padding-bottom:20px">
+  <img src="assets/cafienne-ide/ide-sample.png">
 </p>
 
-## What runs in your browser?
+## Case Engine events
+Each time a case is started and run inside the Cafienne Engine, the commands that are sent to the case (e.g., start a case, complete a task, etc.) result in changes. These changes are stored as events in the underlying database.
 
-The Cafienne IDE contains a graphical designer for CMMN models.
+Inside the Cafienne IDE, a debugger is available that can render these events. You can open it through the right-most halo of the case plan model.
 
-<p align="center">
-  <img src="assets/cafienne-ide/ide.png">
+<p align="center" style="padding-top:20px;padding-bottom:20px">
+  <img src="assets/cafienne-ide/debugger-halo.png">
 </p>
 
-But there is more to it.
+The debugger can render events of individual case instances.
+When you copy paste the case instance id into the debugger, and press the `Show Events` button, the events will be retrieved from the engine and rendered in the screen.
 
-#### Repository
-On the left hand of the system, we see the Repository Browser. Here you can see which cases are in the file system, and you can also create new cases.
-Basically, the Repository Browser provides for a simple rendering of the list of artifacts that are inside the file system.
-These artifacts entail:
-- cases
-- human tasks
-- processes
+<p align="center" style="padding-top:20px;padding-bottom:20px">
+  <img src="assets/cafienne-ide/debugger-task.png">
+</p>
 
-Note that in the file system these are stored inside the designated `/repository` folder. The files in this folder can have one of the following extensions
-**`.case`**, **`.dimensions`**, **`.humantask`**, **`.process`** and **`.cfid`**.
+Or ... not?!
 
-The HelloWorld diagram shown above, is stored in the repository as **`helloworld.case`** and **`helloworld.dimensions`**. The first file contains the actual semantics of the case model, whereas the second file contains the graphical representation. By doing this, the files can be tracked independently in your source control system, allowing you to distinguish semantic from graphical changes when reading history.
+<p align="center" style="padding-top:20px;padding-bottom:20px">
+  <img src="assets/cafienne-ide/debugger-route-closed.png">
+</p>
 
-The **`.humantask`** and **`.process`** extensions are stored to enable reuse of tasks and processes across multiple cases. E.g., the **`Read Response`** task in above **`HelloWorld`** case can also be used inside the **`TravelRequest`** case model. 
+## Debugger Route
+In order to show events in the debugger, the Case Engine must open up the debug API.
+The default configuration that comes with `getting-started` has this option enabled.
+It can be changed inside the `./src/local.conf` settings.
 
-The **`.cfid`** extension is used to store reusable Case File Item Definition documents. These can be reused when selecting the definition for an item in the case file, as can be seen on the right hand of the IDE.
+<p align="center" style="padding-top:20px;padding-bottom:20px">
+  <img src="assets/cafienne-ide/open-debugger-route.png">
+</p>
+
+## More logging
+The above screenshot of `local.conf` starts with a `debug=false` option.
+This option determines whether cases will be started in `debug` mode by default.
+
+If a case runs in `debug` mode it will generate additional logging information in a special type of event, called `DebugEvent`. Running the debugger from the IDE gives a lot of inside information from the engine.
+
+<p align="center" style="padding-top:20px;padding-bottom:20px">
+  <img src="assets/cafienne-ide/debugger-logmessages.png">
+</p>
+
+
+

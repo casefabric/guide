@@ -4,43 +4,26 @@ title: Deploying a case model
 sidebar_label: Deploying
 ---
 
-Yes, Cafienne comes with an Integrated Development Environment (IDE).
-
-But perhaps we should say "Integratable Development Environment" instead. Bottomline, the Cafienne IDE is nothing more than a Node.js application that serves a HTML website through which you can read and write CMMN diagrams (case models).
-
-There are no fancy tech features like source control integration, folder and hierarchy creation, file renaming, nor does it support fancy business analyst presentation modes.
-
-It provides a means to quickly build, validate and deploy case models that fully integrates with your existing development and coding infrastructure. 
-
-## Cafienne IDE fits into your development system
+Within the Halo of the Case Plan you can select the **Deploy** option.
 
 <p align="center">
-  <img src="assets/cafienne-ide/devtools.png">
+  <img src="assets/cafienne-ide/deploy.png">
 </p>
 
-## What runs in your browser?
+## View CMMN
+Within the file system under the Cafienne IDE, cases, processes, tasks, etc. are stored as independent files.
+For Cafienne Engine to run a case, these files must be collected and put into a single XML document conforming the [XML Schema Definition of CMMN1.1](https://www.omg.org/spec/CMMN/20151109/CMMN11CaseModel.xsd).
 
-The Cafienne IDE contains a graphical designer for CMMN models.
+When pressing the View CMMN button, the IDE will compose such a file. It will not store it anywhere, but will only render it in the text area below it.
 
-<p align="center">
-  <img src="assets/cafienne-ide/ide.png">
-</p>
+## Validate
+The Validate button can be used to let the Cafienne Engine validate the composed document (this will do additional parsing that is also needed for execution).
 
-But there is more to it.
+## Deploy
+The Deploy button does not do much. It will **NOT** deploy the model into the Cafienne Engine. Rather it will write a file to the directory that has been specified in the configuration of the Cafienne IDE.
 
-#### Repository
-On the left hand of the system, we see the Repository Browser. Here you can see which cases are in the file system, and you can also create new cases.
-Basically, the Repository Browser provides for a simple rendering of the list of artifacts that are inside the file system.
-These artifacts entail:
-- cases
-- human tasks
-- processes
+By default this will write into `/repository_deploy`.
 
-Note that in the file system these are stored inside the designated `/repository` folder. The files in this folder can have one of the following extensions
-**`.case`**, **`.dimensions`**, **`.humantask`**, **`.process`** and **`.cfid`**.
+In the default configuration of [Getting Started](gettingStarted), the Cafienne Engine has been configured to read definitions from the same folder as where the IDE deploys definitions.
 
-The HelloWorld diagram shown above, is stored in the repository as **`helloworld.case`** and **`helloworld.dimensions`**. The first file contains the actual semantics of the case model, whereas the second file contains the graphical representation. By doing this, the files can be tracked independently in your source control system, allowing you to distinguish semantic from graphical changes when reading history.
-
-The **`.humantask`** and **`.process`** extensions are stored to enable reuse of tasks and processes across multiple cases. E.g., the **`Read Response`** task in above **`HelloWorld`** case can also be used inside the **`TravelRequest`** case model. 
-
-The **`.cfid`** extension is used to store reusable Case File Item Definition documents. These can be reused when selecting the definition for an item in the case file, as can be seen on the right hand of the IDE.
+This scenario is pretty straightforward and a simple mechanism to help developers quickly deploy and test their case models.
