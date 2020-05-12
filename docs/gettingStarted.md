@@ -15,6 +15,6 @@ Travel Request shows a little more complex flow, including technical examples fo
 
 The demo environment consists of
 
-- [Cafienne IDE](modelCases.md), a place to model cases
+- [Cafienne IDE](ideDesignCase.md), a place to model cases
 - [Cafienne Engine](cafienneEngine.md), the heart of the system that executes case models (see the [REST API](apiOverview.md)).
 - [Generic UI](CafienneUI.md), providing a simple user interface that helps demostrating and debugging the flow of the case application.

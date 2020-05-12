@@ -40,7 +40,7 @@ const siteConfig = {
   headerLinks: [
     { doc: 'HowToUseThisGuide', label: 'Overview' },
     { doc: 'GettingStarted', label: 'Getting Started' },
-    { doc: 'modelCases', label: 'Cafienne IDE' },
+    { doc: 'ideOverview', label: 'Cafienne IDE' },
     { doc: 'cafienneEngine', label: 'Case engine' },
     { doc: 'apiOverview', label: 'Cafienne API' }
   ],

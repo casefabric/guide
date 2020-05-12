@@ -14,7 +14,13 @@
        "ObtainingCafDemo"
        ],
     "Cafienne IDE": [
-       "modelCases",
+       "ideOverview",
+       "ideDesignCase",
+       "ideDeployCase",
+       "ideDebugCase"
+       ],
+    "Some CMMN": [
+       "cmmnIntro",
        "modelPlanItems",
        "modelCaseFile",
        "modelCaseRoles",
