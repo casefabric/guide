@@ -27,7 +27,7 @@
        "cafienneAuthorizationPictures"
        ],
     "Cafienne API": [
-       "apiAuthentication",
+       "apiOverview",
        "apiStartCase",
        "apiUsers",
        "apiExecutingCase",

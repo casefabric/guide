@@ -42,7 +42,7 @@ const siteConfig = {
     { doc: 'GettingStarted', label: 'Getting Started' },
     { doc: 'modelCases', label: 'Cafienne IDE' },
     { doc: 'cafienneEngine', label: 'Case engine' },
-    { doc: 'apiAuthentication', label: 'Cafienne API' }
+    { doc: 'apiOverview', label: 'Cafienne API' }
   ],
 
   // If you have users set above, you add it here:

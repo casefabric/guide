@@ -26,11 +26,11 @@ This can help in a security context where personal user information may not end 
 
 ### Platform User
 The token must contain the `sub` claim. This claim is used to create a Platform User. This is nothing more than a simple conversion of the token into an internal structure.
-![Platform User is created from a JWT Token](assets/platform-user.png)
+![Platform User is created from a JWT Token](assets/cafienne-engine/platform-user.png)
 
 To be more precise, the Platform User _does not have any rights_ within the Cafienne Engine. 
 
-![Platform User is created from a JWT Token](assets/platform-user-has-no-access.png)
+![Platform User is created from a JWT Token](assets/cafienne-engine/platform-user-has-no-access.png)
 
 In essence a `Platform User` has only two properties:
 - `user id` which is the value of the `sub` claim from the `JWT` token
@@ -48,4 +48,4 @@ The optional properties are hardly used.
 When a user sends a request to the Cafienne Engine this is typically directed into a specific tenant. E.g., a case must always be started in a specific tenant.
 Some queries, e.g. `GetMyCases` or `GetAllTasks` without a tenant filter set will be executed across all tenants that the user has been registered in.
 
-![Tenant User Mapping](assets/tenant-user.png)
+![Tenant User Mapping](assets/cafienne-engine/tenant-user.png)
