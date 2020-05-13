@@ -1,6 +1,6 @@
 ---
 id: cmmnIntro
-title: A little bit on CMMN
+title: A view notes on CMMN
 sidebar_label: What is CMMN
 ---
 
@@ -19,7 +19,9 @@ The Case Management and Model Notation was introduced in May 2014 by the [Object
 
 Cafienne implements **CMMN 1.1**, the version that was published in December 2016.
 
-The specification intents to provide a language to describe the lifecycle of a case in a graphical manner.
+The specification intends to provide a language to describe the lifecycle of a case in a graphical manner.
+
+Ehhh ... a case?
 
 
 ### Classical Dossier
@@ -30,7 +32,6 @@ Perhaps, as an alternative to the heavily associated word _case_ you can also co
 - A dossier holding patient treatment information
 - A dossier holding your passport renewal application
 - A dossier holding all customer interactions on a service request
-- ......... fill your own type of dossier here
 
 Many examples can be thought of.
 
@@ -69,5 +70,5 @@ The nice thing of the graphical nature of CMMN is that the plan can be depicted 
 #### Case Team
 A case also has a team of people working on it, potentially in various roles. E.g., the treatment case mentioned above probably has a doctor in the role of Treating Physician, and the person under treatment has the role of Patient.
 
-Note that every case has its own team. If the doctor becomes ill and gets a treatment, then in his case he is probably fulfilling the role of Treating Physician, but rather the role of Patient.
+Note that every case has its own team. If the doctor becomes ill and gets a treatment, then in his case he is probably not fulfilling the role of Treating Physician, but rather the role of Patient.
 

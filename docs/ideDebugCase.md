@@ -19,7 +19,7 @@ This page explains how to setup these features.
 </p>
 
 ## Case Engine events
-Each time a case is started and run inside the Cafienne Engine, the commands that are sent to the case (e.g., start a case, complete a task, etc.) result in changes. These changes are stored as events in the underlying database.
+Each time a case is started and run inside the Cafienne Engine, the commands that are sent to the case (e.g., start a case, complete a task) result in changes. These changes are stored as events in the underlying database.
 
 Inside the Cafienne IDE, a debugger is available that can render these events. You can open it through the right-most halo of the case plan model.
 
