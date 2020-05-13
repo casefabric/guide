@@ -9,7 +9,7 @@ This section gives a brief overview of how the IDE supports modeling CMMN Case m
 > This page assumes you have a [**basic understanding of CMMN**](cmmnIntro)
 
 <p align="center" style="border:1px solid black">
-  <img src="assets/cafienne-ide/casemodel.png">
+  <img src="assets/ide/casemodel.png">
 </p>
 
 ## ShapeBox

@@ -15,7 +15,7 @@ In addition, Cafienne Engine comes with a few special options to help in the are
 This page explains how to setup these features.
 
 <p align="center" style="padding-top:20px;padding-bottom:20px">
-  <img src="assets/cafienne-ide/ide-sample.png">
+  <img src="assets/ide/ide-sample.png">
 </p>
 
 ## Case Engine events
@@ -24,20 +24,20 @@ Each time a case is started and run inside the Cafienne Engine, the commands tha
 Inside the Cafienne IDE, a debugger is available that can render these events. You can open it through the right-most halo of the case plan model.
 
 <p align="center" style="padding-top:20px;padding-bottom:20px">
-  <img src="assets/cafienne-ide/debugger-halo.png">
+  <img src="assets/ide/debugger-halo.png">
 </p>
 
 The debugger can render events of individual case instances.
 When you copy paste the case instance id into the debugger, and press the `Show Events` button, the events will be retrieved from the engine and rendered in the screen.
 
 <p align="center" style="padding-top:20px;padding-bottom:20px">
-  <img src="assets/cafienne-ide/debugger-task.png">
+  <img src="assets/ide/debugger-task.png">
 </p>
 
 Or ... not?!
 
 <p align="center" style="padding-top:20px;padding-bottom:20px">
-  <img src="assets/cafienne-ide/debugger-route-closed.png">
+  <img src="assets/ide/debugger-route-closed.png">
 </p>
 
 ## Debugger Route
@@ -46,7 +46,7 @@ The default configuration that comes with `getting-started` has this option enab
 It can be changed inside the `./src/local.conf` settings.
 
 <p align="center" style="padding-top:20px;padding-bottom:20px">
-  <img src="assets/cafienne-ide/open-debugger-route.png">
+  <img src="assets/ide/open-debugger-route.png">
 </p>
 
 ## More logging
@@ -56,7 +56,7 @@ This option determines whether cases will be started in `debug` mode by default.
 If a case runs in `debug` mode it will generate additional logging information in a special type of event, called `DebugEvent`. Running the debugger from the IDE gives a lot of inside information from the engine.
 
 <p align="center" style="padding-top:20px;padding-bottom:20px">
-  <img src="assets/cafienne-ide/debugger-logmessages.png">
+  <img src="assets/ide/debugger-logmessages.png">
 </p>
 
 

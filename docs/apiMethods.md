@@ -14,12 +14,6 @@ In this section, we present all API-methods:
     <th style="text-align:left;">Parameters, body</th>
   </tr>
   <tr>
-    <td style="text-align:left;">post/identity/login</td>
-    <td style="text-align:left;">As a user I want to login, so I can use the API-methods</td>
-    <td style="text-align:left;">Login, responds X-AUTH-CAFIENNE</td>
-    <td style="text-align:left;">username, password; authentication not needed of course</td>
-  </tr>
-  <tr>
     <td style="text-align:left;">get/repository/list</td>
     <td style="text-align:left;">As a user I want a list of available cases, so I can start an case instance</td>
     <td style="text-align:left;">Retrieve a list of deployed models</td>
@@ -124,19 +118,19 @@ In this section, we present all API-methods:
   <tr>
     <td style="text-align:left;">get/tasks</td>
     <td style="text-align:left;">As a user, I want an overview of all tasks in any case instance I am assigned to</td>
-    <td style="text-align:left;">get a list of task (for one user in X-AUTH)</td>
+    <td style="text-align:left;">get a list of task</td>
     <td style="text-align:left;">caseinstance, casedefinition, assignee, state, owner</td>
   </tr>
   <tr>
     <td style="text-align:left;">get/tasks/ user/count</td>
     <td style="text-align:left;">As a case manager, I want some stats</td>
-    <td style="text-align:left;">get number of tasks (for one user in X-AUTH)</td>
+    <td style="text-align:left;">get number of tasks</td>
     <td style="text-align:left;"></td>
   </tr>
   <tr>
     <td style="text-align:left;">get/cases/stats</td>
     <td style="text-align:left;">As a case manager, I want some stats</td>
-    <td style="text-align:left;">get number of tasks (for one user in X-AUTH)</td>
+    <td style="text-align:left;">get number of tasks</td>
     <td style="text-align:left;">definition, state</td>
   </tr>
   

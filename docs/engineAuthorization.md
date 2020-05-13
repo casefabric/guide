@@ -1,5 +1,5 @@
 ---
-id: cafienneAuthorization
+id: engineAuthorization
 title: Cafienne Authorization Overview
 sidebar_label: Authorization
 ---
@@ -7,7 +7,7 @@ sidebar_label: Authorization
 ## Introduction
 The Cafienne Engine holds a multitenancy architecture that enables resource sharing while preserving strict data isolation.
 This page gives an overview of the authorization model in the Cafienne Engine.
-If you prefer to read pictures rather than text, you can go to [this page](cafienneAuthorizationPictures.md).
+If you prefer to read pictures rather than text, you can go to [this page](engineAuthorizationPictures.md).
 
 This page gives an overview of
 - Authentication model through [OpenID Connect](https://en.wikipedia.org/wiki/OpenID_Connect)
@@ -22,7 +22,7 @@ This page gives an overview of
 The basic concept of ownership is implemented at each of these levels. A level has a group of owners, and owners can change the rights of users and manage each other (add/remove another owner).
 
 ## Users and Authentication
-A detailed overview of authentication can be found in [Cafienne Authentication](cafienneAuthentication.md).
+A detailed overview of authentication can be found in [Cafienne Authentication](engineAuthentication.md).
 
 The short version: users can access Cafienne through `JWT` tokens.
 Internally, Cafienne transforms a `JWT` token into a `Platform User` structure, holding a list of all the tenants the user belongs to.

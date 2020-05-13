@@ -8,9 +8,9 @@
        ],
     "Getting Started": [
        "GettingStarted",
-       "CafienneUI",
-       "cafienneUIHTM",
-       "TwoApps",
+       "genericUI",
+       "genericUIHTM",
+       "genericUIExamples",
        "ObtainingCafDemo"
        ],
     "Cafienne IDE": [
@@ -28,9 +28,10 @@
        ],
     "Cafienne Engine": [
        "cafienneEngine",
-       "cafienneAuthentication",
-       "cafienneAuthorization",
-       "cafienneAuthorizationPictures"
+       "engineAuthentication",
+       "engineAuthorization",
+       "engineAuthorizationPictures",
+       "engineLogging"
        ],
     "Cafienne API": [
        "apiOverview",

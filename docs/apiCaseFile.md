@@ -1,15 +1,29 @@
 ---
 id: apiCaseFile
-title: CaseFile requests
+title: Case File Requests
 sidebar_label: Casefile requests
 ---
 
-## Retrieving the Case File and its Items and properties
+## Case File
+Cafienne has a somewhat opiniated implementation of the CMMN Case File concept. It interprets JSON documents and applies name based mappings to feed the Case File.
+Both properties and children of a Case File item can be put in the same JSON document, in an attempt to provide a developer friendly format.
 
-`get/cases/{caseinstanceID}/casefile` compared to` get/cases/{caseinstanceID}` basically returns the same information. 
+## Retrieving the Case File
 
-## Create, replace, update or delete a Case File Item
+The Case File holds the data contained in the case instance. You can retrieve it through the below **GET** method. It will return a JSON structure with all data of the Case File. 
 
-Cafienne allows you to create, replace, update or delete a Case File Item outside the context of a PlanItem. As we have seen, if in the design a Case File Item is used as an input our output parameter of a Task, Cafienne expects in the body of the request `put/tasks/{taskId}/{transition}` a JSON with this Case File Item and its properties. Cafienne interprets this as a life cycle transition on the Case File Item.
+![Image](assets/api/caseFileAPI.png)
 
-Using `post`, `put` or `delete/cases/{caseinstanceId}/casefile/create/{path}` you can perform life cycle transitions on Case File Items outside the context of a task. Path is the name of the Case File Item. If the Case File Item is a child of another Case File Item then this parent should be added to the path.
+## Changing the Case File
+
+There are multiple ways to change the Case File
+
+### Completing a Task
+When a Task completes, regardless of the type of Task, its Output parameters will be mapped back into the Case File according to the mappings specified in the Case Definition.
+
+This is how most applications use Cafienne currently.
+
+### Directly changing the Case File
+
+However, it is also possible to directly manipulate the Case File structure. Nothing in the CMMN specification prevents you from doing that, and the same goes for Cafienne.
+

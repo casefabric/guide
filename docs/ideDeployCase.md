@@ -7,7 +7,7 @@ sidebar_label: Deploying
 Within the Halo of the Case Plan you can select the **Deploy** option.
 
 <p align="center">
-  <img src="assets/cafienne-ide/deploy.png">
+  <img src="assets/ide/deploy.png">
 </p>
 
 ## View CMMN

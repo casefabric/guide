@@ -15,7 +15,7 @@ It provides a means to quickly build, validate and deploy case models that fully
 ## Cafienne IDE fits into your development system
 
 <p align="center">
-  <img src="assets/cafienne-ide/devtools.png">
+  <img src="assets/ide/devtools.png">
 </p>
 
 ## What runs in your browser?
@@ -23,7 +23,7 @@ It provides a means to quickly build, validate and deploy case models that fully
 The Cafienne IDE contains a graphical designer for CMMN models.
 
 <p align="center">
-  <img src="assets/cafienne-ide/ide.png">
+  <img src="assets/ide/ide.png">
 </p>
 
 But there is more to it.

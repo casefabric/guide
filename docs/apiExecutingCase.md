@@ -14,9 +14,9 @@ On human tasks and planned discretionary items you can perform **workflow action
 
 ## Planning Discretionary tasks
 
-In the case model discretionary human tasks can be designed. This tasks can be planned by the discretion of a case team member. Available discretionary tasks can be retrieved using `get/cases/{caseinstanceId}/discretionaryitems`. 
+In the case model discretionary human tasks can be designed. This tasks can be planned by the discretion of a case team member. Available discretionary tasks can be retrieved using **GET /cases/{caseinstanceId}/discretionaryitems**. 
 
-Next, you can plan at your discretion such a task by calling on `post/cases/{caseinstanceId}/discretionaryitems/plan` using the body
+Next, you can plan at your discretion such a task by invoking **POST /cases/{caseinstanceId}/discretionaryitems/plan** using the body
 ```ssh
 { 
   "name":"...", 
@@ -24,24 +24,19 @@ Next, you can plan at your discretion such a task by calling on `post/cases/{cas
   "parentId":"..." 
 }
 ```
-This call will respond with a planitemId. This plan item will also be retrieved by calling again `get/cases/{caseinstanceID}/planitems`. 
+This call will respond with a planitemId. This plan item will also be retrieved by calling again **GET /cases/{caseinstanceID}/planitems**. 
 
-## The workflow of planned tasks
+## The lifecycle of tasks
 
-Using workflow, a user fulfilling a role in a case instance can claim, revoke or delegate a planned human task. Also, a user fulfilling a “planning role” can assign directly a planned task to a user. There is an sequence in the workflow you have to adhere to. First a task must be assigned. An assigned taks can be claimed. A claimed task can be revoked or delegated. A delegated task can be claimed. A revoked task must be assigned again.
+Using workflow, a user fulfilling a role in a case instance can claim, revoke or delegate a human task. Also, a user fulfilling a “planning role” can assign directly a planned task to a user. There is an sequence in the workflow you have to adhere to.
+- First a task must be assigned or claimed. 
+- A task claimed or assigned to you can be revoked or delegated to another user.
+- A delegated task can be revoked, in which case it will be assigned again to the previous user.
+- If the original user also revokes the task, it can again be assigned or claimed.
+- Task completion can only be done when the task is assigned to user.
+- Task data that has been entered by the user can also be saved temporarily. This will not complete the task.
+- Task data can also be verified through an external REST call. This is an experimental feature.
 
-You can orchestrate this workflow of planned human tasks using `put/tasks/{taskId}/{action}`. To this call you add a body that inputs the user.
+You can orchestrate this workflow of planned human tasks using the below APIs.
 
-## The lifecycle of plan items
-
-### Planned human tasks...
-
-Complete, suspend, resume, terminate are the life cycle actions on planned human tasks that can be performed using Cafienne. You can apply this transition using `put/tasks/{taskId}/{transition}`. When you apply complete, you have to add a body that defines the output as modeled with the output parameters, being Case File Items.
-
-Once you request the completion of a task, Cafienne will evaluate which other plan items might be completed, terminated or made available and active. The engine evaluates this by interpreting the designed sentries and milestones and the stages or cases that are the “parent plan item” to the completed human task.
-
-### ...and other plan items
-
-You also can apply life cycle transactions on other plan items as stages, milestones and event listeners. For this, you can use `post/cases/{caseInstanceId}/planitems/{planItemId}/{transition}`.
-
-
+![Image](assets/api/taskAPI.png)

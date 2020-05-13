@@ -6,7 +6,7 @@ sidebar_label: Retrieving cases and tasks
 
 ## Cases
 
-For retrieving a list of cases you should call the method get/cases. Because X-AUTH_CAFIENNE is included in the request, get/cases will respond with all cases for which you are assigned as a user, you are part of the case team, or in which you fulfill a role for cases where no case team is set. Your “overall” roles are set to your user account to Cafienne. This request will respond using the JSON-structure:
+For retrieving a list of cases you should call the method get/cases. get/cases will respond with all cases for which you are assigned as a user, you are part of the case team, or in which you fulfill a role for cases where no case team is set. Your “overall” roles are set to your user account to Cafienne. This request will respond using the JSON-structure:
 ```ssh
 {
  "casefile": "",     --a reference to the whole file (case file, case plan, roles)
@@ -114,12 +114,12 @@ Whenever a PlanItem is planned, Cafienne keeps track of the values added to the 
  "caseDefinition": "",         --the name in the model of the case instance
  "planState": "",              --the life cycle state of the root
 
- "taskinputdata": "",  --used in CafienneUI
- "taskoutputdata": "", --used in CafienneUI
- "mappedInput": {...}, --used in CafienneUI
- "rawOutput": {...},   --used in CafienneUI
- "taskModel": {...},   --used in CafienneUI
- "owner": ""           --used in CafienneUI
- "dueDate": "",        --used in CafienneUI
+ "taskinputdata": "",  --used in Generic UI
+ "taskoutputdata": "", --used in Generic UI
+ "mappedInput": {...}, --used in Generic UI
+ "rawOutput": {...},   --used in Generic UI
+ "taskModel": {...},   --used in Generic UI
+ "owner": ""           --used in Generic UI
+ "dueDate": "",        --used in Generic UI
 }
 ```
