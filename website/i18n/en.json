@@ -9,6 +9,10 @@
         "title": "Case File Requests",
         "sidebar_label": "Casefile requests"
       },
+      "apiCaseTeam": {
+        "title": "Case Team membership",
+        "sidebar_label": "Case Team membership"
+      },
       "apiExecutingCase": {
         "title": "Executing the case",
         "sidebar_label": "Executing the case"
@@ -21,6 +25,10 @@
         "title": "Introducing the API",
         "sidebar_label": "Introducing the API"
       },
+      "apiPlatform": {
+        "title": "Cafienne Platform and Tenant Registration",
+        "sidebar_label": "Joining the platform"
+      },
       "apiRetrieving": {
         "title": "Retrieving cases and tasks",
         "sidebar_label": "Retrieving cases and tasks"
@@ -28,10 +36,6 @@
       "apiStartCase": {
         "title": "Start a Case",
         "sidebar_label": "Start a Case"
-      },
-      "apiUsers": {
-        "title": "Users, roles and case team",
-        "sidebar_label": "Users, roles and case team"
       },
       "cafienneEngine": {
         "title": "The Cafienne Engine"
@@ -51,6 +55,10 @@
       "engineAuthorizationPictures": {
         "title": "Cafienne Authorization Overview",
         "sidebar_label": "Pictorial overview"
+      },
+      "engineConfiguration": {
+        "title": "Cafienne Engine Configuration",
+        "sidebar_label": "Configuration"
       },
       "engineLogging": {
         "title": "Cafienne Logging",

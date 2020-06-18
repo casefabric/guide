@@ -85,9 +85,21 @@ A good example is a case of a Patient Treatment record. Within a hospital, there
 At the case instance level, where a particular patient is being treated, we have the case role `Treating Physician`, which can only be filled by a `Doctor` obviously, but not all doctors in the hospital are the treating physician for one particular patient.
 
 ### Case Team
-In order to honour this distinction, every case instance inside the Cafienne Engine has a `CaseTeam`. This team consists of a set of `TenantUsers` that each have one or more `CaseRoles` assigned.
+In order to honour this distinction, every case instance inside the Cafienne Engine has a `CaseTeam`. This team consists of a set of members that each have one or more `CaseRoles` assigned. Case roles are defined in the case definition.
+<p align="center">
+  <img src="assets/engine/definecaseroles.png">
+</p>
 
-Generally speaking we can say that a `CMMN role` applies _within_ a particaly case instance; we refer to this as a `Case Role` or `Case Team Role`. A tenant user's role can also be referred to as an `organizational role`.
+Generally speaking we can say that a Case Role applies within a particaly case _instance_ whereas a tenant role applies across _all_ case instances in a tenant. A tenant user's role can also be referred to as an `organizational role`.
+
+#### Case Team Membership
+The Case Team can contain members of 2 types
+- Tenant User
+- Tenant Role
+
+Each member may have one or more case roles assigned, but this is not required. A team member without specific roles still has access to the case and can perform e.g. tasks that have no specific case role assigned.
+
+You can read more on this in the [API Documentation](apiCaseTeam) on Case Team.
 
 ### Cafienne specific implementation
 In addition to the above mentioned CMMN rules, the Cafienne Engine also enforces some more authorizations.

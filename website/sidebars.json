@@ -31,12 +31,14 @@
        "engineAuthentication",
        "engineAuthorization",
        "engineAuthorizationPictures",
-       "engineLogging"
+       "engineLogging",
+       "engineConfiguration"
        ],
     "Cafienne API": [
        "apiOverview",
+       "apiPlatform",
        "apiStartCase",
-       "apiUsers",
+       "apiCaseTeam",
        "apiExecutingCase",
        "apiRetrieving",
        "apiCaseFile",
