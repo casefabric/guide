@@ -41,7 +41,7 @@ const siteConfig = {
     { doc: 'HowToUseThisGuide', label: 'Overview' },
     { doc: 'GettingStarted', label: 'Getting Started' },
     { doc: 'ideOverview', label: 'Cafienne IDE' },
-    { doc: 'cafienneEngine', label: 'Case engine' },
+    { doc: 'cafienneEngine', label: 'Cafienne Engine' },
     { doc: 'apiOverview', label: 'Cafienne API' }
   ],
 

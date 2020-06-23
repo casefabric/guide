@@ -64,6 +64,10 @@
         "title": "Cafienne Logging",
         "sidebar_label": "Logging"
       },
+      "engineRepository": {
+        "title": "Cafienne Repository",
+        "sidebar_label": "Repository"
+      },
       "genericUI": {
         "title": "Cafienne Generic UI",
         "sidebar_label": "Generic UI"

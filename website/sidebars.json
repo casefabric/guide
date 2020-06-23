@@ -32,7 +32,8 @@
        "engineAuthorization",
        "engineAuthorizationPictures",
        "engineLogging",
-       "engineConfiguration"
+       "engineConfiguration",
+       "engineRepository"
        ],
     "Cafienne API": [
        "apiOverview",
