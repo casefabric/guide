@@ -1,5 +1,5 @@
 ---
-id: apiCaseFile
+id: case-file
 title: Case File Requests
 sidebar_label: Casefile requests
 ---

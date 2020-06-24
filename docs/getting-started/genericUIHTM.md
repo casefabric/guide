@@ -3,7 +3,7 @@ id: genericUIHTM
 title: Human Task Model and Start Case Schema
 sidebar_label: How to use task UI rendering
 ---
-In Cafienne UI, there is a method to declare a user interface with a JSON structure that will render a UI for a business user who is executing the Case Plan. You have to declare this JSON structure in the `Human Task Model` in the [Cafienne IDE](modelPlanItems.md). On top of that, you can declare a User Interface that helps you starting a case instance; for this, use the `Start Case Editor`.
+In Cafienne UI, there is a method to declare a user interface with a JSON structure that will render a UI for a business user who is executing the Case Plan. You have to declare this JSON structure in the `Human Task Model` in the [Cafienne IDE](case-plan). On top of that, you can declare a User Interface that helps you starting a case instance; for this, use the `Start Case Editor`.
 
 The Human Task Model is an implementation of a Human Task, the Start Case Editor provides you in Cafienne UI –in the IDE next to the button Start Case– a User Interface that allows a business user to enter data to the Case File Item that is modeled as input parameter of the Case Plan.
 

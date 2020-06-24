@@ -1,12 +1,12 @@
 ---
-id: apiPlatform
+id: platform
 title: Cafienne Platform and Tenant Registration
 sidebar_label: Joining the platform
 ---
 
 This page describes how to manage tenants, users and their roles in the Cafienne Platform.
 
-We recommend that you first read up on the concepts of the Cafienne [authorization model](engineAuthorization.md).
+We recommend that you first read up on the concepts of the Cafienne [authorization model](engine/authorization).
 
 ## /platform
 Platform maintenance APIs, like adding tenants, changing platform owners, checking platform health.
@@ -23,7 +23,7 @@ After creation of the new Tenant, the platform owners no longer have access to t
 - `GET /platform/status` retrieves a health summary code, either **`200 OK`** or **`503 Unavailable`**.
 
 #### Authorization for /platform
-In order to use the /platform APIs your user id must be configured as a platform owner in the [Cafienne Engine configuration](engineConfiguration.md).
+In order to use the /platform APIs your user id must be configured as a platform owner in the [Cafienne Engine configuration](engine/configuration).
 
 
 ## /tenant

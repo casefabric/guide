@@ -1,5 +1,5 @@
 ---
-id: ideOverview
+id: ide-overview
 title: Introducing the Cafienne IDE
 sidebar_label: An IDE?
 ---
@@ -14,17 +14,13 @@ It provides a means to quickly build, validate and deploy case models that fully
 
 ## Cafienne IDE fits into your development system
 
-<p align="center">
-  <img src="assets/ide/devtools.png">
-</p>
+![Image](assets/ide/devtools.png)
 
 ## What runs in your browser?
 
 The Cafienne IDE contains a graphical designer for CMMN models.
 
-<p align="center">
-  <img src="assets/ide/ide.png">
-</p>
+![Image](assets/ide/ide.png)
 
 But there is more to it.
 

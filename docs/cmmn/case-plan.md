@@ -1,5 +1,5 @@
 ---
-id: modelPlanItems
+id: case-plan
 title: Modelling the Case Plan
 sidebar_label: Modelling the Case Plan
 ---
@@ -38,7 +38,7 @@ For both implementations you can add using their `Editors` the input and output 
 
 Next, in the *process task implementation* you can add an URI that calls the real implementation, eg using `<cafienne:implementation xmlns:cafienne="org.cafienne" class="org.cafienne.cmmn.instance.process.http.HTTPCallDefinition" async="true"/>`.
 
-For using the Human Task Model, see [How to use task UI rendering](genericUIHTM.md).
+For using the Human Task Model, see [How to use task UI rendering](genericUIHTM).
 ​
 
 ## EventListener

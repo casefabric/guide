@@ -1,5 +1,5 @@
 ---
-id: engineLogging
+id: logging
 title: Cafienne Logging
 sidebar_label: Logging
 ---
@@ -7,7 +7,7 @@ sidebar_label: Logging
 ## Introduction
 Cafienne has multiple logging configuration options. On the one hand they are developer oriented, on the other hand they are operational.
 For the operational logging Cafienne uses standard [Logback](http://logback.qos.ch/) libraries.
-Developers can also use this logging, but since it can be somewhat overwhelming, the case engine also has support for case instance specific [**debugging**](ideDebugCase).
+Developers can also use this logging, but since it can be somewhat overwhelming, the case engine also has support for case instance specific [**debugging**](debug-case).
 
 ## Configuration of Logback
 Inside the docker setup of the Cafienne engine, there is a folder `./src/conf`.
@@ -16,9 +16,8 @@ This directory holds 2 files, `local.conf` and `logback.xml`.
 This document will not describe the full options that are possible with Logback. But a couple of things are important to mention.
 Here is screenshot of the contents for ease of reference while reading this page.
 
-<p align="center">
-  <img src="assets/engine/logback-sample.png">
-</p>
+![Image](assets/engine/logback-sample.png)
+
 
 ### Appenders
 First of all, the default logback contains two so-called appenders. These indicate where log messages should end up.
@@ -28,9 +27,9 @@ One appender is simple: directly to the console. This logging is visible when yo
 It holds a simple pattern that prints timestamp information in front of each message, along with the log level (`ERROR`, `WARN`, `INFO`, `DEBUG`, etc.).
 
 <p/>
-<p align="center">
-  <img src="assets/engine/logback-appenders.png">
-</p>
+
+![Image](assets/engine/logback-appenders.png)
+
 <p/>
 
 
@@ -43,9 +42,9 @@ The file logging is configured to start logging in a fresh file every day. And a
 There are too many options to describe here. Please checkout the Logback community to learn more about it.
 
 <p/>
-<p align="center">
-  <img src="assets/engine/logback-filename-pattern.png">
-</p>
+
+![Image](assets/engine/logback-filename-pattern.png)
+
 <p/>
 
 One particular option must be mentioned, though. The file name is rooted in the `logs` directory. This directory by default resides _outside_ of the docker container.
@@ -59,9 +58,9 @@ In the example above, it tells that at `root` level, i.e. across all code, only 
 Please note that the `root` also tells which appenders to use.
 
 <p/>
-<p align="center">
-  <img src="assets/engine/logback-loggers.png">
-</p>
+
+![Image](assets/engine/logback-loggers.png)
+
 <p/>
 
 ### Changing the settings

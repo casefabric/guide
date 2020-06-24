@@ -1,14 +1,14 @@
 ---
-id: ideDeployCase
+id: deploy-case
 title: Deploying a case model
 sidebar_label: Deploying
 ---
 
 Within the Halo of the Case Plan you can select the **Deploy** option.
 
-<p align="center">
-  <img src="assets/ide/deploy.png">
-</p>
+
+![Image](assets/ide/deploy.png)
+
 
 ## View CMMN
 Within the file system under the Cafienne IDE, cases, processes, tasks, etc. are stored as independent files.

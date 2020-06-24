@@ -1,5 +1,5 @@
 ---
-id: modelCaseRoles
+id: case-team
 title: Modelling the Case Team
 sidebar_label: Modelling the Case Team
 ---

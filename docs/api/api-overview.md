@@ -1,5 +1,5 @@
 ---
-id: apiOverview
+id: api-overview
 title: Introducing the API
 sidebar_label: Introducing the API
 ---
@@ -31,14 +31,12 @@ Platform maintenance APIs, like adding tenants, changing platform owners, checki
 ## Try it out with Swagger UI
 The Cafienne Engine ships with a Swagger UI to give you a quick start in trying the APIs.
 
-<p align="center">
-  <img src="assets/api/swagger.png">
-</p>
+![Image](assets/api/swagger.png)
 
 > You can find the API of your version of the engine through SwaggerUI at [`http://localhost:2027`](http://localhost:2027).
 
 Note that the Cafienne Engine APIs need an authorization token with each request, according to the JWT standard.
-You can find more details about that in [**Cafienne Authentication**](engineAuthentication).
+You can find more details about that in [**Cafienne Authentication**](authentication).
 
 When you click on the `Authorize` button in the above Swagger UI, it will lead you to the configured Identity Provider where you can login and get a token that Swagger will use when you execute requests. 
 

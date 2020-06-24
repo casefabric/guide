@@ -1,5 +1,5 @@
 ---
-id: cmmnIntro
+id: cmmn-overview
 title: A view notes on CMMN
 sidebar_label: What is CMMN
 ---
@@ -11,9 +11,7 @@ If, however, you are new to CMMN: here you can find a little bit more info about
 ## CMMN Background
 First some dry facts.
 
-<p align="center">
-  <img src="assets/cmmn/objectmanagementgroup.png">
-</p>
+![Image](assets/cmmn/objectmanagementgroup.png)
 
 The Case Management and Model Notation was introduced in May 2014 by the [Object Management Group](https://www.omg.org).
 

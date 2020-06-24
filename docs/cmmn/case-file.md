@@ -1,5 +1,5 @@
 ---
-id: modelCaseFile
+id: case-file
 title: Modelling the Case File
 sidebar_label: Modelling the Case File
 ---

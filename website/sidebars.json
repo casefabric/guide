@@ -7,43 +7,43 @@
        "GettingStarted"
        ],
     "Getting Started": [
-       "GettingStarted",
-       "genericUI",
-       "genericUIHTM",
-       "genericUIExamples",
-       "ObtainingCafDemo"
+       "getting-started/GettingStarted",
+       "getting-started/genericUI",
+       "getting-started/genericUIHTM",
+       "getting-started/genericUIExamples",
+       "getting-started/ObtainingCafDemo"
        ],
     "Cafienne IDE": [
-       "ideOverview",
-       "ideDesignCase",
-       "ideDeployCase",
-       "ideDebugCase"
+       "ide/ide-overview",
+       "ide/design-case",
+       "ide/deploy-case",
+       "ide/debug-case"
        ],
     "Some CMMN": [
-       "cmmnIntro",
-       "modelPlanItems",
-       "modelCaseFile",
-       "modelCaseRoles",
-       "modelOther"
+       "cmmn/cmmn-overview",
+       "cmmn/case-plan",
+       "cmmn/case-file",
+       "cmmn/case-team",
+       "cmmn/modelOther"
        ],
     "Cafienne Engine": [
-       "cafienneEngine",
-       "engineAuthentication",
-       "engineAuthorization",
-       "engineAuthorizationPictures",
-       "engineLogging",
-       "engineConfiguration",
-       "engineRepository"
+       "engine/engine-overview",
+       "engine/authentication",
+       "engine/authorization",
+       "engine/authorization-pictures",
+       "engine/logging",
+       "engine/configuration",
+       "engine/repository"
        ],
     "Cafienne API": [
-       "apiOverview",
-       "apiPlatform",
-       "apiStartCase",
-       "apiCaseTeam",
-       "apiExecutingCase",
-       "apiRetrieving",
-       "apiCaseFile",
-       "apiMethods"
+       "api/api-overview",
+       "api/platform",
+       "api/start-case",
+       "api/case-team",
+       "api/apiExecutingCase",
+       "api/query-cases-tasks",
+       "api/case-file",
+       "api/all-methods"
        ]
   }
 }

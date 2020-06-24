@@ -1,5 +1,5 @@
 ---
-id: apiStartCase
+id: start-case
 title: Start a Case
 sidebar_label: Start a Case
 ---

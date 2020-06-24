@@ -8,7 +8,7 @@ Executing a case means that case workers execute tasks, post the completion of t
 
 First, you need to know which tasks are avaliable. For this,  retrieve all **discretionary tasks**. Next, you can plan the discretionary task which will become a *planned item*. Then, you can retrieve all **planned items**.
 
-> See for further exploration of retrieving this information [Retrieving cases and tasks](apiRetrieving.md).
+> See for further exploration of retrieving this information [Retrieving cases and tasks](query-cases-tasks).
 
 On human tasks and planned discretionary items you can perform **workflow actions**. Next you can perform **lifecycle actions** on all planned items. 
 

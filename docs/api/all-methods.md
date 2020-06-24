@@ -1,5 +1,5 @@
 ---
-id: apiMethods
+id: all-methods
 title: All API-methods
 sidebar_label: All API-methods
 ---

@@ -1,5 +1,5 @@
 ---
-id: apiRetrieving
+id: query-cases-tasks
 title: Retrieving cases and tasks
 sidebar_label: Retrieving cases and tasks
 ---

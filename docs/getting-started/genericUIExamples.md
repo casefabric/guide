@@ -5,7 +5,7 @@ sidebar_label: Two business applications
 ---
 
 ## HelloWorld
-Let's start with Hello World. A user can send a greeting to another user. From the Generic UI, navigate to Start Case and select the HelloWorld case definition. That will render the following user interface. The form is based on the JSON shown in [Cafienne UI](genericUI.md).
+Let's start with Hello World. A user can send a greeting to another user. From the Generic UI, navigate to Start Case and select the HelloWorld case definition. That will render the following user interface. The form is based on the JSON shown in [Cafienne UI](genericUI).
 
 ![Image](assets/ui/startUIhelloWorld.png)
 

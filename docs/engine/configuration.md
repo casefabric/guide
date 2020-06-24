@@ -1,5 +1,5 @@
 ---
-id: engineConfiguration
+id: configuration
 title: Cafienne Engine Configuration
 sidebar_label: Configuration
 ---

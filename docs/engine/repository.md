@@ -1,11 +1,11 @@
 ---
-id: engineRepository
+id: repository
 title: Cafienne Repository
 sidebar_label: Repository
 ---
 
 ## Introduction
-The Cafienne Engine runs CMMN based case instances. [CMMN](cmmnIntroduction.md) is the official language to describe the definition of a case.
+The Cafienne Engine runs CMMN based case instances. [CMMN](cmmn-overviewduction) is the official language to describe the definition of a case.
 If you want to start a case in the Cafienne Engine, you must provide the definition.
 
 **Start Case example**
@@ -20,7 +20,7 @@ HTTP:POST from [sending-user] to http://localhost:2027/cases
   "tenant": "World-Wide-Test-Tenant",
 }
 ```
-The **definition** property is topic of interest for this page. The remainder of the format is explained in the [Cafienne API](apiStartCase.md) section.
+The **definition** property is topic of interest for this page. The remainder of the format is explained in the [Cafienne API](start-case) section.
 <br/>In this example, **definition** seems to refer to some sort of .xml file called _helloworld_.
 
 But how does the Cafienne Engine know where to find that file? This is achieved through the Cafienne Repository.
@@ -51,9 +51,9 @@ Most use cases of the Cafienne Engine can be handled with the File Based Reposit
 
 Nevertheless, Cafienne Engine has made the repository a configurable interface. You can configure this in the **application.conf** through the **provider** property.
 
-<p align="center">
-  <img src="assets/engine/repository-configuration.png">
-</p>
+
+![Image](assets/engine/repository-configuration.png)
+
 
 Please contact us when you have a use case that requires a custom repository.
 
@@ -63,7 +63,7 @@ Whenever a StartCase call is done, the engine will ask the repository to give th
 
 For the example request above, the repository will be asked to return the contents of 'helloworld.xml'.
 
-In the [**application.conf**](engineConfiguration.md) file you can specify the following parameters for the File Based Repository
+In the [**application.conf**](engine/configuration) file you can specify the following parameters for the File Based Repository
 
 ### Location
 The location property indicates the root folder in which to read or write definitions. Files will be opened through the plain Java runtime file access of the engine. 
@@ -80,9 +80,9 @@ You can configure the size of the cache. By default it stores 100 definitions on
 ## Without Cafienne Repository
 Cafienne ships out of the box with a special implementation that can be configured by setting the provider to **`org.cafienne.cmmn.repository.StartCaseDefinitionProvider`**
 
-<p align="center">
-  <img src="assets/engine/repository-configuration-scdp.png">
-</p>
+
+![Image](assets/engine/repository-configuration-scdp.png)
+
 
 The implementation does not support listing, loading, deploying or reading like the File Base Repository.
 It will simply ignore those calls.
