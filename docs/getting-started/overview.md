@@ -1,6 +1,6 @@
 ---
 id: overview
-title: Getting started
+title: Getting Started
 sidebar_label: Introducing Cafienne Demo
 ---
 

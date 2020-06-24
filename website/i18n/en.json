@@ -84,6 +84,18 @@
         "title": "Cafienne Repository",
         "sidebar_label": "Repository"
       },
+      "extensions/business-identifiers": {
+        "title": "Business Identifiers",
+        "sidebar_label": "Business Identifiers"
+      },
+      "extensions/overview": {
+        "title": "Cafienne Extensions to CMMN",
+        "sidebar_label": "Do we need extensions?"
+      },
+      "extensions/workflow": {
+        "title": "Workflow Extensions",
+        "sidebar_label": "Workflow"
+      },
       "getting-started/genericUI": {
         "title": "Cafienne Generic UI",
         "sidebar_label": "Generic UI"
@@ -101,7 +113,7 @@
         "sidebar_label": "Obtaining Cafienne Demo"
       },
       "getting-started/overview": {
-        "title": "Getting started",
+        "title": "Getting Started",
         "sidebar_label": "Introducing Cafienne Demo"
       },
       "HowToUseThisGuide": {
@@ -139,9 +151,11 @@
     "links": {
       "Overview": "Overview",
       "Getting Started": "Getting Started",
+      "CMMN": "CMMN",
       "Cafienne IDE": "Cafienne IDE",
       "Cafienne Engine": "Cafienne Engine",
-      "Cafienne API": "Cafienne API"
+      "Extensions": "Extensions",
+      "API Reference": "API Reference"
     },
     "categories": {
       "Overview": "Overview",
@@ -149,6 +163,7 @@
       "Cafienne IDE": "Cafienne IDE",
       "Some CMMN": "Some CMMN",
       "Cafienne Engine": "Cafienne Engine",
+      "Extensions": "Extensions",
       "Cafienne API": "Cafienne API"
     }
   },

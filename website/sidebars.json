@@ -35,6 +35,11 @@
        "engine/configuration",
        "engine/repository"
        ],
+    "Extensions": [
+       "extensions/overview",
+       "extensions/workflow",
+       "extensions/business-identifiers"
+       ],
     "Cafienne API": [
        "api/overview",
        "api/platform",

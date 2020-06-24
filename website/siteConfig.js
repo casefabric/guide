@@ -40,9 +40,11 @@ const siteConfig = {
   headerLinks: [
     { doc: 'HowToUseThisGuide', label: 'Overview' },
     { doc: 'getting-started/overview', label: 'Getting Started' },
+    { doc: 'cmmn/overview', label: 'CMMN' },
     { doc: 'ide/overview', label: 'Cafienne IDE' },
     { doc: 'engine/overview', label: 'Cafienne Engine' },
-    { doc: 'api/overview', label: 'Cafienne API' }
+    { doc: 'extensions/overview', label: 'Extensions' },
+    { doc: 'api/overview', label: 'API Reference' }
   ],
 
   // If you have users set above, you add it here:
