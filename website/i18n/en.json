@@ -9,10 +9,6 @@
         "title": "All API-methods",
         "sidebar_label": "All API-methods"
       },
-      "api/api-overview": {
-        "title": "Introducing the API",
-        "sidebar_label": "Introducing the API"
-      },
       "api/apiExecutingCase": {
         "title": "Executing the case",
         "sidebar_label": "Executing the case"
@@ -24,6 +20,10 @@
       "api/case-team": {
         "title": "Case Team membership",
         "sidebar_label": "Case Team membership"
+      },
+      "api/overview": {
+        "title": "Introducing the API",
+        "sidebar_label": "Introducing the API"
       },
       "api/platform": {
         "title": "Cafienne Platform and Tenant Registration",
@@ -49,13 +49,13 @@
         "title": "Modelling the Case Team",
         "sidebar_label": "Modelling the Case Team"
       },
-      "cmmn/cmmn-overview": {
-        "title": "A view notes on CMMN",
-        "sidebar_label": "What is CMMN"
-      },
       "cmmn/modelOther": {
         "title": "Other things to model",
         "sidebar_label": "Other things to model"
+      },
+      "cmmn/overview": {
+        "title": "A view notes on CMMN",
+        "sidebar_label": "What is CMMN"
       },
       "engine/authentication": {
         "title": "Cafienne Authentication Overview",
@@ -73,12 +73,12 @@
         "title": "Cafienne Engine Configuration",
         "sidebar_label": "Configuration"
       },
-      "engine/engine-overview": {
-        "title": "The Cafienne Engine"
-      },
       "engine/logging": {
         "title": "Cafienne Logging",
         "sidebar_label": "Logging"
+      },
+      "engine/overview": {
+        "title": "The Cafienne Engine"
       },
       "engine/repository": {
         "title": "Cafienne Repository",
@@ -96,13 +96,13 @@
         "title": "Human Task Model and Start Case Schema",
         "sidebar_label": "How to use task UI rendering"
       },
-      "getting-started/GettingStarted": {
-        "title": "Getting started",
-        "sidebar_label": "Introducing Cafienne Demo"
-      },
       "getting-started/ObtainingCafDemo": {
         "title": "Obtaining Cafienne Demo",
         "sidebar_label": "Obtaining Cafienne Demo"
+      },
+      "getting-started/overview": {
+        "title": "Getting started",
+        "sidebar_label": "Introducing Cafienne Demo"
       },
       "HowToUseThisGuide": {
         "title": "How to use this guide",
@@ -120,7 +120,7 @@
         "title": "Modelling Cases",
         "sidebar_label": "Designing"
       },
-      "ide/ide-overview": {
+      "ide/overview": {
         "title": "Introducing the Cafienne IDE",
         "sidebar_label": "An IDE?"
       },

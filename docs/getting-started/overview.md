@@ -1,5 +1,5 @@
 ---
-id: GettingStarted
+id: overview
 title: Getting started
 sidebar_label: Introducing Cafienne Demo
 ---
@@ -15,6 +15,6 @@ Travel Request shows a little more complex flow, including technical examples fo
 
 The demo environment consists of
 
-- [Cafienne IDE](design-case), a place to model cases
-- [Cafienne Engine](engine-overview), the heart of the system that executes case models (see the [REST API](api-overview)).
+- [Cafienne IDE](../ide/overview), a place to model cases
+- [Cafienne Engine](../engine/overview), the heart of the system that executes case models (see the [REST API](../api/overview)).
 - [Generic UI](genericUI), providing a simple user interface that helps demostrating and debugging the flow of the case application.

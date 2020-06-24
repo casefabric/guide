@@ -38,7 +38,7 @@ For both implementations you can add using their `Editors` the input and output 
 
 Next, in the *process task implementation* you can add an URI that calls the real implementation, eg using `<cafienne:implementation xmlns:cafienne="org.cafienne" class="org.cafienne.cmmn.instance.process.http.HTTPCallDefinition" async="true"/>`.
 
-For using the Human Task Model, see [How to use task UI rendering](genericUIHTM).
+For using the Human Task Model, see [How to use task UI rendering](../getting-started/genericUIHTM).
 ​
 
 ## EventListener
@@ -57,7 +57,7 @@ Milestones are beneficial plan items in a case, because they allow us to assess 
 
 **In the Cafienne IDE** you can drag the Milestone Icon to the canvas and model its properties using the Properties Palette.
 
-## Plan item Properties
+## Plan Item properties
 
 ### Repeat
 
@@ -85,7 +85,7 @@ If AutoComplete set to true, a Plan Item will complete if there are no active ch
 
 **In the Cafienne IDE**, you can in the Properties Palette just click AutoComple on or off.
 
-### Plan Item Properties
+### Plan Item properties
 
 Various properties can set for plan item:
 

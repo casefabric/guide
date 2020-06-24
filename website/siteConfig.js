@@ -39,10 +39,10 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     { doc: 'HowToUseThisGuide', label: 'Overview' },
-    { doc: 'getting-started/GettingStarted', label: 'Getting Started' },
-    { doc: 'ide/ide-overview', label: 'Cafienne IDE' },
-    { doc: 'engine/engine-overview', label: 'Cafienne Engine' },
-    { doc: 'api/api-overview', label: 'Cafienne API' }
+    { doc: 'getting-started/overview', label: 'Getting Started' },
+    { doc: 'ide/overview', label: 'Cafienne IDE' },
+    { doc: 'engine/overview', label: 'Cafienne Engine' },
+    { doc: 'api/overview', label: 'Cafienne API' }
   ],
 
   // If you have users set above, you add it here:

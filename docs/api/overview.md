@@ -1,5 +1,5 @@
 ---
-id: api-overview
+id: overview
 title: Introducing the API
 sidebar_label: Introducing the API
 ---
@@ -36,7 +36,7 @@ The Cafienne Engine ships with a Swagger UI to give you a quick start in trying 
 > You can find the API of your version of the engine through SwaggerUI at [`http://localhost:2027`](http://localhost:2027).
 
 Note that the Cafienne Engine APIs need an authorization token with each request, according to the JWT standard.
-You can find more details about that in [**Cafienne Authentication**](authentication).
+You can find more details about that in [**Cafienne Authentication**](../engine/authentication).
 
 When you click on the `Authorize` button in the above Swagger UI, it will lead you to the configured Identity Provider where you can login and get a token that Swagger will use when you execute requests. 
 

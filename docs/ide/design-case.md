@@ -6,7 +6,7 @@ sidebar_label: Designing
 
 This section gives a brief overview of how the IDE supports modeling CMMN Case models.
 
-> This page assumes you have a [**basic understanding of CMMN**](cmmn-overview)
+> This page assumes you have a [**basic understanding of CMMN**](../cmmn/overview)
 
 ![Image](assets/ide/casemodel.png)
 

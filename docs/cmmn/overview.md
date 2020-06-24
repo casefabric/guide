@@ -1,5 +1,5 @@
 ---
-id: cmmn-overview
+id: overview
 title: A view notes on CMMN
 sidebar_label: What is CMMN
 ---

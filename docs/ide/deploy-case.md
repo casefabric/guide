@@ -24,6 +24,6 @@ The Deploy button does not do much. It will **NOT** deploy the model into the Ca
 
 By default this will write into `/repository_deploy`.
 
-In the default configuration of [Getting Started](gettingStarted), the Cafienne Engine has been configured to read definitions from the same folder as where the IDE deploys definitions.
+In the default configuration of [Getting Started](../getting-started/overview), the Cafienne Engine has been configured to read definitions from the same folder as where the IDE deploys definitions.
 
 This scenario is pretty straightforward and a simple mechanism to help developers quickly deploy and test their case models.

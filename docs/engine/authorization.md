@@ -7,7 +7,7 @@ sidebar_label: Authorization
 ## Introduction
 The Cafienne Engine holds a multitenancy architecture that enables resource sharing while preserving strict data isolation.
 This page gives an overview of the authorization model in the Cafienne Engine.
-If you prefer to read pictures rather than text, you can go to [this page](engine/authorization-pictures).
+If you prefer to read pictures rather than text, you can go to [this page](authorization-pictures).
 
 This page gives an overview of
 - Authentication model through [OpenID Connect](https://en.wikipedia.org/wiki/OpenID_Connect)
@@ -22,7 +22,7 @@ This page gives an overview of
 The basic concept of ownership is implemented at each of these levels. A level has a group of owners, and owners can change the rights of users and manage each other (add/remove another owner).
 
 ## Users and Authentication
-A detailed overview of authentication can be found in [Cafienne Authentication](engine/authentication).
+A detailed overview of authentication can be found in [Cafienne Authentication](authentication).
 
 The short version: users can access Cafienne through `JWT` tokens.
 Internally, Cafienne transforms a `JWT` token into a `Platform User` structure, holding a list of all the tenants the user belongs to.
@@ -98,7 +98,7 @@ The Case Team can contain members of 2 types
 
 Each member may have one or more case roles assigned, but this is not required. A team member without specific roles still has access to the case and can perform e.g. tasks that have no specific case role assigned.
 
-You can read more on this in the [API Documentation](case-team) on Case Team.
+You can read more on this in the [API Documentation](../api/case-team) on Case Team.
 
 ### Cafienne specific implementation
 In addition to the above mentioned CMMN rules, the Cafienne Engine also enforces some more authorizations.

@@ -34,7 +34,7 @@ To be more precise, the Platform User _does not have any rights_ within the Cafi
 
 In essence a `Platform User` has only two properties:
 - `user id` which is the value of the `sub` claim from the `JWT` token
-- `tenants` which holds the list of tenants in which the platform user has been registered. This list can be empty, meaning that the user has no access to any tenant in the platform. This is typically the case for platform owners, see the [Cafienne Authorization Overview](engine/authorization).
+- `tenants` which holds the list of tenants in which the platform user has been registered. This list can be empty, meaning that the user has no access to any tenant in the platform. This is typically the case for platform owners, see the [Cafienne Authorization Overview](authorization).
 
 ### Tenant User
 For all the tenants that the user has been registered a `Tenant User` structure is created.

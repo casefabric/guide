@@ -6,7 +6,7 @@ sidebar_label: Case Team membership
 
 This page describes how to manage the Case Team through the API.
 
-We recommend that you first read about the basic [Cafienne authorization model](engine/authorization).
+We recommend that you first read about the basic [Cafienne authorization model](../engine/authorization).
 
 ## Case Team Membership and its Implications
 The heart of the Cafienne Authorization is extremely fine-grained. 

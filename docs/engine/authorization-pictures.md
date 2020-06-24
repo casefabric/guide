@@ -7,7 +7,7 @@ sidebar_label: Pictorial overview
 ## Introduction
 This page gives a pictorial explanation of the Cafienne multitenancy and authorization architecture.
 
-For a detailed description please read [Cafienne Authorization](engine/authorization)
+For a detailed description please read [Cafienne Authorization](authorization)
 
 ![Image](assets/engine/authorization-pictorial/tenant-owner-tenant-user.png)
 

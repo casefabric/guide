@@ -1,5 +1,5 @@
 ---
-id: ide-overview
+id: overview
 title: Introducing the Cafienne IDE
 sidebar_label: An IDE?
 ---

@@ -4,30 +4,30 @@
        "HowToUseThisGuide",
        "ShortIntroduction",
        "WhatGoesWithCafienne",
-       "GettingStarted"
+       "overview"
        ],
     "Getting Started": [
-       "getting-started/GettingStarted",
+       "getting-started/overview",
        "getting-started/genericUI",
        "getting-started/genericUIHTM",
        "getting-started/genericUIExamples",
        "getting-started/ObtainingCafDemo"
        ],
     "Cafienne IDE": [
-       "ide/ide-overview",
+       "ide/overview",
        "ide/design-case",
        "ide/deploy-case",
        "ide/debug-case"
        ],
     "Some CMMN": [
-       "cmmn/cmmn-overview",
+       "cmmn/overview",
        "cmmn/case-plan",
        "cmmn/case-file",
        "cmmn/case-team",
        "cmmn/modelOther"
        ],
     "Cafienne Engine": [
-       "engine/engine-overview",
+       "engine/overview",
        "engine/authentication",
        "engine/authorization",
        "engine/authorization-pictures",
@@ -36,7 +36,7 @@
        "engine/repository"
        ],
     "Cafienne API": [
-       "api/api-overview",
+       "api/overview",
        "api/platform",
        "api/start-case",
        "api/case-team",

@@ -7,7 +7,7 @@ sidebar_label: Logging
 ## Introduction
 Cafienne has multiple logging configuration options. On the one hand they are developer oriented, on the other hand they are operational.
 For the operational logging Cafienne uses standard [Logback](http://logback.qos.ch/) libraries.
-Developers can also use this logging, but since it can be somewhat overwhelming, the case engine also has support for case instance specific [**debugging**](debug-case).
+Developers can also use this logging, but since it can be somewhat overwhelming, the case engine also has support for case instance specific [**debugging**](../ide/debug-case).
 
 ## Configuration of Logback
 Inside the docker setup of the Cafienne engine, there is a folder `./src/conf`.
