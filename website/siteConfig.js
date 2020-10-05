@@ -47,6 +47,11 @@ const siteConfig = {
     { doc: 'api/overview', label: 'API Reference' }
   ],
 
+  /* On page navigation for the current documentation page */
+  onPageNav: 'separate',
+
+  docsSideNavCollapsible: true,
+
   // If you have users set above, you add it here:
   // users,
 
@@ -83,9 +88,6 @@ const siteConfig = {
 
   // Add custom scripts here that would be placed in <script> tags
   scripts: ['https://buttons.github.io/buttons.js'],
-
-  /* On page navigation for the current documentation page */
-  onPageNav: 'separate',
 
   /* Open Graph and Twitter card images */
   ogImage: 'favicon-32x32.png',

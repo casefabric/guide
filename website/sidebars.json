@@ -1,54 +1,54 @@
 {
-  "docs": {
-    "Overview": [
-       "HowToUseThisGuide",
-       "ShortIntroduction",
-       "WhatGoesWithCafienne",
-       "overview"
-       ],
-    "Getting Started": [
-       "getting-started/overview",
-       "getting-started/genericUI",
-       "getting-started/genericUIHTM",
-       "getting-started/genericUIExamples",
-       "getting-started/ObtainingCafDemo"
-       ],
-    "Cafienne IDE": [
-       "ide/overview",
-       "ide/design-case",
-       "ide/deploy-case",
-       "ide/debug-case"
-       ],
-    "Some CMMN": [
-       "cmmn/overview",
-       "cmmn/case-plan",
-       "cmmn/case-file",
-       "cmmn/case-team",
-       "cmmn/modelOther"
-       ],
-    "Cafienne Engine": [
-       "engine/overview",
-       "engine/authentication",
-       "engine/authorization",
-       "engine/authorization-pictures",
-       "engine/logging",
-       "engine/configuration",
-       "engine/repository"
-       ],
-    "Extensions": [
-       "extensions/overview",
-       "extensions/workflow",
-       "extensions/business-identifiers"
-       ],
-    "Cafienne API": [
-       "api/overview",
-       "api/platform",
-       "api/start-case",
-       "api/case-team",
-       "api/apiExecutingCase",
-       "api/query-cases-tasks",
-       "api/case-file",
-       "api/all-methods"
-       ]
-  }
+   "docs": {
+      "Overview": [
+         "HowToUseThisGuide",
+         "ShortIntroduction",
+         "WhatGoesWithCafienne",
+         "overview"
+      ],
+      "Getting Started": [
+         "getting-started/overview",
+         "getting-started/genericUI",
+         "getting-started/genericUIHTM",
+         "getting-started/genericUIExamples",
+         "getting-started/ObtainingCafDemo"
+      ],
+      "Cafienne IDE": [
+         "ide/overview",
+         "ide/design-case",
+         "ide/deploy-case",
+         "ide/debug-case"
+      ],
+      "Some CMMN": [
+         "cmmn/overview",
+         "cmmn/case-plan",
+         "cmmn/case-file",
+         "cmmn/case-team",
+         "cmmn/modelOther"
+      ],
+      "Cafienne Engine": [
+         "engine/overview",
+         "engine/authentication",
+         "engine/authorization",
+         "engine/authorization-pictures",
+         "engine/logging",
+         "engine/configuration",
+         "engine/repository"
+      ],
+      "Extensions": [
+         "extensions/overview",
+         "extensions/workflow",
+         "extensions/business-identifiers"
+      ],
+      "Cafienne API": [
+         "api/overview",
+         "api/platform",
+         "api/start-case",
+         "api/case-team",
+         "api/apiExecutingCase",
+         "api/query-cases-tasks",
+         "api/case-file",
+         "api/all-methods"
+      ]
+   }
 }
