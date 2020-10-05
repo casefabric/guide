@@ -44,7 +44,8 @@ const siteConfig = {
     { doc: 'ide/overview', label: 'Cafienne IDE' },
     { doc: 'engine/overview', label: 'Cafienne Engine' },
     { doc: 'extensions/overview', label: 'Extensions' },
-    { doc: 'api/overview', label: 'API Reference' }
+    { doc: 'api/overview', label: 'API Reference' },
+    { doc: 'release/overview', label: 'Releases' }
   ],
 
   /* On page navigation for the current documentation page */

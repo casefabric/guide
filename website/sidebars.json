@@ -49,6 +49,19 @@
          "api/query-cases-tasks",
          "api/case-file",
          "api/all-methods"
+      ],
+      "Releases": [
+         "release/overview",
+         "release/1.1.9",
+         "release/1.1.8",
+         "release/1.1.7",
+         "release/1.1.6",
+         "release/1.1.5",
+         "release/1.1.4",
+         "release/1.1.3",
+         "release/1.1.2",
+         "release/1.1.1",
+         "release/1.1.0"
       ]
    }
 }
