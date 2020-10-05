@@ -32,6 +32,10 @@ body {
     sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 }
 
+.navListItemActive {
+  background-color: lightgrey;
+}
+
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }
 

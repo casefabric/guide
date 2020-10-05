@@ -44,8 +44,14 @@ const siteConfig = {
     { doc: 'ide/overview', label: 'Cafienne IDE' },
     { doc: 'engine/overview', label: 'Cafienne Engine' },
     { doc: 'extensions/overview', label: 'Extensions' },
-    { doc: 'api/overview', label: 'API Reference' }
+    { doc: 'api/overview', label: 'API Reference' },
+    { doc: 'release/overview', label: 'Releases' }
   ],
+
+  /* On page navigation for the current documentation page */
+  onPageNav: 'separate',
+
+  docsSideNavCollapsible: true,
 
   // If you have users set above, you add it here:
   // users,
@@ -83,9 +89,6 @@ const siteConfig = {
 
   // Add custom scripts here that would be placed in <script> tags
   scripts: ['https://buttons.github.io/buttons.js'],
-
-  /* On page navigation for the current documentation page */
-  onPageNav: 'separate',
 
   /* Open Graph and Twitter card images */
   ogImage: 'favicon-32x32.png',
