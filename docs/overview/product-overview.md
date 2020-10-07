@@ -4,10 +4,24 @@ title: Cafienne Product Overview
 sidebar_label: Product Overview
 ---
 
-Cafienne goes with a Modeler and a Case Engine API. If you want to be introduced into case modelling, continue reading [Modelling](ide/overview). If you want to be introduced how the engine interpretates the model, continue reading [Case Engine](engine/overview), if youw want to know how to use the Cafienne API, continue reading [Cafienne API](api/overview). 
+![Image](assets/overview/product-overview.png)
 
-Cafienne is accompanied by Cafienne UI. This UI shows a business user all the cases and tasks that are assigned to him or her. Also, Cafienne UI provides a method to generate simple UI in which business users can execute their tasks. Cafienne UI helps you building rapidly a demo, that shows business users how the model will “behave”.
+## Cafienne Engine
+The heart of the product suite is formed by the [**Cafienne Engine**](engine/overview).
+<br />
+The engine interprets Case Models and runs on the powerful Akka runtime.
 
-Therefore, you can use Cafienne UI to create a simple executing path for your case model. It then comprises simple user interfaces in which case workers can complete tasks. In this way, Cafienne UI helps in the communication between IT, business analists and business people.
+## Cafienne IDE
+Case Models can be created through the [**Cafienne IDE**](ide/overview).
+<br />
+This is a simple, browser based environment that natively integrates with existing development tools.
 
-To be introduced in Cafienne UI, continue reading [Getting Started](getting-started/overview).
+## Cafienne UI
+In many solutions a specific design of the user interface will fit the end user purpose best.
+<br />
+However, for the sake of fast prototyping and early usage feedback, Cafienne comes with a generic user interface that can interpret any design of case model.
+<br />
+The [**Cafienne UI**](getting-started/overview) shows a business user all cases and tasks assigned to him or her. Task forms can be quickly created through [React JSON Schema Forms](https://github.com/rjsf-team/react-jsonschema-form).
+This makes it extremely easy to rapidly build complex demonstrations that show business users how the model gives them a solution to support their business process.
+<br />
+You can use Cafienne UI to create a simple executing path through the case model. It then comprises simple user interfaces in which case workers can complete tasks. In this way, Cafienne UI helps in the communication between IT, business analists and business people.
