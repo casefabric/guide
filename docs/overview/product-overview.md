@@ -1,7 +1,7 @@
 ---
-id: WhatGoesWithCafienne
-title: What goes with Cafienne
-sidebar_label: What goes with Cafienne
+id: product-overview
+title: Cafienne Product Overview
+sidebar_label: Product Overview
 ---
 
 Cafienne goes with a Modeler and a Case Engine API. If you want to be introduced into case modelling, continue reading [Modelling](ide/overview). If you want to be introduced how the engine interpretates the model, continue reading [Case Engine](engine/overview), if youw want to know how to use the Cafienne API, continue reading [Cafienne API](api/overview). 

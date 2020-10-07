@@ -1,6 +1,6 @@
 ---
-id: ShortIntroduction
-title: A short introduction
+id: why-cafienne
+title: Cafienne - Why?
 sidebar_label: A short introduction
 ---
 
