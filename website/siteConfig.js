@@ -38,7 +38,7 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    { doc: 'HowToUseThisGuide', label: 'Overview' },
+    { doc: 'index', label: 'Overview' },
     { doc: 'getting-started/overview', label: 'Getting Started' },
     { doc: 'cmmn/overview', label: 'CMMN' },
     { doc: 'ide/overview', label: 'Cafienne IDE' },

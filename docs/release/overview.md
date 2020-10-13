@@ -17,6 +17,6 @@ sidebar_label: Overview
 | [05-03-2020](1.1.3.md) |   [`1.1.3`](1.1.3.md)   | [Fixpack](1.1.3.md)    |
 | [04-03-2020](1.1.2.md) |   [`1.1.2`](1.1.2.md)   | [Platform Health Information](1.1.2.md)    |
 | [10-02-2020](1.1.1.md) |   [`1.1.1`](1.1.1.md)   | [New Persistence Configurations](1.1.1.md)    |
-| [07-01-2020](1.1.0.md) |   [`1.1.0`](1.1.0.md)   | [Docker hub release 1.1.0 of cafienne engine](1.1.0.md)    |
+| [07-01-2020](1.1.0.md) |   [`1.1.0`](1.1.0.md)   | [Proudly presenting ...](1.1.0.md)    |
 
 

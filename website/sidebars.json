@@ -1,10 +1,9 @@
 {
    "docs": {
       "Overview": [
-         "HowToUseThisGuide",
-         "ShortIntroduction",
-         "WhatGoesWithCafienne",
-         "overview"
+         "index",
+         "overview/why-cafienne",
+         "overview/product-overview"
       ],
       "Getting Started": [
          "getting-started/overview",
@@ -13,18 +12,18 @@
          "getting-started/genericUIExamples",
          "getting-started/ObtainingCafDemo"
       ],
-      "Cafienne IDE": [
-         "ide/overview",
-         "ide/design-case",
-         "ide/deploy-case",
-         "ide/debug-case"
-      ],
       "Some CMMN": [
          "cmmn/overview",
          "cmmn/case-plan",
          "cmmn/case-file",
          "cmmn/case-team",
          "cmmn/modelOther"
+      ],
+      "Cafienne IDE": [
+         "ide/overview",
+         "ide/design-case",
+         "ide/deploy-case",
+         "ide/debug-case"
       ],
       "Cafienne Engine": [
          "engine/overview",
@@ -40,7 +39,7 @@
          "extensions/workflow",
          "extensions/business-identifiers"
       ],
-      "Cafienne API": [
+      "API Reference": [
          "api/overview",
          "api/platform",
          "api/start-case",

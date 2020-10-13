@@ -93,7 +93,7 @@
         "sidebar_label": "Do we need extensions?"
       },
       "extensions/workflow": {
-        "title": "Workflow Extensions",
+        "title": "Workflow Extensions for a HumanTask",
         "sidebar_label": "Workflow"
       },
       "getting-started/genericUI": {
@@ -116,10 +116,6 @@
         "title": "Getting Started",
         "sidebar_label": "Introducing Cafienne Demo"
       },
-      "HowToUseThisGuide": {
-        "title": "How to use this guide",
-        "sidebar_label": "How to use this Guide"
-      },
       "ide/debug-case": {
         "title": "Introducing the Cafienne Debugger",
         "sidebar_label": "Debugging"
@@ -135,6 +131,18 @@
       "ide/overview": {
         "title": "Introducing the Cafienne IDE",
         "sidebar_label": "An IDE?"
+      },
+      "index": {
+        "title": "Cafienne Reference Guide",
+        "sidebar_label": "Cafienne"
+      },
+      "overview/product-overview": {
+        "title": "Cafienne Product Overview",
+        "sidebar_label": "Product Overview"
+      },
+      "overview/why-cafienne": {
+        "title": "Cafienne - Why?",
+        "sidebar_label": "A short introduction"
       },
       "release/1.1.0": {
         "title": "Cafienne Engine Release 1.1.0",
@@ -180,16 +188,8 @@
         "title": "Cafienne Engine Releases",
         "sidebar_label": "Overview"
       },
-      "ShortIntroduction": {
-        "title": "A short introduction",
-        "sidebar_label": "A short introduction"
-      },
       "swagger": {
         "title": "swagger"
-      },
-      "WhatGoesWithCafienne": {
-        "title": "What goes with Cafienne",
-        "sidebar_label": "What goes with Cafienne"
       }
     },
     "links": {
@@ -205,11 +205,11 @@
     "categories": {
       "Overview": "Overview",
       "Getting Started": "Getting Started",
-      "Cafienne IDE": "Cafienne IDE",
       "Some CMMN": "Some CMMN",
+      "Cafienne IDE": "Cafienne IDE",
       "Cafienne Engine": "Cafienne Engine",
       "Extensions": "Extensions",
-      "Cafienne API": "Cafienne API",
+      "API Reference": "API Reference",
       "Releases": "Releases"
     }
   },
