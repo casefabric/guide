@@ -1,12 +1,12 @@
 ---
 id: overview
-title: A view notes on CMMN
+title: A few notes on CMMN
 sidebar_label: What is CMMN
 ---
 
 Cafienne assumes you are familiar with the [**Case Management and Model Notation (CMMN)**](https://www.omg.org/spec/CMMN/1.1).
 
-If, however, you are new to CMMN: here you can find a little bit more info about it. If it makes you curious: don't hesistate to contact us and we're happy to help you further.
+If, however, you are new to CMMN: here you can find a little bit more info about it. If it makes you curious: don't hesitate to contact us and we're happy to help you further.
 
 ## CMMN Background
 First some dry facts.
