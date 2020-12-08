@@ -22,7 +22,7 @@ The specification intends to provide a language to describe the lifecycle of a c
 Ehhh ... a case?
 
 
-### Classical Dossier
+### What makes a Case?
 There are many associations to the word _case_. If you google the word, you may quickly end up in a medical definition, or a legal one. And all of these are valid definitions.
 
 Perhaps, as an alternative to the heavily associated word _case_ you can also consider it a _dossier_.
@@ -33,9 +33,9 @@ Perhaps, as an alternative to the heavily associated word _case_ you can also co
 
 Many examples can be thought of.
 
-In a classical environment without IT automation, all of these dossiers share something in common: they hold documents.
+In a classical environment without IT automation, all of these cases share something in common: they hold documents.
 
-Each time new information is received, this information will be added to the dossier. Probably it is tied together with a paperclip.
+Each time new information is received, this information will be added to the case file. Probably it is tied together with a paperclip.
 
 The proceeding within the case is not always made explicit. You can perhaps reconstruct it by reading all the documents in order. Alternatively a small summary card can be available on the top of the file.
 

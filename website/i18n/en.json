@@ -54,7 +54,7 @@
         "sidebar_label": "Other things to model"
       },
       "cmmn/overview": {
-        "title": "A view notes on CMMN",
+        "title": "A few notes on CMMN",
         "sidebar_label": "What is CMMN"
       },
       "engine/authentication": {
@@ -151,6 +151,10 @@
       "release/1.1.1": {
         "title": "Cafienne Engine Release 1.1.1",
         "sidebar_label": "1.1.1"
+      },
+      "release/1.1.10": {
+        "title": "Cafienne Engine Release 1.1.10",
+        "sidebar_label": "1.1.10"
       },
       "release/1.1.2": {
         "title": "Cafienne Engine Release 1.1.2",
