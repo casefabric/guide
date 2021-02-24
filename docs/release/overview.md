@@ -8,6 +8,7 @@ sidebar_label: Overview
 
 | Date       |  Release   | Notes                   |
 |------------|------------|-------------------------|
+| [24-02-2021](1.1.11.md) |   [`1.1.11`](1.1.11.md) | [Maintenance Release - with some hidden gems](1.1.11.md) |
 | [08-12-2020](1.1.10.md) |   [`1.1.10`](1.1.10.md) | [December: small gifts & presents](1.1.10.md) |
 | [03-10-2020](1.1.9.md)  |   [`1.1.9`](1.1.9.md)   | [Case File enhancements](1.1.9.md) |
 | [29-08-2020](1.1.8.md)  |   [`1.1.8`](1.1.8.md)   | [Housekeeping Release](1.1.8.md) |
