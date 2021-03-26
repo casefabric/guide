@@ -43,15 +43,17 @@ These states are stored in a custom field `taskState` to avoid confusion with th
 
 Furthermore, Cafienne stores an `owner` and an `assignee` for each HumanTask.
 
+Note that the extra lifecycle steps are optional. E.g. A user with the proper authorizations can complete a task without claiming it.
+
 #### Lifecycle operations
 When the task becomes `Active`, it is in sub-state `Unassigned`. It can then be claimed by or assigned to team members with appropriate authorization.
 
 ![Image](assets/extensions/task-lifecycle-api.png)
-<br />
+
 If the task is claimed by a user (or assigned to a user), that user becomes both `owner` and `assignee`, and the task goes into sub-state `Assigned`.
-<br />
+
 When the user delegates the task to another user, the initial user is still the `owner`, but the other user becomes the `assignee`. The task goes into sub-state `Delegated`.
-<br />
+
 This process can be reverted through the `revoke` action.
 
 ## Workflow Properties - Assignment and DueDate
@@ -60,14 +62,19 @@ This process can be reverted through the `revoke` action.
 
 ### CMMN Performer Role
 CMMN supports Human Task Authorization through the notion of the "Performer" role. 
-<br />
+
 Setting this role implies that the Human Task is only available for members of the case team with that role.
+
+> Note: authorizations are managed by case owners. 
+> 
+> Case owners can directly override actions on tasks. This includes e.g. revoking assigned tasks or directly completing a task that is currently assigned to another user.
+
 
 ### Due Date
 The due date of a Human Task can be filled through an expression.
-<br />
+
 The expression is evaluated in the optional context of a Case File Item, similar to the other expressions in CMMN.
-<br />
+
 Due date does not imply any behavior in the case engine. It is merely a date/time field that is passed on to the query database,
 where it can be used to select, filter and sort tasks.
 
@@ -85,16 +92,17 @@ Using this property has some consequences.
 
 #### Case Team changes
 First of all, assigning a task to a user _also_ assigns the user to the case.
-<br/>
-Users that are not part of the case team have no access to the case or its tasks. But if a user is assigned dyanmically to the task,
-that user automatically is added to the case team. Additionally, if the user
+
+Users that are not part of the case team have no access to the case or its tasks. But if a user is assigned dynamically to the task,
+that user automatically is added to the case team.
+Furthermore, if the user does not have the proper roles, the user will get the required role in the team.
 
 ## Form definitions for Cafienne generic User Interface
 
 The [**Cafienne UI**](../getting-started/genericUI) can be used to render any case modeled with Cafienne IDE. 
-<br/>
+
 Human Tasks are rendered through special set of open source components that can interpret JSON Schema.
-<br/>
+
 This set is called [**React JSON Schema Forms**](https://react-jsonschema-form.readthedocs.io).
 Please visit their website for extensive documentation.
 
@@ -124,9 +132,9 @@ Furthermore Cafienne Engine supports 2 additional features for validation before
 ### Mandatory output
 
 When you open the input/output mappings of a Task, there is a small checkbox for output parameters,
-<br/> 
+
 titled `R`. With this checkbox, it is possible to mark an output parameter as `required`, making task completion validate that the parameter has a value.
-<br/> 
+
 If the parameter has no value, the task cannot be completed.
 
 
