@@ -128,9 +128,17 @@
         "title": "Modelling Cases",
         "sidebar_label": "Designing"
       },
+      "ide/expressions": {
+        "title": "Expressions",
+        "sidebar_label": "Expressions"
+      },
       "ide/overview": {
         "title": "Introducing the Cafienne IDE",
         "sidebar_label": "An IDE?"
+      },
+      "ide/parameter-mapping": {
+        "title": "Tasks and Parameters - Mapping",
+        "sidebar_label": "Tasks and Parameters"
       },
       "index": {
         "title": "Cafienne Reference Guide",
