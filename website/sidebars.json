@@ -22,6 +22,8 @@
       "Cafienne IDE": [
          "ide/overview",
          "ide/design-case",
+         "ide/parameter-mapping",
+         "ide/expressions",
          "ide/deploy-case",
          "ide/debug-case"
       ],
