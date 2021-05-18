@@ -20,6 +20,7 @@ workflows:
   build_and_deploy:
     jobs:
       - deploy-website:
+          context: automation-context
           filters:
             branches:
               only: master
