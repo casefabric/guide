@@ -8,6 +8,7 @@ sidebar_label: Overview
 
 | Date       |  Release   | Notes                   |
 |------------|------------|-------------------------|
+| [07-06-2021](1.1.13.md) |   [`1.1.13`](1.1.13.md) | [Robustness - _just in time_, _just in case_](1.1.13.md) |
 | [24-04-2021](1.1.12.md) |   [`1.1.12`](1.1.12.md) | [Maintenance Release](1.1.12.md) |
 | [24-02-2021](1.1.11.md) |   [`1.1.11`](1.1.11.md) | [Maintenance Release - with some hidden gems](1.1.11.md) |
 | [08-12-2020](1.1.10.md) |   [`1.1.10`](1.1.10.md) | [December: small gifts & presents](1.1.10.md) |
