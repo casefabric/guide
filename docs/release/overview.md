@@ -8,6 +8,8 @@ sidebar_label: Overview
 
 | Date       |  Release   | Notes                 |
 |------------|------------|-----------------------|
+| [28-01-2022](1.1.16.md) | [`1.1.16`](1.1.16.md) | [Sweet 16](1.1.16.md) |
+| [23-07-2021](1.1.15.md) | [`1.1.15`](1.1.15.md) | [Upgrades under the hood](1.1.15.md) |
 | [26-06-2021](1.1.14.md) | [`1.1.14`](1.1.14.md) | [Refactoring is Preparing](1.1.14.md) |
 | [07-06-2021](1.1.13.md) | [`1.1.13`](1.1.13.md) | [Robustness - _just in time_, _just in case_](1.1.13.md) |
 | [24-04-2021](1.1.12.md) | [`1.1.12`](1.1.12.md) | [Maintenance Release](1.1.12.md) |
