@@ -48,11 +48,11 @@
          "api/case-team",
          "api/apiExecutingCase",
          "api/query-cases-tasks",
-         "api/case-file",
-         "api/all-methods"
+         "api/case-file"
       ],
       "Releases": [
          "release/overview",
+         "release/1.1.17",
          "release/1.1.16",
          "release/1.1.15",
          "release/1.1.14",
