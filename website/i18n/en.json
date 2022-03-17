@@ -5,10 +5,6 @@
     "previous": "Previous",
     "tagline": "How to use Cafienne, a CMMN based case engine",
     "docs": {
-      "api/all-methods": {
-        "title": "All API-methods",
-        "sidebar_label": "All API-methods"
-      },
       "api/apiExecutingCase": {
         "title": "Executing the case",
         "sidebar_label": "Executing the case"
@@ -191,6 +187,10 @@
       "release/1.1.17": {
         "title": "Cafienne Engine Release 1.1.17",
         "sidebar_label": "1.1.17"
+      },
+      "release/1.1.18": {
+        "title": "Cafienne Engine Release 1.1.18",
+        "sidebar_label": "1.1.18"
       },
       "release/1.1.2": {
         "title": "Cafienne Engine Release 1.1.2",
