@@ -1,4 +1,7 @@
 {
+  "name": "@cafienne/guide",
+  "description": "Source of website guide.cafienne.io",
+  "license": "UNLICENSED",
   "scripts": {
     "examples": "docusaurus-examples",
     "start": "docusaurus-start",
@@ -9,7 +12,7 @@
     "rename-version": "docusaurus-rename-version"
   },
   "devDependencies": {
-    "docusaurus": "^1.14.6"
+    "docusaurus": "^1.14.7"
   },
   "dependencies": {}
 }
