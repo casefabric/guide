@@ -8,6 +8,7 @@ sidebar_label: Overview
 
 | Date       |  Release   | Notes                 |
 |------------|------------|-----------------------|
+| [14-10-2022](1.1.22.md) | [`1.1.22`](1.1.22.md) | [Where do you come from?](1.1.22.md) |
 | [14-07-2022](1.1.21.md) | [`1.1.21`](1.1.21.md) | [Case Migration extended to Process Tasks](1.1.21.md) |
 | [27-05-2022](1.1.20.md) | [`1.1.20`](1.1.20.md) | [Continuous Improvement](1.1.20.md) |
 | [22-04-2022](1.1.19.md) | [`1.1.19`](1.1.19.md) | [Fixpack](1.1.19.md) |
