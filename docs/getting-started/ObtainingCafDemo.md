@@ -34,7 +34,15 @@ After starting up the Cafienne Demo environment, the following URL allow you to 
 * Cafienne API (exposed through Swagger): http://localhost:2027
 * MailCatcher web UI: http://localhost:1080
 
-You can logon to these parts by using `admin` for the username and `cafienne` for the password. Next to the admin there are four predefined users: Lara `lara@example.com/lara`, Hank `hank@example.com/hank`, Gerald `gerald@example.com/gerald` and Suzy `suzy@example.com/suzy`.
+You can logon to these parts by using `admin` for the username and `cafienne` for the password.
+<br/>Next to the admin there are 3 predefined users:
+
+| name | password |
+| ---- | -------- |
+| lara | lara |
+| suzy | suzy |
+| hank | hank |
+
 
 ## More information
 More information about running the Cafienne Demo environment is available in the documentation of the [getting-started](https://github.com/cafienne/getting-started) repository in GitHub.
