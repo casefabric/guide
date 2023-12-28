@@ -63,19 +63,12 @@ Whenever a StartCase call is done, the engine will ask the repository to give th
 
 For the example request above, the repository will be asked to return the contents of 'helloworld.xml'.
 
-In the [**application.conf**](configuration) file you can specify the following parameters for the File Based Repository
+In the configuration file you can specify the following parameters for the File Based Repository
 
-### Location
-The location property indicates the root folder in which to read or write definitions. Files will be opened through the plain Java runtime file access of the engine. 
-This means it can also point to e.g. a shared folder.
-
-In addition, although the Repository API enables you to deploy definitions, you can also copy, edit, and version files through standard file system routines and source control mechanisms.
-
-### Cache
-The File Based Repository will cache the definitions in memory, to avoid XML definition parsing for each and every StartCase request.
-Nevertheless, each time StartCase is invoked, the repository will first check whether a new version of the file is found in the file system, based on file timestamp comparison (allowing you to rollback to an older version as well).
-
-You can configure the size of the cache. By default it stores 100 definitions on a least recently used (LRU) algoritm.
+| property | description |
+| -- | -- |
+| Location | The location property indicates the root folder in which to read or write definitions.<br/>Files will be opened through the plain Java runtime file access of the engine. <br/> This means it can also point to e.g. a shared folder.<br/> In addition, although the Repository API enables you to deploy definitions, you can also copy, edit, and version files through standard file system routines and source control mechanisms. |
+| Cache | The File Based Repository will cache the definitions in memory, to avoid XML definition parsing for each and every StartCase request.<br/>Nevertheless, each time StartCase is invoked, the repository will first check whether a new version of the file is found in the file system, based on file timestamp comparison (allowing to rollback to an older version as well).<br/><br/>The size of the cache can be configured and defaults to 100 definitions on a least recently used (LRU) algoritm. |
 
 ## Without Cafienne Repository
 Cafienne ships out of the box with a special implementation that can be configured by setting the provider to **`org.cafienne.cmmn.repository.StartCaseDefinitionProvider`**

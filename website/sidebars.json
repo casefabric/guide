@@ -32,12 +32,13 @@
          "engine/authentication",
          "engine/authorization",
          "engine/authorization-pictures",
-         "engine/logging",
          "engine/configuration",
+         "engine/logging",
          "engine/repository"
       ],
       "Extensions": [
          "extensions/overview",
+         "extensions/fault-handling",
          "extensions/workflow",
          "extensions/business-identifiers"
       ],
@@ -52,6 +53,7 @@
       ],
       "Releases": [
          "release/overview",
+         "release/1.1.28",
          "release/1.1.27",
          "release/1.1.26",
          "release/1.1.25",

@@ -27,5 +27,6 @@ As you can see in the example, Cafienne provides for extensions at the level of 
 
 ## Cafienne Extensions
 Cafienne provides for the following extensions to CMMN
+- [Fault Handling](fault-handling)
 - [Workflow extensions](workflow)
 - [Business Identifiers](business-identifiers)
