@@ -8,6 +8,7 @@ sidebar_label: Overview
 
 | Date       |  Release   | Notes                 |
 |------------|------------|-----------------------|
+| [29-04-2024](1.1.30.md) | [`1.1.30`](1.1.30.md) | [Fixes & enhancements](1.1.30.md) |
 | [26-02-2024](1.1.29.md) | [`1.1.29`](1.1.29.md) | [Fixpack](1.1.29.md) |
 | [18-12-2023](1.1.28.md) | [`1.1.28`](1.1.28.md) | [Model driven fault handling](1.1.28.md) |
 | [09-08-2023](1.1.27.md) | [`1.1.27`](1.1.27.md) | [Workflow Extensions](1.1.27.md) |
