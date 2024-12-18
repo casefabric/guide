@@ -9,7 +9,7 @@ sidebar_label: Product Overview
 ## Cafienne Engine
 The heart of the product suite is formed by the [**Cafienne Engine**](/docs/engine/overview).
 <br />
-The engine interprets Case Models and runs on the powerful Akka runtime.
+The engine interprets Case Models and runs on the powerful Pekko runtime.
 
 ## Cafienne IDE
 Case Models can be created through the [**Cafienne IDE**](/docs/ide/overview).

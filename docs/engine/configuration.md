@@ -8,14 +8,14 @@ sidebar_label: Configuration
 
 This page gives an overview of the various configuration options of the Cafienne Engine.
 <br/>
-Cafienne Engine runs on the Akka actor system and is typically hosted in a configuration of Docker containers.
+Cafienne Engine runs on the Pekko actor system and is typically hosted in a configuration of Docker containers.
 
 
 ## `docker-compose.yml, local.conf & environment variables`
 
-Both Docker and Akka have a wide range of configuration possibilities.
+Both Docker and Pekko have a wide range of configuration possibilities.
 - Docker configuration makes use of the [**`YAML`**](https://en.wikipedia.org/wiki/YAML) format
-- Akka makes use of the [**`HOCON`**](https://doc.akka.io/docs/akka/current/general/configuration.html) format 
+- Pekko makes use of the [**`HOCON`**](https://pekko.apache.org/docs/pekko/1.1/general/configuration.html) format 
 
 Both languages also support the use of environment variables.
 <br/>An example configuration that combines all these options can be found in the Cafienne Demo environment of the [getting-started ](https://github.com/cafienne/getting-started) repository in GitHub.
@@ -23,7 +23,7 @@ Both languages also support the use of environment variables.
 ## Various persistence configurations
 
 The Cafienne Engine requires two types of storage, based on the [CQRS principle](https://en.wikipedia.org/wiki/Command_Query_Responsibility_Segregation).
-The configuration for the event journal is done through that standard akka persistence configuration.
+The configuration for the event journal is done through that standard pekko persistence configuration.
 
 | &nbsp;&nbsp; storage |  |
 |----------|-------------|
@@ -39,12 +39,11 @@ The configuration for the event journal is done through that standard akka persi
 
 - [Example configuration for Cassandra](assets/engine/configuration/cassandra.conf)
   <br/> The Cassandra configuration uses Cassandra as Event Journal, and PostgreSQL as Query DB.
-- [Example configuration for PostgreSQL](assets/engine/configuration/postgres.conf)
-- [Example configuration for Microsoft SQL Server](assets/engine/configuration/sqlserver.conf)
+- [Example configuration for JDBC](assets/engine/configuration/jdbc.conf)
 
 ## Cafienne specific settings
 
-Cafienne Engine specific settings can be added to the Akka configuration file. These settings include the following:
+Cafienne Engine specific settings can be added to the Pekko configuration file. These settings include the following:
 
 ```yml
 cafienne {
@@ -125,17 +124,17 @@ cafienne {
 
   actor {
     # the seconds of wait time before a response to a command is expected
-    # by the akka http command routes
+    # by the pekko http command routes
     ask-timeout = 60
 
-    # the seconds of idle time after which a case actor is removed from akka memory
+    # the seconds of idle time after which a case actor is removed from pekko memory
     # if the case has not received new commands after the specified number of seconds,
-    # the case engine will ask akka to remove the case from memory to avoid memory leaks.
+    # the case engine will ask pekko to remove the case from memory to avoid memory leaks.
     idle-period = 600
   }
 
   # This setting tells cafienne which journal to use for reading events.
-  #  If omitted, cafienne will try to guess the read journal, based on the akka settings
+  #  If omitted, cafienne will try to guess the read journal, based on the pekko settings
   read-journal = "jdbc-read-journal"
 
   query-db {
@@ -153,7 +152,7 @@ cafienne {
 
     # Configuration options handling exceptions that may occur while reading
     #  the event streams that populate the query-db tables
-    #  See also https://doc.akka.io/docs/akka/current/stream/stream-error.html#restart-with-backoff
+    #  See also https://pekko.apache.org/docs/pekko/1.0/stream/stream-error.html#delayed-restarts-with-a-backoff-operator
     restart-stream {
       min-back-off = 500ms
       max-back-off = 30s
