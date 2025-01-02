@@ -1,6 +1,6 @@
 {
-  "name": "@cafienne/guide",
-  "description": "Source of website guide.cafienne.io",
+  "name": "@casefabric/guide",
+  "description": "Source of website guide.casefabric.io",
   "license": "UNLICENSED",
   "scripts": {
     "examples": "docusaurus-examples",

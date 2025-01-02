@@ -1,16 +1,16 @@
 ---
 id: logging
-title: Cafienne Logging
+title: CaseFabric Logging
 sidebar_label: Logging
 ---
 
 ## Introduction
-Cafienne has multiple logging configuration options. On the one hand they are developer oriented, on the other hand they are operational.
-For the operational logging Cafienne uses standard [Logback](http://logback.qos.ch/) libraries.
+CaseFabric has multiple logging configuration options. On the one hand they are developer oriented, on the other hand they are operational.
+For the operational logging CaseFabric uses standard [Logback](http://logback.qos.ch/) libraries.
 Developers can also use this logging, but since it can be somewhat overwhelming, the case engine also has support for case instance specific [**debugging**](../ide/debug-case).
 
 ## Configuration of Logback
-Inside the docker setup of the Cafienne engine, there is a folder `./src/conf`.
+Inside the docker setup of the CaseFabric engine, there is a folder `./src/conf`.
 This directory holds 2 files, `local.conf` and `logback.xml`.
 
 This document will not describe the full options that are possible with Logback. But a couple of things are important to mention.
@@ -53,7 +53,7 @@ One particular option must be mentioned, though. The file name is rooted in the 
 ### Loggers
 Below the appenders, we find a couple of loggers. Loggers can be configured at very detailed depth. They indicate for which part of the code which type of messages are logged.
 
-In the example above, it tells that at `root` level, i.e. across all code, only `WARN` and `ERROR` messages must be logged. The individual loggers of `org.cafienne` and `org.flywaydb` tell that their `INFO` messages must also be logged.
+In the example above, it tells that at `root` level, i.e. across all code, only `WARN` and `ERROR` messages must be logged. The individual loggers of `com.casefabric` and `org.flywaydb` tell that their `INFO` messages must also be logged.
 
 Please note that the `root` also tells which appenders to use.
 
@@ -66,4 +66,4 @@ Please note that the `root` also tells which appenders to use.
 ### Changing the settings
 The top element of the `logback.xml` contains a special attribute `scan="true"`. This tells `Logback` to refresh the contents of the logback.xml file once every minute, and perform a live reload.
 
-That means, you can change the contents of the logback.xml, and within a minute, the Cafienne Engine will pick up your changes and act accordingly, without needing to restart the engine.
+That means, you can change the contents of the logback.xml, and within a minute, the CaseFabric Engine will pick up your changes and act accordingly, without needing to restart the engine.

@@ -1,12 +1,12 @@
 ---
 id: authorization
-title: Cafienne Authorization Overview
+title: CaseFabric Authorization Overview
 sidebar_label: Authorization
 ---
 
 ## Introduction
-The Cafienne Engine holds a multitenancy architecture that enables resource sharing while preserving strict data isolation.
-This page gives an overview of the authorization model in the Cafienne Engine.
+The CaseFabric Engine holds a multitenancy architecture that enables resource sharing while preserving strict data isolation.
+This page gives an overview of the authorization model in the CaseFabric Engine.
 If you prefer to read pictures rather than text, you can go to [this page](authorization-pictures).
 
 This page gives an overview of
@@ -17,25 +17,25 @@ This page gives an overview of
     - Tenant level authorization
     - Case level authorization
         - CMMN language level authorization
-        - Cafienne specific authorizations that are not part of CMMN.
+        - CaseFabric specific authorizations that are not part of CMMN.
 
 The basic concept of ownership is implemented at each of these levels. A level has a group of owners, and owners can change the rights of users and manage each other (add/remove another owner).
 
 ## Users and Authentication
-A detailed overview of authentication can be found in [Cafienne Authentication](authentication).
+A detailed overview of authentication can be found in [CaseFabric Authentication](authentication).
 
-The short version: users can access Cafienne through `JWT` tokens.
-Internally, Cafienne transforms a `JWT` token into a `Platform User` structure, holding a list of all the tenants the user belongs to.
+The short version: users can access CaseFabric through `JWT` tokens.
+Internally, CaseFabric transforms a `JWT` token into a `Platform User` structure, holding a list of all the tenants the user belongs to.
 
 ## Platform level authorization
-A platform user does not have any privileges inside the Cafienne Engine except for one - retrieve it's own details.
+A platform user does not have any privileges inside the CaseFabric Engine except for one - retrieve it's own details.
 
 ### Get User Information
 The REST call `GET /platform/user` retrieves the user details. This consists of the `user id` and the list of tenants that the user is a member of, including the set of `roles` the user has within the tenant, and the optional fields `name` and `email` address.
 So with a valid JWT token it is possible to retrieve your own user details. Other than that, nothing can be done as a platform user, unless the platform user belongs to the group of `platform owners`. 
 
 ### Platform Owners
-In the configuration file of the Cafienne Engine, the property `platform.owners` can be filled with a list of `user ids` that are platform owner.
+In the configuration file of the CaseFabric Engine, the property `platform.owners` can be filled with a list of `user ids` that are platform owner.
 This means: when a `JWT token` is valid, and the value of the `sub` claim is part of that list, then without any further ado this platform user is a `platform owner`. Platform owners have the following privileges:
 - add or disable other platform owners
 - create tenants
@@ -50,7 +50,7 @@ So, a platform owner can _create_ a tenant, but once the tenant is created, the 
 Obviously a platform owner can also add himself to the list of tenant owners when creating the tenant.
 
 #### Platform bootstrapping
-The configuration file of the Cafienne Engine has an option to load and create a tenant with users when it is started. If the tenant already exists, the call is not executed. So this mechanism cannot be used to maintain the tenant.
+The configuration file of the CaseFabric Engine has an option to load and create a tenant with users when it is started. If the tenant already exists, the call is not executed. So this mechanism cannot be used to maintain the tenant.
 
 ## Tenant level authorization
 Tenant level authorization is also based on two groups:
@@ -81,11 +81,11 @@ The [CMMN specification](https://www.omg.org/spec/CMMN) defines a limited set of
 ### Tenant Roles are not Case Roles
 Note that the term `role` in the CMMN defined authorization is something quite different than the roles that tenant users have. The `CMMN role` is defined within a single case, and only applies to that single case. Tenant roles apply to all cases across the tenant.
 
-A good example is a case of a Patient Treatment record. Within a hospital, there can be many persons with the role `Doctor`. Such a role would typically be associated with the `TenantUser` in the Cafienne Engine.
+A good example is a case of a Patient Treatment record. Within a hospital, there can be many persons with the role `Doctor`. Such a role would typically be associated with the `TenantUser` in the CaseFabric Engine.
 At the case instance level, where a particular patient is being treated, we have the case role `Treating Physician`, which can only be filled by a `Doctor` obviously, but not all doctors in the hospital are the treating physician for one particular patient.
 
 ### Case Team
-In order to honour this distinction, every case instance inside the Cafienne Engine has a `CaseTeam`. This team consists of a set of members that each have one or more `CaseRoles` assigned. Case roles are defined in the case definition.
+In order to honour this distinction, every case instance inside the CaseFabric Engine has a `CaseTeam`. This team consists of a set of members that each have one or more `CaseRoles` assigned. Case roles are defined in the case definition.
 
 ![Image](assets/engine/definecaseroles.png)
 
@@ -100,9 +100,9 @@ Each member may have one or more case roles assigned, but this is not required. 
 
 You can read more on this in the [API Documentation](../api/case-team) on Case Team.
 
-### Cafienne specific implementation
-In addition to the above mentioned CMMN rules, the Cafienne Engine also enforces some more authorizations.
+### CaseFabric specific implementation
+In addition to the above mentioned CMMN rules, the CaseFabric Engine also enforces some more authorizations.
 
 #### Human Task authorization
-- When claiming a HumanTask, the Cafienne Engine validates whether the user has the required `Case Role` within the Case Team.
+- When claiming a HumanTask, the CaseFabric Engine validates whether the user has the required `Case Role` within the Case Team.
 - When a HumanTask is assigned to a specific person, only that person can revoke the task.

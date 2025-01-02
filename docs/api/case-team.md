@@ -6,10 +6,10 @@ sidebar_label: Case Team membership
 
 This page describes how to manage the Case Team through the API.
 
-We recommend that you first read about the basic [Cafienne authorization model](../engine/authorization).
+We recommend that you first read about the basic [CaseFabric authorization model](../engine/authorization).
 
 ## Case Team Membership and its Implications
-The heart of the Cafienne Authorization is extremely fine-grained. 
+The heart of the CaseFabric Authorization is extremely fine-grained. 
 
 > **Every case instance has its own authorization**
 
@@ -33,7 +33,7 @@ Team members can also get assigned as Case Owners. Ownership extends the rights 
 
 ### Tenant Roles as Members
 The word "Team" may mislead you to think that only users can become member. 
-And, indeed, that was the initial implementation in Cafienne. That made the case team administration rather cumbersome. Each case needed a team of users to handle it.
+And, indeed, that was the initial implementation in CaseFabric. That made the case team administration rather cumbersome. Each case needed a team of users to handle it.
 
 This has been overcome with the option to add Tenant Roles as Case Team Member. When a Case Team contains Tenant Roles, then every Tenant User having that role automatically is part of that Case Team.
 

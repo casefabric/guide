@@ -6,7 +6,7 @@ sidebar_label: Retrieving cases and tasks
 
 ## Cases
 
-For retrieving a list of cases you should call the method get/cases. get/cases will respond with all cases for which you are assigned as a user, you are part of the case team, or in which you fulfill a role for cases where no case team is set. Your “overall” roles are set to your user account to Cafienne. This request will respond using the JSON-structure:
+For retrieving a list of cases you should call the method get/cases. get/cases will respond with all cases for which you are assigned as a user, you are part of the case team, or in which you fulfill a role for cases where no case team is set. Your “overall” roles are set to your user account to CaseFabric. This request will respond using the JSON-structure:
 ```ssh
 {
  "casefile": "",     --a reference to the whole file (case file, case plan, roles)
@@ -89,7 +89,7 @@ If you create a list of “myTasks” that gives a business user an overview of 
 
 You can retrieve information on a task instance using `get/tasks/{taskID}`. This will give you additional information on the Assignee, and the mapping of CaseFileItems to input and output parameters. The information on the Assignee helps you controlling the workflow of planned tasks. 
 
-Whenever a PlanItem is planned, Cafienne keeps track of the values added to the CaseFileItem that are input parameters of that PlanItem. Even so, Cafienne keeps the data that are in the output parameters. You can use the information on CaseFileItems and their property for building a UI that help the assignee to execute the task. Also, this information can be used in keeping track of the way the data in your business application are used, for instance in case an audit is being performed.
+Whenever a PlanItem is planned, CaseFabric keeps track of the values added to the CaseFileItem that are input parameters of that PlanItem. Even so, CaseFabric keeps the data that are in the output parameters. You can use the information on CaseFileItems and their property for building a UI that help the assignee to execute the task. Also, this information can be used in keeping track of the way the data in your business application are used, for instance in case an audit is being performed.
 
 `get/tasks/{taskID}` will respond the following JSON structure:
 ```ssh

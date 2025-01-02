@@ -66,7 +66,7 @@ It can also be used to entirely override the given Case File Item, e.g. to pass 
 
 ### Expression language
 
-Cafienne supports multiple expression languages. You can read more about it in the Expression chapter.
+CaseFabric supports multiple expression languages. You can read more about it in the Expression chapter.
 The CMMN specification enables you to choose a different language at the level of each individual expression.
 In the parameter mapping editor you can choose to deviate from the default expression language of the case by pressing the small `L` button at the left of the transformation. If the choosen language differs from the default language, the `L` button gets a small blue underlining.
 
@@ -74,12 +74,12 @@ In the parameter mapping editor you can choose to deviate from the default expre
 
 
 ## Binding Refinement (Operations)
-Cafienne provides a small set of operations to enable various patterns of binding the Case File Item to a Task Input Parameter.
+CaseFabric provides a small set of operations to enable various patterns of binding the Case File Item to a Task Input Parameter.
 Also for binding Task Output Parameters back to the Case File Item a number of operations is supported.
 
 > A critical element in choosing the right operation is the multiplicity of the Case File Item.
 > 
-> If the multiplicity is `0..*` or `1..*` or simply `*`, the Cafienne engine treats the Case File Item as an array.
+> If the multiplicity is `0..*` or `1..*` or simply `*`, the CaseFabric engine treats the Case File Item as an array.
 
 Details are described in the below screenshots.
 

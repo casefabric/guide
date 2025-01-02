@@ -2,7 +2,7 @@
    "docs": {
       "Overview": [
          "index",
-         "overview/why-cafienne",
+         "overview/why-casefabric",
          "overview/product-overview"
       ],
       "Getting Started": [
@@ -19,7 +19,7 @@
          "cmmn/case-team",
          "cmmn/modelOther"
       ],
-      "Cafienne IDE": [
+      "CaseFabric IDE": [
          "ide/overview",
          "ide/design-case",
          "ide/parameter-mapping",
@@ -27,7 +27,7 @@
          "ide/deploy-case",
          "ide/debug-case"
       ],
-      "Cafienne Engine": [
+      "CaseFabric Engine": [
          "engine/overview",
          "engine/authentication",
          "engine/authorization",

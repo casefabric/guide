@@ -1,10 +1,10 @@
 ---
 id: genericUI
-title: Cafienne Generic UI
+title: CaseFabric Generic UI
 sidebar_label: Generic UI
 ---
 
-Cafienne provides a generic user interface to enable quick testing of the case that you are creating.
+CaseFabric provides a generic user interface to enable quick testing of the case that you are creating.
 The user interface is agnostic to the type of case model that it renders.
 
 In most use cases you will want to develop your own user interface, that fits better with the domain it is intended for.
@@ -24,7 +24,7 @@ Navigating into a task or case will render that specific instance.
  - For a task, buttons to e.g. claim or complete the task are rendered.
 
 ## Rendering Case and Task Data with JSON Schema
-For starting a Case or completing a Task, in most use cases it is required to pass data. The logic of the case depends on the data entered by the user. In most applications using the Cafienne Engine this is built into the custom User Interface of that application. However, the Cafienne Engine also provides for a placeholder in which you can store e.g. a JSON document that holds rendering information.
+For starting a Case or completing a Task, in most use cases it is required to pass data. The logic of the case depends on the data entered by the user. In most applications using the CaseFabric Engine this is built into the custom User Interface of that application. However, the CaseFabric Engine also provides for a placeholder in which you can store e.g. a JSON document that holds rendering information.
 
 To be more concrete, the Generic UI can render Start Case and Task screens that hold such a JSON schema to enable you to test the wiring of data into the case model.
 

@@ -1,0 +1,16 @@
+version: 1
+frontend:
+  phases:
+    build:
+      commands:
+        - cd website
+        - yarn install
+        - yarn build
+        - ls build/casefabric-guide
+        - pwd
+  artifacts:
+    baseDirectory: website/build/casefabric-guide/
+    files:
+      - "**/*"
+  cache:
+    paths: []

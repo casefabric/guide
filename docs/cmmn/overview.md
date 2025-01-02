@@ -4,7 +4,7 @@ title: A few notes on CMMN
 sidebar_label: What is CMMN
 ---
 
-Cafienne assumes you are familiar with the [**Case Management and Model Notation (CMMN)**](https://www.omg.org/spec/CMMN/1.1).
+CaseFabric assumes you are familiar with the [**Case Management and Model Notation (CMMN)**](https://www.omg.org/spec/CMMN/1.1).
 
 If, however, you are new to CMMN: here you can find a little bit more info about it. If it makes you curious: don't hesitate to contact us and we're happy to help you further.
 
@@ -15,7 +15,7 @@ First some dry facts.
 
 The Case Management and Model Notation was introduced in May 2014 by the [Object Management Group](https://www.omg.org).
 
-Cafienne implements **CMMN 1.1**, the version that was published in December 2016.
+CaseFabric implements **CMMN 1.1**, the version that was published in December 2016.
 
 The specification intends to provide a language to describe the lifecycle of a case in a graphical manner.
 
@@ -46,7 +46,7 @@ In contrast to this, CMMN provides a higher level graphical language with explic
 
 ### CMMN gives structure
 
-The reason that we as Cafienne are so excited about the CMMN language, is that it has a very intuitive and elegant model to put structure to dossiers and cases and use that as the basis for automation.
+The reason that we as CaseFabric are so excited about the CMMN language, is that it has a very intuitive and elegant model to put structure to dossiers and cases and use that as the basis for automation.
 
 A case expressed in CMMN will consist of three elements
 

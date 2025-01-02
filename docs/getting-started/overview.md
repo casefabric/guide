@@ -1,10 +1,10 @@
 ---
 id: overview
 title: Getting Started
-sidebar_label: Introducing Cafienne Demo
+sidebar_label: Introducing CaseFabric Demo
 ---
 
-Cafienne Demo is an environment that holds [two examples](genericUIExamples).
+CaseFabric Demo is an environment that holds [two examples](genericUIExamples).
 
 - Hello World
 - Travel Request
@@ -15,6 +15,6 @@ Travel Request shows a little more complex flow, including technical examples fo
 
 The demo environment consists of
 
-- [Cafienne IDE](../ide/overview), a place to model cases
-- [Cafienne Engine](../engine/overview), the heart of the system that executes case models (see the [REST API](../api/overview)).
+- [CaseFabric IDE](../ide/overview), a place to model cases
+- [CaseFabric Engine](../engine/overview), the heart of the system that executes case models (see the [REST API](../api/overview)).
 - [Generic UI](genericUI), providing a simple user interface that helps demostrating and debugging the flow of the case application.

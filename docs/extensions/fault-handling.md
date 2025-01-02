@@ -40,9 +40,9 @@ if the task is in failed state, the stage surrounding it may consider itself as 
 
 We have received feedback from CMMN designers that experienced this as somewhat counter-intuitive.
 
-## Cafienne Fault Handling
+## CaseFabric Fault Handling
 
-Cafienne provides for an elegant mechanism to fix the mentioned drawbacks.
+CaseFabric provides for an elegant mechanism to fix the mentioned drawbacks.
 
 ### Bubbling failures
 First of all, the engine by default bubbles fault transitions to the parent of the failing task or stage, all the way up the instantiation chain.
