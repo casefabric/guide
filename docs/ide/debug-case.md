@@ -1,16 +1,16 @@
 ---
 id: debug-case
-title: Introducing the Cafienne Debugger
+title: Introducing the CaseFabric Debugger
 sidebar_label: Debugging
 ---
 
 ## Introduction
-The Cafienne Engine comes with an IDE in which you can design [`CMMN`](https://omg.org/spec/CMMN) based case models.
+The CaseFabric Engine comes with an IDE in which you can design [`CMMN`](https://omg.org/spec/CMMN) based case models.
 
 The cycle of designing, running and debugging a complex model is not straightforward.
-Cafienne recommends to use all the well known software development tools that are available for this.
+CaseFabric recommends to use all the well known software development tools that are available for this.
 
-In addition, Cafienne Engine comes with a few special options to help in the area of debugging case models.
+In addition, CaseFabric Engine comes with a few special options to help in the area of debugging case models.
 
 This page explains how to setup these features.
 
@@ -19,9 +19,9 @@ This page explains how to setup these features.
 
 
 ## Case Engine events
-Each time a case is started and run inside the Cafienne Engine, the commands that are sent to the case (e.g., start a case, complete a task) result in changes. These changes are stored as events in the underlying database.
+Each time a case is started and run inside the CaseFabric Engine, the commands that are sent to the case (e.g., start a case, complete a task) result in changes. These changes are stored as events in the underlying database.
 
-Inside the Cafienne IDE, a debugger is available that can render these events. You can open it through the right-most halo of the case plan model.
+Inside the CaseFabric IDE, a debugger is available that can render these events. You can open it through the right-most halo of the case plan model.
 
 
 ![Image](assets/ide/debugger-halo.png)

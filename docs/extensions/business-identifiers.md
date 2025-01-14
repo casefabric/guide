@@ -5,7 +5,7 @@ sidebar_label: Business Identifiers
 ---
 
 ## Introduction
-The Cafienne APIs to retrieve cases and tasks has certain filtering options.<br/>
+The CaseFabric APIs to retrieve cases and tasks has certain filtering options.<br/>
 Just to name a few, you can ask for:
 - Cases in state `Completed`, or
 - Cases of type `Helloworld`, or 
@@ -17,7 +17,7 @@ But how about asking for:
 - Tasks for `Customers located in India`, or
 - Cases where `CustomerLevel=Gold and (Location=India or Location=Netherlands)`
 
-In order to enable these queries, Cafienne has implemented the notion of **Business Identifiers**
+In order to enable these queries, CaseFabric has implemented the notion of **Business Identifiers**
 
 ## Concept of Business Identifiers
 Within CMMN, you can design an hierarchical Case File structure with nested items and properties. 
@@ -28,14 +28,14 @@ A TravelRequest has details on the travellers: each Traveller must be listed wit
 
 The properties are not set in the Case File Item itself, but rather in the underlying Case File Item Definition. CMMN has added this additional layer in order to make the definition reusable across various types of Case definitions. E.g. the same Traveller structure can be used in the TravelRequest case, but also in a BusTrip case.
 
-The Case File Item Definition holds a list of properties. Within Cafienne, you can indicate for each property whether it is a Business Identifier or not.
-<br/>When it is, Cafienne will detect changes on that property, and store the value in an index that can be used to query cases and tasks on that property.
+The Case File Item Definition holds a list of properties. Within CaseFabric, you can indicate for each property whether it is a Business Identifier or not.
+<br/>When it is, CaseFabric will detect changes on that property, and store the value in an index that can be used to query cases and tasks on that property.
 <br/>In the example below this means that whenever the Nationality of a Traveller is set to e.g. Netherlands, a query to get cases for Dutch nationality would return both BusTrips and TravelRequests with Dutch travellers.
 
 ![Image](assets/extensions/casefile-properties.png)
 
 ## GetCases, GetTasks
-Within the Cafienne Engine, the query database has a business_identifier table that holds the case instance id, the name of the business identifier and the value.
+Within the CaseFabric Engine, the query database has a business_identifier table that holds the case instance id, the name of the business identifier and the value.
 Whenever a call to **`GET /cases`** or **`GET /tasks`** is made, next to the other query parameter options we can also pass an identifier filter.
 
 - **`GET /cases?identifiers=Nationality=Netherlands`**

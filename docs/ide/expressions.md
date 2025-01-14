@@ -4,7 +4,7 @@ title: Expressions
 sidebar_label: Expressions
 ---
 
-This section explains how to use expressions inside Cafienne.
+This section explains how to use expressions inside CaseFabric.
 
 ## CMMN Expressions
 CMMN supports expressions in many different places of the case model.
@@ -16,13 +16,13 @@ The body must be a `String`. Some expressions must result in a `Boolean` value.
 ### Default language
 
 Each expression inside a case model needs a different language. But, as we can read in the above snippet of the CMMN 1.1 version, the language can take a default from the overall definition.
-Inside the Cafienne IDE this can be set at the case level properties.
+Inside the CaseFabric IDE this can be set at the case level properties.
 
 ![Image](assets/ide/default-language.png)
 
-## Cafienne Expressions - Pick the language of choice
+## CaseFabric Expressions - Pick the language of choice
 
-The Cafienne engine has been designed for openness. This goes into the veins of the product, including the level of the expression language.
+The CaseFabric engine has been designed for openness. This goes into the veins of the product, including the level of the expression language.
 The engine ships with a number of languages - but the default language of choice is `spel` the Spring Expression Language
 
 > For handling REST services responses in Process Tasks, the [Jayway JsonPath](https://github.com/json-path/JsonPath) is a better match, as it has shorter filtering notations.
@@ -30,7 +30,7 @@ The engine ships with a number of languages - but the default language of choice
 
 ### Spring Expression Language (SPEL)
 
-[Spring.io](https://spring.io/) comes with a powerful expression language. Cafienne exposes the benefits of this language as the default in case models.
+[Spring.io](https://spring.io/) comes with a powerful expression language. CaseFabric exposes the benefits of this language as the default in case models.
 
 ### Case model expressions
 Expressions can be used in the following places of a case model
@@ -45,7 +45,7 @@ Expressions can be used in the following places of a case model
 
 ## Expression Context
 In quite a few occasions, the context of the expression is required as an input parameter to the expression.
-Cafienne provides a rich API to use detailed case information inside expressions.
+CaseFabric provides a rich API to use detailed case information inside expressions.
 This section describes the properties and methods available.
 
 ### Root Object

@@ -11,12 +11,12 @@ Also, a Discretionary item can be Non Blocking, meaning that it is not waiting f
 
 Discretionary items are part of the Planning table of the Stage or Case in which they are modelled. The Planning Table can be restricted by Applicability Rules. Applicability Rules contain a Case File Item and an Expression. 
 
-**In Cafienne**, you can model Human Tasks, Case Tasks, and Stages as Discretionary using the Properties Palette; you can also model it as Non Blocking. Once you modelled a Discreationary Item, the Planning Table icon is shown in its parent Plan Item. Clicking on this icon, you can add an Applicability Rule.
+**In CaseFabric**, you can model Human Tasks, Case Tasks, and Stages as Discretionary using the Properties Palette; you can also model it as Non Blocking. Once you modelled a Discreationary Item, the Planning Table icon is shown in its parent Plan Item. Clicking on this icon, you can add an Applicability Rule.
 
 ## Sentries
 **In CMMN**, a Sentry “watches out” for importants situations to occur (or “events”) which influence the further proceedings of a Case. In CMMN, important situations to occur are a lifecycle transition of a Plan Item or a Case File Item and the triggering of Event Listeners. In this way, a Sentry allows us to describe when a task, stage, or milestone should be available for execution (entry criteria), or when a case (case plan), stage, or task should terminate abnormally (exit criteria).
 
-**In Cafienne**, you can drag Entry and Exit Sentries from one item to another item. In its properties, you can declare an On Part and an If Part. In the On Part you can select an Plan Item and/or a Case File Item and one of their lifecycle transactions. In the If Part you can select a Case File Item and express an Expression​.
+**In CaseFabric**, you can drag Entry and Exit Sentries from one item to another item. In its properties, you can declare an On Part and an If Part. In the On Part you can select an Plan Item and/or a Case File Item and one of their lifecycle transactions. In the If Part you can select a Case File Item and express an Expression​.
 
 Sentries can be used for plan items as follows:
 <table>
@@ -48,4 +48,4 @@ Sentries can be used for plan items as follows:
 
 In CMMN, you can add to parameters Expressions. Expressions are String objects. Expressions operate over Properties and Case File Items in the Case File. 
 
-In Cafienne, you can express your Expressions in Spring Expression Language (SpEL).
+In CaseFabric, you can express your Expressions in Spring Expression Language (SpEL).

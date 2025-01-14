@@ -8,7 +8,7 @@ sidebar_label: Workflow
 
 ## Overview
 
-Cafienne provides for a series of extensions to the CMMN HumanTask in order to support enhanced workflow handling.
+CaseFabric provides for a series of extensions to the CMMN HumanTask in order to support enhanced workflow handling.
 
 - Workflow lifecycle extensions (like claim and delegate)
 - Applying Workflow at design time
@@ -17,7 +17,7 @@ Cafienne provides for a series of extensions to the CMMN HumanTask in order to s
   - Dynamic assignment of Human Tasks to users
   - Workflow patterns for Rendez-Vous and Four-Eyes
 - Reusable HumanTask implementations
-- Human Task rendering in Cafienne UI
+- Human Task rendering in CaseFabric UI
 - Dealing with Task Data
   - Mandatory Task output parameters
   - Storing, Validating and Completing with Task output
@@ -29,9 +29,9 @@ Task input is set when a task becomes `Active`.
 
 In typical workflow scenarios, it may be necessary to know whether a task is already picked up by someone, or to delegate a task to someone else if we're too busy.
 
-Cafienne Engine adds a few states to a Human Task in `Active` state. We can consider them 'sub states'. They do not have any effect in the Case Plan, but merely help in querying tasks.
+CaseFabric Engine adds a few states to a Human Task in `Active` state. We can consider them 'sub states'. They do not have any effect in the Case Plan, but merely help in querying tasks.
 These states are stored in a custom field `taskState` to avoid confusion with the normal CMMN lifecycle.
-<br />Furthermore, Cafienne stores an `owner` and an `assignee` for each HumanTask.
+<br />Furthermore, CaseFabric stores an `owner` and an `assignee` for each HumanTask.
 
 Note that the extra lifecycle steps are optional. E.g. a user with the proper authorizations can complete a task without claiming it.
 
@@ -54,7 +54,7 @@ The image shows the available options to implement and extend the CMMN Human Tas
 ![Image](assets/extensions/workflow-properties.png)
 
 > Performer role is defined in CMMN.
-> <br />Due Date, Dynamic Assignment, 4-eyes and Rendez-Vous are Cafienne extensions.
+> <br />Due Date, Dynamic Assignment, 4-eyes and Rendez-Vous are CaseFabric extensions.
 
 ### CMMN Performer Role
 
@@ -89,8 +89,8 @@ Upon activating a task, it can be directly assigned to a specific user through a
 
 #### Authorization consequences
 
-It is important to realize that the Cafienne Engine tries to validate the existence of the user id, but it allows for unrecognized user ids.
-The reason for this, is that the user identification is not up to Cafienne, but to the IDP that Cafienne trusts.
+It is important to realize that the CaseFabric Engine tries to validate the existence of the user id, but it allows for unrecognized user ids.
+The reason for this, is that the user identification is not up to CaseFabric, but to the IDP that CaseFabric trusts.
 
 Assignment and delegation will not just assign the task to the user id passed.
 The engine will also verify that whether user id is already in the case team, and, if not, the user id will be added.
@@ -135,7 +135,7 @@ Combining both options on tasks can be used to implement more complex scenarios 
 - When 3 tasks each have Four Eyes with the other 2, then all three tasks must be performed by a different user.
 
 Needless to say that the complexity of these scenarios may lead to configuration mistakes.
-The Cafienne IDE allows making such "mistakes" during modeling. The Cafienne Engine is more precise.
+The CaseFabric IDE allows making such "mistakes" during modeling. The CaseFabric Engine is more precise.
 When validating the model, the engine will recognize invalid configurations.
 
 ![Image](assets/extensions/combined-four-eyes-rendez-vous.png)
@@ -149,11 +149,11 @@ You can drag/drop them onto any case model in order to create a Human Task with 
 
 ![Image](assets/extensions/reusable-implementations.png)
 
-## Form definitions for Cafienne generic User Interface
+## Form definitions for CaseFabric generic User Interface
 
-The [**Cafienne UI**](../getting-started/genericUI) can be used to render any case modeled with Cafienne IDE.
+The [**CaseFabric UI**](../getting-started/genericUI) can be used to render any case modeled with CaseFabric IDE.
 
-The Cafienne UI renders Human Tasks with the help of 2 open source frameworks that can interpret JSON Schema.
+The CaseFabric UI renders Human Tasks with the help of 2 open source frameworks that can interpret JSON Schema.
 
 - [JSON Forms](https://https://jsonforms.io/).
 - [React JSON Schema Forms](https://react-jsonschema-form.readthedocs.io).
@@ -165,15 +165,15 @@ The format of the task model needs 2 properties
 - `schema` describing the data that must be rendered
 - `uiSchema` optional rendering suggestions
 
-Cafienne IDE supports basic JSON validation and a simple preview of the form.
+CaseFabric IDE supports basic JSON validation and a simple preview of the form.
 
 ![Image](assets/extensions/task-form-rendering.png)
 
-> Note: Cafienne Engine does not put any restrictions on the content of the task model. <br/> The information is passed through the engine as a string and then gets stored into the query database.
+> Note: CaseFabric Engine does not put any restrictions on the content of the task model. <br/> The information is passed through the engine as a string and then gets stored into the query database.
 
 ## Task Data - Saving, Validating & Completing
 
-Next to completing a task, Cafienne supports saving intermediate task output and output validation.
+Next to completing a task, CaseFabric supports saving intermediate task output and output validation.
 
 ![Image](assets/extensions/task-data-api.png)
 
@@ -182,7 +182,7 @@ Next to completing a task, Cafienne supports saving intermediate task output and
 If a user does not yet want to complete the task, but needs to switch to a different context, a user interface component can decide to save the data as entered by the user.
 Next time the task is opened, the data is available to continue editing.
 
-Furthermore Cafienne Engine supports 2 additional features for validation before the task can be completed to ensure a that task output will not corrupt the case at hand.
+Furthermore CaseFabric Engine supports 2 additional features for validation before the task can be completed to ensure a that task output will not corrupt the case at hand.
 
 ### Mandatory output
 
@@ -198,14 +198,14 @@ If the parameter has no value, the task cannot be completed.
 
 > Note: task output validation is an experimental feature
 
-Cafienne Engine supports a new API call to enable validation of (potential) human task output.
+CaseFabric Engine supports a new API call to enable validation of (potential) human task output.
 This can be used e.g. to validate a ZipCode or the existence of an email address in a database.
 
 The current functionality is rather basic. The validator must be implemented as a REST service.
-The content to validate is posted to the Cafienne Engine. The engine then invokes the REST service with that content.
+The content to validate is posted to the CaseFabric Engine. The engine then invokes the REST service with that content.
 
-- If the REST service returns without any content, it is considered valid, and Cafienne Engine responds `202 Accepted`.
-- If the REST service returns with some JSON, the content is considered invalid, but Cafienne Engine also responds `202 Accepted`, along with the JSON received from the service.
-- If the REST service is unavailable or returns an error, the Cafienne Engine responds with `400 Bad Request`.
+- If the REST service returns without any content, it is considered valid, and CaseFabric Engine responds `202 Accepted`.
+- If the REST service returns with some JSON, the content is considered invalid, but CaseFabric Engine also responds `202 Accepted`, along with the JSON received from the service.
+- If the REST service is unavailable or returns an error, the CaseFabric Engine responds with `400 Bad Request`.
 
 ![Image](assets/extensions/task-output-validation.png)

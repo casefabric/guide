@@ -1,6 +1,6 @@
 ---
 id: overview
-title: The Cafienne Engine
+title: The CaseFabric Engine
 sidebar_label: 
 ---
 
@@ -16,7 +16,7 @@ Also, a case worker can act as a case engine adding discretionary tasks to this 
 
 Also, the case engine interprets some rules. In CMMN you can model repeatability and requiredness of human tasks and other Plan Items.  
 
-Last, the engine will execute expressions. Expressions are linked to Sentries and operate over Case File Items in the Case File. In addition to Case File content, constant and time base expressions are also allowed. The expression language in Cafienne is Spring Expression Language (SpEL).
+Last, the engine will execute expressions. Expressions are linked to Sentries and operate over Case File Items in the Case File. In addition to Case File content, constant and time base expressions are also allowed. The expression language in CaseFabric is Spring Expression Language (SpEL).
 
 ## Delving into the engine
 
@@ -36,7 +36,7 @@ The following diagram illustrates the lifecycel of a Stage or a Task instance. A
 
 To go form one state to another state, a transition takes place. For example, the transition create will transition from “null” to Available, start from Available to Active.
 
-As you will learn in Cafienne API, this “from-to” transition is in the response of API-calls that [retrieve information](../api/query-cases-tasks.md#a-case-instance) on plan item: historyState, CurrentState, transition.
+As you will learn in CaseFabric API, this “from-to” transition is in the response of API-calls that [retrieve information](../api/query-cases-tasks.md#a-case-instance) on plan item: historyState, CurrentState, transition.
 
 ### CaseFile item Lifecycle
 
@@ -44,9 +44,9 @@ The following diagram illustrates the lifecycle of a CaseFile item instance (see
 
 ![Image](assets/engine/cfiLifeCycle.png)
 
-Note that Cafienne as yet does not support references of CaseFile items.
+Note that CaseFabric as yet does not support references of CaseFile items.
 
-In Cafienne, you can perform a transition on a CaseFile item by [completing a task](../api/apiExecutingCase.md#planned-human-tasks) that has a CaseFile item in its output, or by performing a CaseFile item transaction [directly](../api/case-file).
+In CaseFabric, you can perform a transition on a CaseFile item by [completing a task](../api/apiExecutingCase.md#planned-human-tasks) that has a CaseFile item in its output, or by performing a CaseFile item transaction [directly](../api/case-file).
 
 ### Sentries
 

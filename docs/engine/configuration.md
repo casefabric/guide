@@ -1,14 +1,14 @@
 ---
 id: configuration
-title: Cafienne Engine Configuration
+title: CaseFabric Engine Configuration
 sidebar_label: Configuration
 ---
 
 # Introduction
 
-This page gives an overview of the various configuration options of the Cafienne Engine.
+This page gives an overview of the various configuration options of the CaseFabric Engine.
 <br/>
-Cafienne Engine runs on the Pekko actor system and is typically hosted in a configuration of Docker containers.
+CaseFabric Engine runs on the Pekko actor system and is typically hosted in a configuration of Docker containers.
 
 
 ## `docker-compose.yml, local.conf & environment variables`
@@ -18,11 +18,11 @@ Both Docker and Pekko have a wide range of configuration possibilities.
 - Pekko makes use of the [**`HOCON`**](https://pekko.apache.org/docs/pekko/1.1/general/configuration.html) format 
 
 Both languages also support the use of environment variables.
-<br/>An example configuration that combines all these options can be found in the Cafienne Demo environment of the [getting-started ](https://github.com/cafienne/getting-started) repository in GitHub.
+<br/>An example configuration that combines all these options can be found in the CaseFabric Demo environment of the [getting-started ](https://github.com/casefabric/getting-started) repository in GitHub.
 
 ## Various persistence configurations
 
-The Cafienne Engine requires two types of storage, based on the [CQRS principle](https://en.wikipedia.org/wiki/Command_Query_Responsibility_Segregation).
+The CaseFabric Engine requires two types of storage, based on the [CQRS principle](https://en.wikipedia.org/wiki/Command_Query_Responsibility_Segregation).
 The configuration for the event journal is done through that standard pekko persistence configuration.
 
 | &nbsp;&nbsp; storage |  |
@@ -41,9 +41,9 @@ The configuration for the event journal is done through that standard pekko pers
   <br/> The Cassandra configuration uses Cassandra as Event Journal, and PostgreSQL as Query DB.
 - [Example configuration for JDBC](assets/engine/configuration/jdbc.conf)
 
-## Cafienne specific settings
+## CaseFabric specific settings
 
-Cafienne Engine specific settings can be added to the Pekko configuration file. These settings include the following:
+CaseFabric Engine specific settings can be added to the Pekko configuration file. These settings include the following:
 
 ```yml
 cafienne {
@@ -93,7 +93,7 @@ cafienne {
     security {
       ###############################################################################
       ##  Below settings can be used to configure multiple OIDC services           ##
-      ##   that ships with the docker images in the cafienne repository named      ##
+      ##   that ships with the docker images in the casefabric repository named      ##
       ##   getting-started.                                                        ##
       ###############################################################################
       # configuration settings for OpenID Connect
@@ -133,8 +133,8 @@ cafienne {
     idle-period = 600
   }
 
-  # This setting tells cafienne which journal to use for reading events.
-  #  If omitted, cafienne will try to guess the read journal, based on the pekko settings
+  # This setting tells casefabric which journal to use for reading events.
+  #  If omitted, casefabric will try to guess the read journal, based on the pekko settings
   read-journal = "jdbc-read-journal"
 
   query-db {

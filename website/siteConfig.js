@@ -21,8 +21,8 @@ const users = [
 ];
 
 const siteConfig = {
-  title: 'Cafienne Reference Guide' /* title for your website */,
-  tagline: 'How to use Cafienne, a CMMN based case engine',
+  title: 'CaseFabric Reference Guide' /* title for your website */,
+  tagline: 'How to use CaseFabric, a CMMN based case engine',
   url: 'https://cafienne.github.io' /* your website url */,
   baseUrl: '/' /* base url for your project */,
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -30,8 +30,8 @@ const siteConfig = {
   //   baseUrl: '/test-site/',
 
   // Used for publishing and more
-  projectName: 'cafienne.github.io',
-  organizationName: 'cafienne',
+  projectName: 'casefabric-guide',
+  organizationName: 'casefabric',
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
@@ -41,8 +41,8 @@ const siteConfig = {
     { doc: 'index', label: 'Overview' },
     { doc: 'getting-started/overview', label: 'Getting Started' },
     { doc: 'cmmn/overview', label: 'CMMN' },
-    { doc: 'ide/overview', label: 'Cafienne IDE' },
-    { doc: 'engine/overview', label: 'Cafienne Engine' },
+    { doc: 'ide/overview', label: 'CaseFabric IDE' },
+    { doc: 'engine/overview', label: 'CaseFabric Engine' },
     { doc: 'extensions/overview', label: 'Extensions' },
     { doc: 'api/overview', label: 'API Reference' },
     { doc: 'release/overview', label: 'Releases' }
@@ -57,7 +57,7 @@ const siteConfig = {
   // users,
 
   /* path to images for header/footer */
-  headerIcon: 'img/cafienne.svg',
+  headerIcon: 'img/casefabric.svg',
   footerIcon: 'img/favicon-32x32.png',
   favicon: 'img/favicon.png',
 
@@ -80,7 +80,7 @@ const siteConfig = {
   // },
 
   // This copyright info is used in /core/Footer.js and blog rss/atom feeds.
-  copyright: 'Copyright © ' + new Date().getFullYear() + ' Cafienne',
+  copyright: 'Copyright © ' + new Date().getFullYear() + ' CaseFabric',
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks

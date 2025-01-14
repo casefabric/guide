@@ -1,13 +1,13 @@
 ---
 id: authorization-pictures
-title: Cafienne Authorization Overview
+title: CaseFabric Authorization Overview
 sidebar_label: Pictorial overview
 ---
 
 ## Introduction
-This page gives a pictorial explanation of the Cafienne multitenancy and authorization architecture.
+This page gives a pictorial explanation of the CaseFabric multitenancy and authorization architecture.
 
-For a detailed description please read [Cafienne Authorization](authorization)
+For a detailed description please read [CaseFabric Authorization](authorization)
 
 ![Image](assets/engine/authorization-pictorial/tenant-owner-tenant-user.png)
 

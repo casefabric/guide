@@ -1,16 +1,16 @@
 ---
 id: index
-title: Cafienne Reference Guide
-sidebar_label: Cafienne
+title: CaseFabric Reference Guide
+sidebar_label: CaseFabric
 ---
-## Welcome to Cafienne
-This website holds reference information for working with the Cafienne product stack.
+## Welcome to CaseFabric
+This website holds reference information for working with the CaseFabric product stack.
 <br/>
 At a glance, you can find the following topics.
 
-## [Cafienne - why use it?](overview/why-cafienne)
-## [Cafienne - what's in the box?](overview/product-overview)
-## [Cafienne - how to get started?](overview/product-overview)
+## [CaseFabric - why use it?](overview/why-casefabric)
+## [CaseFabric - what's in the box?](overview/product-overview)
+## [CaseFabric - how to get started?](overview/product-overview)
 <h3>
     <ul style="list-style-type:none">
         <li>[Quick start](getting-started/overview)</li>

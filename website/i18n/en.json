@@ -3,7 +3,7 @@
   "localized-strings": {
     "next": "Next",
     "previous": "Previous",
-    "tagline": "How to use Cafienne, a CMMN based case engine",
+    "tagline": "How to use CaseFabric, a CMMN based case engine",
     "docs": {
       "api/apiExecutingCase": {
         "title": "Executing the case",
@@ -22,7 +22,7 @@
         "sidebar_label": "Introducing the API"
       },
       "api/platform": {
-        "title": "Cafienne Platform and Tenant Registration",
+        "title": "CaseFabric Platform and Tenant Registration",
         "sidebar_label": "Joining the platform"
       },
       "api/query-cases-tasks": {
@@ -54,30 +54,30 @@
         "sidebar_label": "What is CMMN"
       },
       "engine/authentication": {
-        "title": "Cafienne Authentication Overview",
+        "title": "CaseFabric Authentication Overview",
         "sidebar_label": "Authentication"
       },
       "engine/authorization-pictures": {
-        "title": "Cafienne Authorization Overview",
+        "title": "CaseFabric Authorization Overview",
         "sidebar_label": "Pictorial overview"
       },
       "engine/authorization": {
-        "title": "Cafienne Authorization Overview",
+        "title": "CaseFabric Authorization Overview",
         "sidebar_label": "Authorization"
       },
       "engine/configuration": {
-        "title": "Cafienne Engine Configuration",
+        "title": "CaseFabric Engine Configuration",
         "sidebar_label": "Configuration"
       },
       "engine/logging": {
-        "title": "Cafienne Logging",
+        "title": "CaseFabric Logging",
         "sidebar_label": "Logging"
       },
       "engine/overview": {
-        "title": "The Cafienne Engine"
+        "title": "The CaseFabric Engine"
       },
       "engine/repository": {
-        "title": "Cafienne Repository",
+        "title": "CaseFabric Repository",
         "sidebar_label": "Repository"
       },
       "extensions/business-identifiers": {
@@ -89,7 +89,7 @@
         "sidebar_label": "Fault Handling"
       },
       "extensions/overview": {
-        "title": "Cafienne Extensions to CMMN",
+        "title": "CaseFabric Extensions to CMMN",
         "sidebar_label": "Do we need extensions?"
       },
       "extensions/workflow": {
@@ -97,7 +97,7 @@
         "sidebar_label": "Workflow"
       },
       "getting-started/genericUI": {
-        "title": "Cafienne Generic UI",
+        "title": "CaseFabric Generic UI",
         "sidebar_label": "Generic UI"
       },
       "getting-started/genericUIExamples": {
@@ -109,15 +109,15 @@
         "sidebar_label": "How to use task UI rendering"
       },
       "getting-started/ObtainingCafDemo": {
-        "title": "Obtaining Cafienne Demo",
-        "sidebar_label": "Obtaining Cafienne Demo"
+        "title": "Obtaining CaseFabric Demo",
+        "sidebar_label": "Obtaining CaseFabric Demo"
       },
       "getting-started/overview": {
         "title": "Getting Started",
-        "sidebar_label": "Introducing Cafienne Demo"
+        "sidebar_label": "Introducing CaseFabric Demo"
       },
       "ide/debug-case": {
-        "title": "Introducing the Cafienne Debugger",
+        "title": "Introducing the CaseFabric Debugger",
         "sidebar_label": "Debugging"
       },
       "ide/deploy-case": {
@@ -133,7 +133,7 @@
         "sidebar_label": "Expressions"
       },
       "ide/overview": {
-        "title": "Introducing the Cafienne IDE",
+        "title": "Introducing the CaseFabric IDE",
         "sidebar_label": "An IDE?"
       },
       "ide/parameter-mapping": {
@@ -141,15 +141,15 @@
         "sidebar_label": "Tasks and Parameters"
       },
       "index": {
-        "title": "Cafienne Reference Guide",
-        "sidebar_label": "Cafienne"
+        "title": "CaseFabric Reference Guide",
+        "sidebar_label": "CaseFabric"
       },
       "overview/product-overview": {
-        "title": "Cafienne Product Overview",
+        "title": "CaseFabric Product Overview",
         "sidebar_label": "Product Overview"
       },
-      "overview/why-cafienne": {
-        "title": "Cafienne - Why?",
+      "overview/why-casefabric": {
+        "title": "CaseFabric - Why?",
         "sidebar_label": "A short introduction"
       },
       "release/1.1.0": {
@@ -281,7 +281,7 @@
         "sidebar_label": "1.1.7"
       },
       "release/1.1.8": {
-        "title": "Cafienne Engine Release 1.1.8",
+        "title": "CaseFabric Engine Release 1.1.8",
         "sidebar_label": "1.1.8"
       },
       "release/1.1.9": {
@@ -300,8 +300,8 @@
       "Overview": "Overview",
       "Getting Started": "Getting Started",
       "CMMN": "CMMN",
-      "Cafienne IDE": "Cafienne IDE",
-      "Cafienne Engine": "Cafienne Engine",
+      "CaseFabric IDE": "CaseFabric IDE",
+      "CaseFabric Engine": "CaseFabric Engine",
       "Extensions": "Extensions",
       "API Reference": "API Reference",
       "Releases": "Releases"
@@ -310,8 +310,8 @@
       "Overview": "Overview",
       "Getting Started": "Getting Started",
       "Some CMMN": "Some CMMN",
-      "Cafienne IDE": "Cafienne IDE",
-      "Cafienne Engine": "Cafienne Engine",
+      "CaseFabric IDE": "CaseFabric IDE",
+      "CaseFabric Engine": "CaseFabric Engine",
       "Extensions": "Extensions",
       "API Reference": "API Reference",
       "Releases": "Releases"

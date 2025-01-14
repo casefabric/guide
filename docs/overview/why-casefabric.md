@@ -1,29 +1,29 @@
 ---
-id: why-cafienne
-title: Cafienne - Why?
+id: why-casefabric
+title: CaseFabric - Why?
 sidebar_label: A short introduction
 ---
 
-## When to use Cafienne
-You can use Cafienne when your organisation works with Cases, building up Case Files and cooperates in a team. 
+## When to use CaseFabric
+You can use CaseFabric when your organisation works with Cases, building up Case Files and cooperates in a team. 
 
-You can use Cafienne when your User Interface should in a glance give you an overview of the whole case, of what has been done, what can be done and what must be done, of all the information that is in the Case File and that is related to the work that you are doing. 
+You can use CaseFabric when your User Interface should in a glance give you an overview of the whole case, of what has been done, what can be done and what must be done, of all the information that is in the Case File and that is related to the work that you are doing. 
 
-You should use Cafienne if you want to build up a case team, and –as a case manager– want to keep all of them involved in the proceeding of the case.
+You should use CaseFabric if you want to build up a case team, and –as a case manager– want to keep all of them involved in the proceeding of the case.
 
-You want to use Cafienne if you want to build up an auditable track of what case workers contributed to solving the case.
+You want to use CaseFabric if you want to build up an auditable track of what case workers contributed to solving the case.
 
 
-## Cafienne is a case engine
-Cafienne is a case engine. Cafienne interprets a case model that is designed according to the [CMMN](https://www.omg.org/spec/CMMN/About-CMMN/) specifications. Doing this, it offers the user tasks he must perform, tasks he may perform and tasks he may choose to perform. And, the case engine keeps track of all the information that is added to the Case File during its lifecycle.
+## CaseFabric is a case engine
+CaseFabric is a case engine. CaseFabric interprets a case model that is designed according to the [CMMN](https://www.omg.org/spec/CMMN/About-CMMN/) specifications. Doing this, it offers the user tasks he must perform, tasks he may perform and tasks he may choose to perform. And, the case engine keeps track of all the information that is added to the Case File during its lifecycle.
 
 Also, you can create a team of case workers for the specific case. To this team, you can add people from within your own organisation but also from outside it.
 
-## Cafienne is open source
-Cafienne is fully open source and has an active community. This way we can ensure that we have a continuous development for the product and a good focus on quality and interoperability.
+## CaseFabric is open source
+CaseFabric is fully open source and has an active community. This way we can ensure that we have a continuous development for the product and a good focus on quality and interoperability.
 
-## Cafienne Background
-Cafienne has a two-fold background. First, there is a background in business process modelling, and next, Cafienne has learned of the evolution of the ways business applications are deployed on IT-infrastructure.
+## CaseFabric Background
+CaseFabric has a two-fold background. First, there is a background in business process modelling, and next, CaseFabric has learned of the evolution of the ways business applications are deployed on IT-infrastructure.
 
 ### Business Processes
 Ten companies responded to a 2009 OMG (Object Management Group) call to standardize a Data Centric Business Process Management, or Emerging Case Management Standard to be published in 2012. The OMG call draws on several influences, among them the Case Management literature (van der Aalst, 2008), Business Artifacts (Nigam and Caswell, 2003), Guard-Stage-Milestone (GSM, Hull et al 2011), and Dynamic planning for Case Management (de Man, 2009).
@@ -38,4 +38,4 @@ In Business Process is predefined which roles must execute tasks. In a Case ther
 ### Building and deploying business applications
 In earlier days, software companies that offered Business Process Management Solutions supplied a platform. As a customer, you needed to build your business aplications using that platform and all its capabilites and next you deployed these business applications on the infrastructure offered. This way of working has many setbacks and nowadays there are other strategies that allow for a more agile and evolutionary approach.
 
-We adher to microservices. Cafienne is a framework that is deployed as a Docker container that can be orchestrated in a Docker swarm or on Kubernetes. Through the implementation on top of the Pekko framework, Cafienne provides an extremely open architecture, with a simple and powerful REST API, along with a clear and public Cassandra based event stream that enables you to deal with the ins and outs of all case handling. 
+We adher to microservices. CaseFabric is a framework that is deployed as a Docker container that can be orchestrated in a Docker swarm or on Kubernetes. Through the implementation on top of the Pekko framework, CaseFabric provides an extremely open architecture, with a simple and powerful REST API, along with a clear and public Cassandra based event stream that enables you to deal with the ins and outs of all case handling. 

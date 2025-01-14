@@ -1,24 +1,24 @@
 ---
 id: overview
-title: Introducing the Cafienne IDE
+title: Introducing the CaseFabric IDE
 sidebar_label: An IDE?
 ---
 
-Yes, Cafienne comes with an Integrated Development Environment (IDE).
+Yes, CaseFabric comes with an Integrated Development Environment (IDE).
 
-But perhaps we should say "Integratable Development Environment" instead. Bottomline, the Cafienne IDE is nothing more than a Node.js application that serves a HTML website through which you can read and write CMMN diagrams (case models).
+But perhaps we should say "Integratable Development Environment" instead. Bottomline, the CaseFabric IDE is nothing more than a Node.js application that serves a HTML website through which you can read and write CMMN diagrams (case models).
 
 There are no fancy tech features like source control integration, folder and hierarchy creation, file renaming, nor does it support fancy business analyst presentation modes.
 
 It provides a means to quickly build, validate and deploy case models that fully integrates with your existing development and coding infrastructure. 
 
-## Cafienne IDE fits into your development system
+## CaseFabric IDE fits into your development system
 
 ![Image](assets/ide/devtools.png)
 
 ## What runs in your browser?
 
-The Cafienne IDE contains a graphical designer for CMMN models.
+The CaseFabric IDE contains a graphical designer for CMMN models.
 
 ![Image](assets/ide/ide.png)
 
