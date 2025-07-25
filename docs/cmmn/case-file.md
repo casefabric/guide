@@ -8,7 +8,7 @@ sidebar_label: Modelling the Case File
 
 Information in the Case File serves as context for raising events and evaluating Expressions as well as point of reference for Case Parameters, such as inputs and outputs of Tasks. CaseFile also serves as container for data that is accessible by other systems and people outside of the Case, through CaseParameters. 
 
-**In CaseFabric**, once you have created a Case, the Case File is a given and is shown in the IDE in a separate section, named Case File Items. CaseFabric allows you to organise Case File Items in hierarchies by containment, so you can add childs or siblings. 
+**In CaseFabric**, once you have created a Case, the Case File is a given and is shown in the Designer in a separate section, named Case File Items. CaseFabric allows you to organise Case File Items in hierarchies by containment, so you can add childs or siblings. 
 
 ## Case File Item
 

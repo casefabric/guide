@@ -1,26 +1,26 @@
 ---
 id: overview
-title: Introducing the CaseFabric IDE
+title: Introducing the CaseFabric Designer
 sidebar_label: An IDE?
 ---
 
-Yes, CaseFabric comes with an Integrated Development Environment (IDE).
+CaseFabric comes with a Designer, and sometimes this is referred to as an IDE (Integrated Development Environment).
 
-But perhaps we should say "Integratable Development Environment" instead. Bottomline, the CaseFabric IDE is nothing more than a Node.js application that serves a HTML website through which you can read and write CMMN diagrams (case models).
+But perhaps we should say "Integratable Development Environment" instead. Bottomline, the Case Designer is nothing more than a Node.js application that serves a HTML website through which you can read and write CMMN diagrams (case models).
 
 There are no fancy tech features like source control integration, folder and hierarchy creation, file renaming, nor does it support fancy business analyst presentation modes.
 
 It provides a means to quickly build, validate and deploy case models that fully integrates with your existing development and coding infrastructure. 
 
-## CaseFabric IDE fits into your development system
+## CaseFabric Designer fits _your_ development system
 
-![Image](assets/ide/devtools.png)
+![Image](assets/designer/devtools.png)
 
 ## What runs in your browser?
 
-The CaseFabric IDE contains a graphical designer for CMMN models.
+The CaseFabric Designer contains a graphical designer for CMMN models.
 
-![Image](assets/ide/ide.png)
+![Image](assets/designer/ide.png)
 
 But there is more to it.
 
@@ -39,4 +39,4 @@ The HelloWorld diagram shown above, is stored in the repository as **`helloworld
 
 The **`.humantask`** and **`.process`** extensions are stored to enable reuse of tasks and processes across multiple cases. E.g., the **`Read Response`** task in above **`HelloWorld`** case can also be used inside the **`TravelRequest`** case model. 
 
-The **`.cfid`** extension is used to store reusable Case File Item Definition documents. These can be reused when selecting the definition for an item in the case file, as can be seen on the right hand of the IDE.
+The **`.cfid`** extension is used to store reusable Case File Item Definition documents. These can be reused when selecting the definition for an item in the case file, as can be seen on the right hand of the Designer.

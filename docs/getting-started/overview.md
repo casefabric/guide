@@ -15,6 +15,6 @@ Travel Request shows a little more complex flow, including technical examples fo
 
 The demo environment consists of
 
-- [CaseFabric IDE](../ide/overview), a place to model cases
-- [CaseFabric Engine](../engine/overview), the heart of the system that executes case models (see the [REST API](../api/overview)).
+- [Case Designer](../designer/overview), a place to model cases
+- [Case Engine](../engine/overview), the heart of the system that executes case models (see the [REST API](../api/overview)).
 - [Generic UI](genericUI), providing a simple user interface that helps demostrating and debugging the flow of the case application.

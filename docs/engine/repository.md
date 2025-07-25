@@ -43,7 +43,7 @@ Returns the contents of a single CMMN definitions document in the repository.
 - **`POST /repository/deploy`**<br/>
 This will ask the repository to store the posted CMMN contents.
 - **`POST /repository/validate`**<br/>
-To validate a CMMN definition. This is used from e.g. the CaseFabric IDE.<br/>
+To validate a CMMN definition. This is used from e.g. the Case Designer.<br/>
 Note that this API bypasses the configured repository since it works solely on the posted content.
 
 ## Repository Configuration

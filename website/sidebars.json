@@ -19,15 +19,15 @@
          "cmmn/case-team",
          "cmmn/modelOther"
       ],
-      "CaseFabric IDE": [
-         "ide/overview",
-         "ide/design-case",
-         "ide/parameter-mapping",
-         "ide/expressions",
-         "ide/deploy-case",
-         "ide/debug-case"
+      "Case Designer": [
+         "designer/overview",
+         "designer/design-case",
+         "designer/parameter-mapping",
+         "designer/expressions",
+         "designer/deploy-case",
+         "designer/debug-case"
       ],
-      "CaseFabric Engine": [
+      "Case Engine": [
          "engine/overview",
          "engine/authentication",
          "engine/authorization",

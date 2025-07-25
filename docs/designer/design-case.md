@@ -8,7 +8,7 @@ This section gives a brief overview of how the IDE supports modeling CMMN Case m
 
 > This page assumes you have a [**basic understanding of CMMN**](../cmmn/overview)
 
-![Image](assets/ide/casemodel.png)
+![Image](assets/designer/casemodel.png)
 
 ## ShapeBox
 To the left of the canvas is the ShapeBox. This contains all types of CMMN elements that you can put to the drawing.

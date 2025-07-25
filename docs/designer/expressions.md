@@ -11,14 +11,14 @@ CMMN supports expressions in many different places of the case model.
 It however is not very explicit about the actual implementation, other than specifying the expression language and the expression body.
 The body must be a `String`. Some expressions must result in a `Boolean` value.
 
-![Image](assets/ide/cmmn-expression.png)
+![Image](assets/designer/cmmn-expression.png)
 
 ### Default language
 
 Each expression inside a case model needs a different language. But, as we can read in the above snippet of the CMMN 1.1 version, the language can take a default from the overall definition.
-Inside the CaseFabric IDE this can be set at the case level properties.
+Inside the Case Designer this can be set at the case level properties.
 
-![Image](assets/ide/default-language.png)
+![Image](assets/designer/default-language.png)
 
 ## CaseFabric Expressions - Pick the language of choice
 
@@ -41,7 +41,7 @@ Expressions can be used in the following places of a case model
 - Timer expressions
 - Workflow assignment and due dates
 
-![Image](assets/ide/various-expressions.png)
+![Image](assets/designer/various-expressions.png)
 
 ## Expression Context
 In quite a few occasions, the context of the expression is required as an input parameter to the expression.

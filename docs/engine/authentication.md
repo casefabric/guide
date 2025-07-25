@@ -12,7 +12,7 @@ Users can authenticate to CaseFabric with [JSON Web Tokens](https://jwt.io/) (JW
 The provider must be configured in the `local.conf` file of the CaseFabric Engine.
 
 ### Example in [`getting-started`](https://github.com/casefabric/getting-started)
-The CaseFabric demo environment in [`getting-started`](https://github.com/cafienne/getting-started) comes with a default Docker image of the open source [Dex Identity Provider](https://github.com/dexidp/dex).
+The CaseFabric demo environment in [`getting-started`](https://github.com/casefabric/getting-started) comes with a default Docker image of the open source [Dex Identity Provider](https://github.com/dexidp/dex).
 This image is preloaded with a few demo users, and this list can be extended manually in the `/src/idp-conf/dex.yaml` file.
 
 ## Platform Users and Tenant Users

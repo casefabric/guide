@@ -7,7 +7,7 @@ sidebar_label: Logging
 ## Introduction
 CaseFabric has multiple logging configuration options. On the one hand they are developer oriented, on the other hand they are operational.
 For the operational logging CaseFabric uses standard [Logback](http://logback.qos.ch/) libraries.
-Developers can also use this logging, but since it can be somewhat overwhelming, the case engine also has support for case instance specific [**debugging**](../ide/debug-case).
+Developers can also use this logging, but since it can be somewhat overwhelming, the case engine also has support for case instance specific [**debugging**](../designer/debug-case).
 
 ## Configuration of Logback
 Inside the docker setup of the CaseFabric engine, there is a folder `./src/conf`.

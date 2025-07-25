@@ -17,7 +17,7 @@ It is important to realize that the dependency is noted on the task and not on t
 
 **In CMMN**, a Stage provides a means to group plan items within the context of a case. A stage serves as building block for Case. A Stage contains plan items and sentries. Stages bundle other plan items. When creating our case models, sometimes we have plan items that are closely related and need to be grouped together. These items could be multiple tasks that must be completed before the case can proceed.
 
-**In the CaseFabric IDE**, you can drag the Stage icon to the canvas and model its properties using the Properties Palette.
+**In the Case Designer**, you can drag the Stage icon to the canvas and model its properties using the Properties Palette.
 
 ## Task
 
@@ -25,10 +25,10 @@ It is important to realize that the dependency is noted on the task and not on t
 
 All tasks use parameters to pass information. These parameters refer to Case File Items. A Human Task needs a performer and therefore the Role concept us used. Also, a Human Task can have a Planning Table and therefore Appicability Rules to a Task.
 
-**In the CaseFabric IDE**, you can model a human task, a process task and a case task. Drag the icon for the task to the canvas and model its properties using the Properties Palette.
+**In the Case Designer**, you can model a human task, a process task and a case task. Drag the icon for the task to the canvas and model its properties using the Properties Palette.
 
 ### Implementation of Human Task and Process Task
-**In the CaseFabric IDE** for both the Human Task and the Process Task, you can add an implementation. Note that **in CMMN** an implementation of a Process Task –a reference to a Process– is specified, whereas an implementation for a Human Task is not.
+**In the Case Designer** for both the Human Task and the Process Task, you can add an implementation. Note that **in CMMN** an implementation of a Process Task –a reference to a Process– is specified, whereas an implementation for a Human Task is not.
 
 You can create an implementation in the IDE, clicking on labels `Processes` or `Human Task Model` and create it by entering a Name and Description, and next using the button Create+Open.
 
@@ -47,7 +47,7 @@ For using the Human Task Model, see [How to use task UI rendering](../getting-st
 
 For this reason, CMMN introduces EventListeners, which specialise into TimerEventListeners and UserEventListeners. This enables CMMN to handle any event in a uniform way, namely as “standard events” that denote transitions in lifecycles. These standard events are handled via Sentries.
 
-**In the CaseFabric IDE**, you can drag the icons of both EventListeners to the canvas and fill in their properties and attach Sentries from it to other Plan Items. Note that a UserEventListener can only be triggered by a Authorized Role. A TimerEventListener can be triggered by a lifecycle transition on a Plan Item or a Case File Item. 
+**In the Case Designer**, you can drag the icons of both EventListeners to the canvas and fill in their properties and attach Sentries from it to other Plan Items. Note that a UserEventListener can only be triggered by a Authorized Role. A TimerEventListener can be triggered by a lifecycle transition on a Plan Item or a Case File Item. 
 
 ## Milestones
 
@@ -55,7 +55,7 @@ A Milestone represents an achievable target. They can be used to show that a cer
 
 Milestones are beneficial plan items in a case, because they allow us to assess a case’s progress. They are not associated with work like a task is, but rather indicate certain conditions have been reached within a case.
 
-**In the CaseFabric IDE** you can drag the Milestone Icon to the canvas and model its properties using the Properties Palette.
+**In the Case Designer** you can drag the Milestone Icon to the canvas and model its properties using the Properties Palette.
 
 ## Plan Item properties
 
@@ -63,19 +63,19 @@ Milestones are beneficial plan items in a case, because they allow us to assess 
 
 **In CMMN**, you can model a Repetition Rule that specifies under which conditions a Plan Item will have repetition. Each repetition is an new instance for it. The first instance is nat considered a repetition.
 
-**In the CaseFabric IDE**, you can select the property Repeat, and next add the Rule as an expression and add a Case File Item as the context of the Rule. If the Rule is not added, than the Plan Item can be executed infinite, unless the containing Case or Stage is completed or terminated. Default is not repeatable.
+**In the Case Designer**, you can select the property Repeat, and next add the Rule as an expression and add a Case File Item as the context of the Rule. If the Rule is not added, than the Plan Item can be executed infinite, unless the containing Case or Stage is completed or terminated. Default is not repeatable.
 
 ### Required
 
 **In CMMN**, you can model a Required Rule. This Rule specifies under which conditions Plan Items will be required to complete or terminate before their containing Stage or Case can complete.
 
-**In the CaseFabric IDE**, you can select the property Required, and next optionally add the Rule as an expression and add a Case File Item as the context of the Rule. If the Rule is not added, than the Plan Item is 100% required. Default is not required.
+**In the Case Designer**, you can select the property Required, and next optionally add the Rule as an expression and add a Case File Item as the context of the Rule. If the Rule is not added, than the Plan Item is 100% required. Default is not required.
 
 ### Manual Activation
 
 **In CMMN**, you can model an Manual Activation Rule. This Rule specifies under wich conditions a Plan Item, once enabled, start manually or automatically.
 
-**In the CaseFabric IDE**, you can select the property Manual Activation, and next optionally add the Rule as an expression and add a Case File Item as the context of the Rule. Default is manual activated.
+**In the Case Designer**, you can select the property Manual Activation, and next optionally add the Rule as an expression and add a Case File Item as the context of the Rule. Default is manual activated.
 
 ### Auto Complete
 
@@ -83,7 +83,7 @@ Milestones are beneficial plan items in a case, because they allow us to assess 
 
 If AutoComplete set to true, a Plan Item will complete if there are no active children and all required children are in lifecycle state disabled, completed, terminated or failed. If set to false, it will complete if there are no active children, no Discretionary Items planned, all required tasks are evaluated to true.
 
-**In the CaseFabric IDE**, you can in the Properties Palette just click AutoComple on or off.
+**In the Case Designer**, you can in the Properties Palette just click AutoComple on or off.
 
 ### Plan Item properties
 

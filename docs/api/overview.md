@@ -7,7 +7,7 @@ sidebar_label: Introducing the API
 This section gives a brief overview of the CaseFabric Engine APIs.
 
 The API can be used to embed the CaseFabric Engine into the setup of your solution.
-The user interfaces that come with CaseFabric, like the Generic UI and the CaseFabric IDE also use these APIs.
+The user interfaces that come with CaseFabric, like the Generic UI and the CaseFabric Designer also use these APIs.
 
 ## Categorization 
 The APIs broadly consist of the following categories. The majority of the APIs in use is for handling cases and tasks.
