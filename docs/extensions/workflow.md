@@ -135,7 +135,7 @@ Combining both options on tasks can be used to implement more complex scenarios 
 - When 3 tasks each have Four Eyes with the other 2, then all three tasks must be performed by a different user.
 
 Needless to say that the complexity of these scenarios may lead to configuration mistakes.
-The CaseFabric IDE allows making such "mistakes" during modeling. The CaseFabric Engine is more precise.
+The Case Designer allows making such "mistakes" during modeling. The CaseFabric Engine is more precise.
 When validating the model, the engine will recognize invalid configurations.
 
 ![Image](assets/extensions/combined-four-eyes-rendez-vous.png)
@@ -151,7 +151,7 @@ You can drag/drop them onto any case model in order to create a Human Task with 
 
 ## Form definitions for CaseFabric generic User Interface
 
-The [**CaseFabric UI**](../getting-started/genericUI) can be used to render any case modeled with CaseFabric IDE.
+The [**CaseFabric UI**](../getting-started/genericUI) can be used to render any case modeled with Case Designer.
 
 The CaseFabric UI renders Human Tasks with the help of 2 open source frameworks that can interpret JSON Schema.
 
@@ -165,7 +165,7 @@ The format of the task model needs 2 properties
 - `schema` describing the data that must be rendered
 - `uiSchema` optional rendering suggestions
 
-CaseFabric IDE supports basic JSON validation and a simple preview of the form.
+Case Designer supports basic JSON validation and a simple preview of the form.
 
 ![Image](assets/extensions/task-form-rendering.png)
 

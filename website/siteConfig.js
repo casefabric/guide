@@ -41,8 +41,8 @@ const siteConfig = {
     { doc: 'index', label: 'Overview' },
     { doc: 'getting-started/overview', label: 'Getting Started' },
     { doc: 'cmmn/overview', label: 'CMMN' },
-    { doc: 'ide/overview', label: 'CaseFabric IDE' },
-    { doc: 'engine/overview', label: 'CaseFabric Engine' },
+    { doc: 'designer/overview', label: 'Case Designer' },
+    { doc: 'engine/overview', label: 'Case Engine' },
     { doc: 'extensions/overview', label: 'Extensions' },
     { doc: 'api/overview', label: 'API Reference' },
     { doc: 'release/overview', label: 'Releases' }

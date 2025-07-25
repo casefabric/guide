@@ -53,6 +53,30 @@
         "title": "A few notes on CMMN",
         "sidebar_label": "What is CMMN"
       },
+      "designer/debug-case": {
+        "title": "Introducing the CaseFabric Debugger",
+        "sidebar_label": "Debugging"
+      },
+      "designer/deploy-case": {
+        "title": "Deploying a case model",
+        "sidebar_label": "Deploying"
+      },
+      "designer/design-case": {
+        "title": "Modelling Cases",
+        "sidebar_label": "Designing"
+      },
+      "designer/expressions": {
+        "title": "Expressions",
+        "sidebar_label": "Expressions"
+      },
+      "designer/overview": {
+        "title": "Introducing the CaseFabric Designer",
+        "sidebar_label": "An IDE?"
+      },
+      "designer/parameter-mapping": {
+        "title": "Tasks and Parameters - Mapping",
+        "sidebar_label": "Tasks and Parameters"
+      },
       "engine/authentication": {
         "title": "CaseFabric Authentication Overview",
         "sidebar_label": "Authentication"
@@ -115,30 +139,6 @@
       "getting-started/overview": {
         "title": "Getting Started",
         "sidebar_label": "Introducing CaseFabric Demo"
-      },
-      "ide/debug-case": {
-        "title": "Introducing the CaseFabric Debugger",
-        "sidebar_label": "Debugging"
-      },
-      "ide/deploy-case": {
-        "title": "Deploying a case model",
-        "sidebar_label": "Deploying"
-      },
-      "ide/design-case": {
-        "title": "Modelling Cases",
-        "sidebar_label": "Designing"
-      },
-      "ide/expressions": {
-        "title": "Expressions",
-        "sidebar_label": "Expressions"
-      },
-      "ide/overview": {
-        "title": "Introducing the CaseFabric IDE",
-        "sidebar_label": "An IDE?"
-      },
-      "ide/parameter-mapping": {
-        "title": "Tasks and Parameters - Mapping",
-        "sidebar_label": "Tasks and Parameters"
       },
       "index": {
         "title": "CaseFabric Reference Guide",
@@ -308,8 +308,8 @@
       "Overview": "Overview",
       "Getting Started": "Getting Started",
       "CMMN": "CMMN",
-      "CaseFabric IDE": "CaseFabric IDE",
-      "CaseFabric Engine": "CaseFabric Engine",
+      "Case Designer": "Case Designer",
+      "Case Engine": "Case Engine",
       "Extensions": "Extensions",
       "API Reference": "API Reference",
       "Releases": "Releases"
@@ -318,8 +318,8 @@
       "Overview": "Overview",
       "Getting Started": "Getting Started",
       "Some CMMN": "Some CMMN",
-      "CaseFabric IDE": "CaseFabric IDE",
-      "CaseFabric Engine": "CaseFabric Engine",
+      "Case Designer": "Case Designer",
+      "Case Engine": "Case Engine",
       "Extensions": "Extensions",
       "API Reference": "API Reference",
       "Releases": "Releases"

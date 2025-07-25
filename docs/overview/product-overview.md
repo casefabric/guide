@@ -6,13 +6,13 @@ sidebar_label: Product Overview
 
 ![Image](assets/overview/product-overview.png)
 
-## CaseFabric Engine
-The heart of the product suite is formed by the [**CaseFabric Engine**](/docs/engine/overview).
+## Case Engine
+The heart of the product suite is formed by the [**Case Engine**](/docs/engine/overview).
 <br />
 The engine interprets Case Models and runs on the powerful Pekko runtime.
 
-## CaseFabric IDE
-Case Models can be created through the [**CaseFabric IDE**](/docs/ide/overview).
+## Case Designer
+Case Models can be created through the [**Case Designer**](/docs/designer/overview).
 <br />
 This is a simple, browser based environment that natively integrates with existing development tools.
 

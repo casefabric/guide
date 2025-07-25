@@ -14,7 +14,7 @@ At a glance, you can find the following topics.
 <h3>
     <ul style="list-style-type:none">
         <li>[Quick start](getting-started/overview)</li>
-        <li>[How to use the IDE](ide/overview)</li>
+        <li>[How to use the Designer](designer/overview)</li>
         <li>[How we built Engine](engine/overview)</li>
         <li>[Show me the API](api/overview)</li>
     </ul>

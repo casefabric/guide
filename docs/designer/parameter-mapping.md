@@ -9,7 +9,7 @@ It explains how to pass data into Tasks and how to take data out of Tasks after 
 
 The Task Mappings editor can be opened by clicking one of the curly arrows under the Task.
 
-![Image](assets/ide/mapping.png)
+![Image](assets/designer/mapping.png)
 
 ## Tasks and the Case File
 
@@ -19,7 +19,7 @@ Tasks can take their input from the Case File. The CMMN specification is a bit c
 In the picture we see the `Greeting` input parameter taken from the Case File and mapped directly into the task parameter `Greeting`.
 This is the most straightforward and probably also the most applied pattern.
 
-![Image](assets/ide/map-greeting.png)
+![Image](assets/designer/map-greeting.png)
 
 The details of the CMMN specification distinguish between 3 important elements.
 
@@ -35,7 +35,7 @@ The editor is hiding some of the complexity of the CMMN specification.
 In the above scenario, we just want the Greeting to be passed to the Human Task. The Case File of HelloWorld contains an item named Greeting.
 And the SendResponse human task works only on input parameters named Greeting.
 
-![Image](assets/ide/map-greeting-detail.png)
+![Image](assets/designer/map-greeting-detail.png)
 
 > Note: in order to have a `Model Input Parameter` show up in the mapping editor, it first must be defined in the underlying task implementation.
 >
@@ -70,7 +70,7 @@ CaseFabric supports multiple expression languages. You can read more about it in
 The CMMN specification enables you to choose a different language at the level of each individual expression.
 In the parameter mapping editor you can choose to deviate from the default expression language of the case by pressing the small `L` button at the left of the transformation. If the choosen language differs from the default language, the `L` button gets a small blue underlining.
 
-![Image](assets/ide/transformation-language.png)
+![Image](assets/designer/transformation-language.png)
 
 
 ## Binding Refinement (Operations)
@@ -84,8 +84,8 @@ Also for binding Task Output Parameters back to the Case File Item a number of o
 Details are described in the below screenshots.
 
 ### Binding Refinement on Task Input Parameters 
-![Image](assets/ide/operations-input.png)
+![Image](assets/designer/operations-input.png)
 
 ### Binding Refinement on Task Output Parameters 
-![Image](assets/ide/operations-output.png)
+![Image](assets/designer/operations-output.png)
 
