@@ -30,7 +30,7 @@ There are  two methods to stop and/or remove the environment.
 After starting up the CaseFabric Demo environment, the following URL allow you to access the various parts of the environment:
 
 * Case Designer: http://localhost:2081
-* Task user interface: http://localhost:8081
+* Task user interface: http://localhost:3317
 * Case Engine API (exposed through Swagger): http://localhost:2027
 * Mailcatcher web UI: http://localhost:1080
 
@@ -39,7 +39,7 @@ You can login to these parts by using `admin` for the username and `admin` for t
 
 | name | password |
 | ---- | -------- |
-| lara | lara |
+| lana | lana |
 | suzy | suzy |
 | hank | hank |
 
