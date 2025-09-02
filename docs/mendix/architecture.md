@@ -74,9 +74,4 @@ For all actions that changing the state of the case instance, the DCM module mak
 Task Queue. When you execute the java action, it will do some premilary work but the actual change is handled by the UserAction
 triggered via the Task Queue. Issues in the execution are therefore not directly visible in the user action. 
 Entities are serialised at the action side (before it is handled in the queue), issues will be responded to the user. 
-This setup ensures that all Mendix microflow handling is completed as expected before the DCM module makes use of the data. 
-
-
-
-
-
+This setup ensures that all Mendix microflow handling is completed as expected before the DCM module makes use of the data.

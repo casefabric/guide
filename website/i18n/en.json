@@ -344,10 +344,7 @@
       "Case Engine": "Case Engine",
       "Extensions": "Extensions",
       "API Reference": "API Reference",
-<<<<<<< HEAD
-=======
       "DCM for Mendix": "DCM for Mendix",
->>>>>>> e836475 (Updates due to use of the Task Queue internally)
       "Releases": "Releases"
     },
     "categories": {
@@ -358,10 +355,7 @@
       "Case Engine": "Case Engine",
       "Extensions": "Extensions",
       "API Reference": "API Reference",
-<<<<<<< HEAD
-=======
       "DCM for Mendix": "DCM for Mendix",
->>>>>>> e836475 (Updates due to use of the Task Queue internally)
       "Releases": "Releases"
     }
   },
