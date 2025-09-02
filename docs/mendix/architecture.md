@@ -70,14 +70,12 @@ But when you update a persistent entity inside the case file, **it is automatica
 
 #### Entity and casefile transaction boundaries
 
-**Be Aware**
+For all actions that changing the state of the case instance, the DCM module makes use of CaseManagement_Execution_Queue
+Task Queue. When you execute the java action, it will do some premilary work but the actual change is handled by the UserAction
+triggered via the Task Queue. Issues in the execution are therefore not directly visible in the user action. 
+Entities are serialised at the action side (before it is handled in the queue), issues will be responded to the user. 
+This setup ensures that all Mendix microflow handling is completed as expected before the DCM module makes use of the data. 
 
-When you pass on an Entity to the case engine in ways mentioned above, the Entity needs to be fully available in the database.
-This means that when you create or update entities in microflows, the need to be commited **and** need an **communityCommons.EndTransaction**.
-Without the EndTransaction, using the case engine will lead to errors. 
-
-This issue is due to the fact the case engine runs as a Mendix Add-On and cannot use the same database transactions as the 
-Mendix system uses as it runs with its own database connection.
 
 
 

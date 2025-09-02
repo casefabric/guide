@@ -4,9 +4,9 @@ title: DCM module releases
 sidebar_label: Releases
 ---
 
-## Release 1.0.0
+## Release 0.9.19
 
-First released version of the Mendix DCM module adding Dynamic Case Management to the Mendix Platform. 
+First beta released version of the Mendix DCM module adding Dynamic Case Management to the Mendix Platform. 
 
 This release gives:
  * A CMMN Case Modeler as part of Studio Pro
@@ -18,4 +18,4 @@ This release gives:
 
 ## Earlier releases
 
-All releases before were only for internal use and do not have a stable API. Please migrate to 1.0.0 or up. 
+This is the first Beta release. 
