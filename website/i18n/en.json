@@ -152,9 +152,17 @@
         "title": "Design Case Models in Mendix Studio Pro",
         "sidebar_label": "Add models to your App"
       },
+      "mendix/limitations": {
+        "title": "DCM limitations",
+        "sidebar_label": "Limitations"
+      },
       "mendix/overview": {
         "title": "Mendix Dynamic Case Management",
         "sidebar_label": "Overview"
+      },
+      "mendix/releases": {
+        "title": "DCM module releases",
+        "sidebar_label": "Releases"
       },
       "mendix/usecases": {
         "title": "Interact with Cases",
@@ -336,7 +344,7 @@
       "Case Engine": "Case Engine",
       "Extensions": "Extensions",
       "API Reference": "API Reference",
-      "Mendix Add-On": "Mendix Add-On",
+      "DCM for Mendix": "DCM for Mendix",
       "Releases": "Releases"
     },
     "categories": {
@@ -347,7 +355,7 @@
       "Case Engine": "Case Engine",
       "Extensions": "Extensions",
       "API Reference": "API Reference",
-      "Mendix Add-On": "Mendix Add-On",
+      "DCM for Mendix": "DCM for Mendix",
       "Releases": "Releases"
     }
   },

@@ -51,11 +51,12 @@
          "api/query-cases-tasks",
          "api/case-file"
       ],
-      "Mendix Add-On": [
+      "DCM for Mendix": [
          "mendix/overview",
          "mendix/architecture",
          "mendix/designmodels",
          "mendix/usecases",
+         "mendix/limitations",
          "mendix/releases"
       ],
       "Releases": [

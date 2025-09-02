@@ -45,7 +45,7 @@ const siteConfig = {
     { doc: 'engine/overview', label: 'Case Engine' },
     { doc: 'extensions/overview', label: 'Extensions' },
     { doc: 'api/overview', label: 'API Reference' },
-    { doc: 'mendix/overview', label: 'Mendix Add-On'},
+    { doc: 'mendix/overview', label: 'DCM for Mendix'},
     { doc: 'release/overview', label: 'Releases' }
   ],
 
