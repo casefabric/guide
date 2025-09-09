@@ -49,15 +49,7 @@ More detailed [information on the case engine runtime](../engine/overview)
 
 ### Case file structure and Entity structure compatibility
 
-Entities are used as input and output for interaction with the case. More details on how to use that are found in [Add models to your app](designmodels)
-
-### Note on Inheritance
-
-As you see in the sample model at the [Add models to your app](designmodels) page, it is possible to define
-inheritance and its available in the case file. 
-When you refer to the base Entity (Vehicle in this example), you can only use Vehicle properties in your case file model.
-
-**Currently the specific elements (Car, Cycle) are serialized into the case file, they are not recognized as types**
+Entities are used as input and output for interaction with the case. More details on how to use that are found in [Design Case Models](designmodels)
 
 ### Entity and Case File integration
 
@@ -65,13 +57,16 @@ Entities are passed on into the case file structure when you start a case or whe
 Next to that you are able to update the 'Context' of the case instance or task instance by explicitly updating. 
 
 **At this moment, updates on Entities outside the case file are not automatically merged into the case file.**
+You can use the "Update Case Context" java action order to get an Entity Change into the casefile. 
+By mapping the outcome to the casefile in Process or Human tasks, the case file **and entities** will be updated. 
 
-But when you update a persistent entity inside the case file, **it is automatically updated in the entity.**
+Example: You have a casefile with a Person owning vehicles, now you add a new Car as a new Entity via a Microflow.
+This will not change the case file of a certain case instance. When you add the car via "Update Case Context" though, it will
+be available in the model and add the entity in Mendix as a Vehicle. 
 
 #### Entity and casefile transaction boundaries
 
 For all actions that changing the state of the case instance, the DCM module makes use of CaseManagement_Execution_Queue
 Task Queue. When you execute the java action, it will do some premilary work but the actual change is handled by the UserAction
 triggered via the Task Queue. Issues in the execution are therefore not directly visible in the user action. 
-Entities are serialised at the action side (before it is handled in the queue), issues will be responded to the user. 
-This setup ensures that all Mendix microflow handling is completed as expected before the DCM module makes use of the data.
+This setup ensures that all Mendix microflow handling is completed (transactionally) as expected before the DCM module makes use of the data.

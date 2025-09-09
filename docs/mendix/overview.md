@@ -12,12 +12,12 @@ inside Mendix for designing and running Dynamic Case Management applications.
 
 ## What is available
 
-After installation of the DCM Marketplace Add-0n, you will have the option to design case models 
+After installation of the DCM Marketplace Add-on, you will have the option to design case models 
 right from Studio Pro - See [Design Case Models](designmodels) for more information.
 
 These models are thereafter available in the Mendix Runtime and a number of java actions allow you
 to start an instance of the designed model and interact with it down the line by using the provided 
-Case Management actions. [[Using Cases]](usecases.md) explains more on how to interact with the case
+Case Management actions. [Interact with cases](usecases.md) explains more on how to interact with the case
 model within your application.
 
 ## Inside the Mendix Runtime
@@ -28,7 +28,7 @@ case management application. The Mendix app created can be deployed on any exist
 Mendix runtime environment.
 
 More information on the structure of the DCM module for mendix is found at the 
-[Architecture](architecture) page.
+[DCM Add-On Architecture](architecture) page.
 
 ## Availability
 

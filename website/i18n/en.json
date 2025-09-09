@@ -150,11 +150,11 @@
       },
       "mendix/designmodels": {
         "title": "Design Case Models in Mendix Studio Pro",
-        "sidebar_label": "Add models to your App"
+        "sidebar_label": "Design Case Models"
       },
-      "mendix/limitations": {
-        "title": "DCM limitations",
-        "sidebar_label": "Limitations"
+      "mendix/faq": {
+        "title": "DCM Frequently Asked Questions",
+        "sidebar_label": "FAQ"
       },
       "mendix/overview": {
         "title": "Mendix Dynamic Case Management",
@@ -166,7 +166,7 @@
       },
       "mendix/usecases": {
         "title": "Interact with Cases",
-        "sidebar_label": "Using in your App"
+        "sidebar_label": "Interact with Cases"
       },
       "overview/product-overview": {
         "title": "CaseFabric Product Overview",

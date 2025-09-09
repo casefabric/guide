@@ -56,7 +56,7 @@
          "mendix/architecture",
          "mendix/designmodels",
          "mendix/usecases",
-         "mendix/limitations",
+         "mendix/faq",
          "mendix/releases"
       ],
       "Releases": [

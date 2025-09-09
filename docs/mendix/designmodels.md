@@ -1,7 +1,7 @@
 ---
 id: designmodels
 title: Design Case Models in Mendix Studio Pro
-sidebar_label: Add models to your App
+sidebar_label: Design Case Models
 ---
 
 ## Introduction
@@ -18,7 +18,7 @@ option or start the modeler with a specific Entity as root case file type.
 
 ![Start Modeler CaseFile](assets/mendix/start_modeler_casefile.png)
 
-With the modeler started you can start building a model. [The IDE section](../ide/design-case) gives
+With the modeler started you can start building a model. [The designer section](../designer/design-case) gives
 more information how to use the modeler and build a model.
 
 ### Entities as Case File elements
@@ -42,6 +42,15 @@ the Mendix entities availble in the various domain models. Multiplicity is selec
 and business identifiers are not (yet) available for the DCM plugin.
 
 ![Person case file model](assets/mendix/person_casefile_model.png)
+
+#### Note on Inheritance
+
+It is possible to define inheritance and its available in the case file. 
+When you refer to the base Entity (Vehicle in this example), you can only use Vehicle properties in your case file model.
+See the Person case file model above: It is possible to select the vehicle color but it is not possible to make use of 
+the Cars brand or the Cycles Gears.  
+
+**Currently the specific elements (Car, Cycle) are serialized into the case file, they are not recognized as types**
 
 ### Using Pages as Human Tasks
 
@@ -68,16 +77,26 @@ task representation (hover over the task)
 
 ![Click Magnifier](assets/mendix/modeler_implementation.png)
 
-## Deploy the model
+## WaitFor java action
 
-[Deploying a case](../ide/deploy-case) works as described but there are some limitations. 
-The validation of the case model does not work via Studio Pro as it needs a running case engine at this moment. 
+**Only continue when the results of a java action are available**
 
-Deployment writes the files to ```$PROJECT_ROOT/resources/casemanagement``` to make it part of the App. 
-Next to that it is directly written to ```$PROJECT_ROOT/deployment/model/resources/casemanagement``` allowing your running
-App in Studio Pro to directly use the updated model in a running environment. (Hot Deployment)
+The engine is fully asynchronous and the effects of state changes are handled in the background. 
+In order to ease working with the case engine in your app, all java actions that result in state changes return a WaitForTaskToken entity.
+This entity contains the CaseInstanceId and a correlationId that is used to keep track of all changes inside the case engine.
 
-**You need to use the Deploy option in the Case Modeler - otherwise the case is not available for use**
+WaitFor accepts the WaitForTaskToken (and WaitForTaskTokenDiscretionaryItem) and will block to the moment all data is available. 
+You need to use WaitFor in another transaction than the actual java action that result in state changes, otherwise your microflow will stop execution
+and fail with a timeout. 
 
+**What to do when you need the results?**
 
+For user interactions, create a nanoflow that calls the java action you want todo and thereafter call the WaitFor, see the sample below.
+
+![WaitFor Nanoflow](assets/mendix/waitfor_nanoflow.png)
+
+The WaitForMicroflow is a wrapper around the single WaitFor java action. 
+
+Note that waiting for direct feedback is only required when you need the outcome of the action in that same session. Starting a java action that ends up
+with new tasks for other team members dont need that feedback and you can skip waiting for the result, just fire and forget. 
 

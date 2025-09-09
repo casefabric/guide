@@ -4,7 +4,7 @@ title: DCM module releases
 sidebar_label: Releases
 ---
 
-## Release 0.9.19
+## Release 0.9.20
 
 First beta released version of the Mendix DCM module adding Dynamic Case Management to the Mendix Platform. 
 

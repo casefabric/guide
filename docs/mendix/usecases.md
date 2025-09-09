@@ -1,7 +1,7 @@
 ---
 id: usecases
 title: Interact with Cases
-sidebar_label: Using in your App
+sidebar_label: Interact with Cases
 ---
 
 ## Introduction
@@ -13,11 +13,12 @@ First of all, you need to add the DCM Startup Flow to the 'After Startup' App se
 The java action to be added to your startup flow can be found in the toolbox underneath the Case management
 section and is called 'Case management startup'.
 
-After [deploying the model](designmodels#deploy-the-model) you are able to use the 'Start case' action in order to start execution
+After [deploying the model](usecases#deploy-the-model) you are able to use the 'Start case' action in order to start execution
 of the case model deployed. 
 
-When the case has started, there will be a caseInstanceId that allows you to interact with that specific case. 
+When the case has started, there will be a WaitForTaskToken including a CaseInstanceId that allows you to interact with that specific case. 
 Next to that, it is possible to fetch and trigger possible available human tasks, milestones, discretionary items and user events.
+When you need direct (synchronous) interaction with the case, you can use the [WaitFor java action](designmodels#waitfor-java-action) to ensure all results are available. 
 
 Normally a case instance completes because all required planitems within the case are completed but you have the
 possibility to terminate (stop) a task or a case. 
@@ -27,6 +28,20 @@ all events that lead to its current state. You can see it as a repeatable audit 
 Next to the events that lead to the current state, Debug events are added that tell you what happened during case
 instance evaluation (You need to set debug to true when you start a case for this). This is quite helpful 
 when you need to debug your case model. 
+
+## Deploy the model
+
+[Deploying a case](../designer/deploy-case) works as described but there are some limitations. 
+![Deploy Screen](assets/mendix/deploy_screen.png)
+Press 1 to open the deploy screen and press 2 to deploy the case. 
+
+The Server Validation button does not work via Studio Pro as it needs a running case engine at this moment. 
+
+Deployment writes the files to ```$PROJECT_ROOT/resources/casemanagement``` to make it part of the App. 
+Next to that it is directly written to ```$PROJECT_ROOT/deployment/model/resources/casemanagement``` allowing your running
+App in Studio Pro to directly use the updated model in a running environment. (Hot Deployment)
+
+**You need to use the Deploy option in the Case Modeler - otherwise the case is not available for use**
 
 ## Starting Cases
 
@@ -45,7 +60,7 @@ Input Parameters
 Input parameters need to be defined at case level
 
 ![Case Parameter Mapping](assets/mendix/case_parameter_mapping.png)
-More details on [Parameter Mapping](../ide/parameter-mapping)
+More details on [Parameter Mapping](../designer/parameter-mapping)
 
 Input parameters end up as case file items in the case. This is a json structured tree of data specific
 for the case instance. This input is given via an Entity and its connected associations as designed via
