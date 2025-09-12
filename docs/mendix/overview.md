@@ -20,6 +20,8 @@ to start an instance of the designed model and interact with it down the line by
 Case Management actions. [Interact with cases](usecases.md) explains more on how to interact with the case
 model within your application.
 
+**IMPORTANT** The current release requires an external database setup for Postgres or Microsoft SQL Server. 
+
 ## Inside the Mendix Runtime
 
 CaseFabric Dynamic Case Management runs **inside** the Mendix App being built. 
