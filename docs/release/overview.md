@@ -8,6 +8,7 @@ sidebar_label: Overview
 
 | Date       |  Release   | Notes                 |
 |------------|------------|-----------------------|
+| [12-09-2025](1.1.36.md) | [`1.1.36`](1.1.36.md) | [Maintenance Release](1.1.36.md) |
 | [23-06-2025](1.1.35.md) | [`1.1.35`](1.1.35.md) | [More multitasking](1.1.35.md) |
 | [19-03-2025](1.1.34.md) | [`1.1.34`](1.1.34.md) | [Robustness all around](1.1.34.md) |
 | [18-12-2024](1.1.33.md) | [`1.1.33`](1.1.33.md) | [Thank you Akka - Hello Pekko!](1.1.33.md) |
