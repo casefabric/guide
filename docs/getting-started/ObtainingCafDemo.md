@@ -4,7 +4,6 @@ title: Obtaining CaseFabric Demo
 sidebar_label: Obtaining CaseFabric Demo
 ---
 
-In order to get access to the demo environment, you need to be registered with CaseFabric. You can fill out the form at [casefabric.com](https://casefabric.com). 
 
 ## Prerequisites
 In order to run CaseFabric Demo, you need to have
