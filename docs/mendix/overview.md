@@ -7,7 +7,7 @@ sidebar_label: Overview
 ## Introduction
 
 [Mendix](https://mendix.com) is a low code platform used by many customers building applications.
-CaseFabric introduces a [DCM Marketplace Add-On](url to marketplace) that allows you to use CaseFabric 
+CaseFabric introduces a [DCM Marketplace Add-On](https://marketplace.mendix.com/link/component/242816) that allows you to use CaseFabric 
 inside Mendix for designing and running Dynamic Case Management applications. 
 
 ## What is available

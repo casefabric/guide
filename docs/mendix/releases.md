@@ -4,7 +4,7 @@ title: DCM module releases
 sidebar_label: Releases
 ---
 
-## Release 1.0.0
+## Release 1.0.1
 
 First beta (closed) released version of the Mendix DCM module adding Dynamic Case Management to the Mendix Platform. 
 
@@ -14,7 +14,7 @@ This release gives:
  * A set of Java Actions to interact with the case engine
    * Start cases, Terminate cases, interact with Human Tasks, Microflows as ProcessTasks. Access to the Case file and more.
 
-[Link to the marketplace here](link)
+You can request access at the [DCM Marketplace Add-On](https://marketplace.mendix.com/link/component/242816) page. 
 
 ## Earlier releases
 
