@@ -51,6 +51,14 @@
          "api/query-cases-tasks",
          "api/case-file"
       ],
+      "DCM for Mendix": [
+         "mendix/overview",
+         "mendix/architecture",
+         "mendix/designmodels",
+         "mendix/usecases",
+         "mendix/faq",
+         "mendix/releases"
+      ],
       "Releases": [
          "release/overview",
          "release/1.1.37",

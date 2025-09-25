@@ -1,0 +1,72 @@
+---
+id: architecture
+title: Mendix Dynamic Case Management Architecture
+sidebar_label: DCM Add-On Architecture
+---
+
+## Introduction
+
+The Mendix Dynamic Case Management Add-On is a marketplace module embedded into the Mendix App.
+Basically a set of java actions with supporting jar files are added to the App and by running 
+the startup action in a startup microflow, the case engine becomes operational. 
+
+![Architecture](assets/mendix/DCM_Architecture.jpg)
+
+The case engine as such is based on persistent actors using event sourcing. All supporting data is stored 
+in the configured mendix database prefixed by ```casemanagement$```.
+
+This guide contains an HTTP API reference - **That is not available for the DCM module** as the module is 
+embedded right into the Mendix App and made available via Java Actions.
+
+**Note on security** 
+
+When your app does not use any of the java actions, there is *no* functionality exposed to the outside world. 
+The point as such is unrealistic as adding DCM has the intent of using it. The point is that depending on 
+they way your application is built, DCM will be more or less securely available. 
+
+## Project File Structure (and Runtime)
+
+After adding DCM to your App project, the folder structure is extended with:
+
+ - $PROJECT_ROOT
+    - casesource = the models used by the studio pro plugin
+    - resources/casemanagement = deployed case models* to be bundled for runtime deployment
+    - deployment/model/resources/casemanagement = the runtime deployed case models*
+    - extensions/CaseManagementExtension = the Studio Pro plugin
+    - vendorlib = additional jar files required to run the case engine
+
+* deployed case models bundle all details required to run into one xml (cmmn) file.
+    Deployment of the case model does 2 things. First add it to resources/casemanagement, secondly it is\
+    added to deployment/model/resources/casemanagement. The first is actually the app bundle and when you hit 
+    run in studio pro, this will be copied to the deployment/model/resources/casemanagement folder. 
+    As we already copy it to the deployment location, you can start with the updated case model without restarting
+
+## Runtime 
+
+### Case engine runtime
+
+More detailed [information on the case engine runtime](../engine/overview) 
+
+### Case file structure and Entity structure compatibility
+
+Entities are used as input and output for interaction with the case. More details on how to use that are found in [Design Case Models](designmodels)
+
+### Entity and Case File integration
+
+Entities are passed on into the case file structure when you start a case or when you complete a task. 
+Next to that you are able to update the 'Context' of the case instance or task instance by explicitly updating. 
+
+**At this moment, updates on Entities outside the case file are not automatically merged into the case file.**
+You can use the "Update Case Context" java action order to get an Entity Change into the casefile. 
+By mapping the outcome to the casefile in Process or Human tasks, the case file **and entities** will be updated. 
+
+Example: You have a casefile with a Person owning vehicles, now you add a new Car as a new Entity via a Microflow.
+This will not change the case file of a certain case instance. When you add the car via "Update Case Context" though, it will
+be available in the model and add the entity in Mendix as a Vehicle. 
+
+#### Entity and casefile transaction boundaries
+
+For all actions that changing the state of the case instance, the DCM module makes use of CaseManagement_Execution_Queue
+Task Queue. When you execute the java action, it will do some premilary work but the actual change is handled by the UserAction
+triggered via the Task Queue. Issues in the execution are therefore not directly visible in the user action. 
+This setup ensures that all Mendix microflow handling is completed (transactionally) as expected before the DCM module makes use of the data.
