@@ -3,7 +3,7 @@ id: index
 title: CaseFabric Reference Guide
 sidebar_label: CaseFabric
 ---
-## Welcome to CaseFabric
+## Welcome to CaseFabric!
 This website holds reference information for working with the CaseFabric product stack.
 <br/>
 At a glance, you can find the following topics.
