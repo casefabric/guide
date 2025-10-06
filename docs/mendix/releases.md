@@ -4,6 +4,15 @@ title: DCM module releases
 sidebar_label: Releases
 ---
 
+## Release 1.0.2
+
+Release with fixes on ProcessTasks / Microflow 
+
+ * Bugfix on the parameter generation of Microflow ProcessTasks in Studio Pro
+ * Microflows now run as the user that is assigned to it by the case engine
+ * Studio Pro hidden items are now hidden in the case modeler too
+ * Engine update to 1.1.38 
+
 ## Release 1.0.1
 
 First beta (closed) released version of the Mendix DCM module adding Dynamic Case Management to the Mendix Platform. 
@@ -16,6 +25,3 @@ This release gives:
 
 You can request access at the [DCM Marketplace Add-On](https://marketplace.mendix.com/link/component/242816) page. 
 
-## Earlier releases
-
-  No earlier releases yet.
