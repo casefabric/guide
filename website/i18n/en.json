@@ -338,11 +338,20 @@
       },
       "swagger": {
         "title": "swagger"
+      },
+      "training/overview": {
+        "title": "Training",
+        "sidebar_label": "Training overview"
+      },
+      "training/part1": {
+        "title": "Part1",
+        "sidebar_label": "Training Part1"
       }
     },
     "links": {
       "Overview": "Overview",
       "Getting Started": "Getting Started",
+      "Training": "Training",
       "CMMN": "CMMN",
       "Case Designer": "Case Designer",
       "Case Engine": "Case Engine",
@@ -354,6 +363,7 @@
     "categories": {
       "Overview": "Overview",
       "Getting Started": "Getting Started",
+      "Training": "Training",
       "Some CMMN": "Some CMMN",
       "Case Designer": "Case Designer",
       "Case Engine": "Case Engine",
