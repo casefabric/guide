@@ -12,6 +12,10 @@
          "getting-started/genericUIExamples",
          "getting-started/ObtainingCafDemo"
       ],
+      "Training": [
+         "training/overview",
+         "training/part1"
+      ],
       "Some CMMN": [
          "cmmn/overview",
          "cmmn/case-plan",

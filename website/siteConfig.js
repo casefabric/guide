@@ -23,7 +23,7 @@ const users = [
 const siteConfig = {
   title: 'CaseFabric Reference Guide' /* title for your website */,
   tagline: 'How to use CaseFabric, a CMMN based case engine',
-  url: 'https://cafienne.github.io' /* your website url */,
+  url: 'https://guide.casefabric.com' /* your website url */,
   baseUrl: '/' /* base url for your project */,
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
@@ -40,6 +40,7 @@ const siteConfig = {
   headerLinks: [
     { doc: 'index', label: 'Overview' },
     { doc: 'getting-started/overview', label: 'Getting Started' },
+    { doc: 'training/overview', label: 'Training'} ,
     { doc: 'cmmn/overview', label: 'CMMN' },
     { doc: 'designer/overview', label: 'Case Designer' },
     { doc: 'engine/overview', label: 'Case Engine' },
