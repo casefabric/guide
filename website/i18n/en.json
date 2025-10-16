@@ -343,9 +343,9 @@
         "title": "Training",
         "sidebar_label": "Introduction"
       },
-      "training/part1": {
-        "title": "Part1",
-        "sidebar_label": "Training Part1"
+      "training/part0": {
+        "title": "Chapter 0",
+        "sidebar_label": "Chapter 0"
       }
     },
     "links": {
