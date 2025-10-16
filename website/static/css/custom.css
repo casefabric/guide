@@ -19,11 +19,11 @@
 }
 
 .fixedHeaderContainer * {
-  background-color: black !important;
+  background-color: rgb(11, 79, 151) !important;
 }
 
 .fixedHeaderContainer {
-  background-color: black !important;
+  background-color: rgb(11, 79, 151) !important;
 }
 
 body {
