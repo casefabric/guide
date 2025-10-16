@@ -40,7 +40,7 @@ const siteConfig = {
   headerLinks: [
     { doc: 'index', label: 'Overview' },
     { doc: 'getting-started/overview', label: 'Getting Started' },
-    { doc: 'training/overview', label: 'Training'} ,
+    { doc: 'training/Introduction', label: 'Training'} ,
     { doc: 'cmmn/overview', label: 'CMMN' },
     { doc: 'designer/overview', label: 'Case Designer' },
     { doc: 'engine/overview', label: 'Case Engine' },

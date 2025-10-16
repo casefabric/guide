@@ -339,9 +339,9 @@
       "swagger": {
         "title": "swagger"
       },
-      "training/overview": {
+      "training/Introduction": {
         "title": "Training",
-        "sidebar_label": "Training overview"
+        "sidebar_label": "Introduction"
       },
       "training/part1": {
         "title": "Part1",
