@@ -340,12 +340,28 @@
         "title": "swagger"
       },
       "training/Introduction": {
-        "title": "Training",
+        "title": "Basic CMMN with CaseFabric",
         "sidebar_label": "Introduction"
       },
       "training/part0": {
         "title": "Chapter 0",
         "sidebar_label": "Chapter 0"
+      },
+      "training/part1": {
+        "title": "Chapter 1",
+        "sidebar_label": "Chapter 1"
+      },
+      "training/part2": {
+        "title": "Chapter 2",
+        "sidebar_label": "Chapter 2"
+      },
+      "training/part3": {
+        "title": "Chapter 3",
+        "sidebar_label": "Chapter 3"
+      },
+      "training/part4": {
+        "title": "Chapter 4",
+        "sidebar_label": "Chapter 4"
       }
     },
     "links": {
