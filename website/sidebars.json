@@ -14,7 +14,11 @@
       ],
       "Training": [
          "training/Introduction",
-         "training/part0"
+         "training/part0",
+         "training/part1",
+         "training/part2",
+         "training/part3",
+         "training/part4"
       ],
       "Some CMMN": [
          "cmmn/overview",

@@ -7,4 +7,4 @@ sidebar_label: Chapter 0
 ## Obtaining the CaseFabric Demo
 
 First we will implement the system on your machine: 
-https://guide.casefabric.com/docs/getting-started/ObtainingCafDemo.html.
+[obtaining demo](https://guide.casefabric.com/docs/getting-started/ObtainingCafDemo.html)

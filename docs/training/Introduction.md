@@ -1,10 +1,8 @@
 ---
 id: Introduction
-title: Training
+title: Basic CMMN with CaseFabric
 sidebar_label: Introduction
 ---
-## Basic CMMN with CaseFabric
-
 Welcome to the CaseFabric Training Session. In this session, we will guide you through the features and functionalities of CaseFabric and build a model that grows in complexity when it touches upon all CMMN plan items and CaseFabric capabilities.
 
 ## The Use Case
