@@ -149,7 +149,7 @@ Now let's put all the tasks and milestones that have to do with accepting or rej
 
 ![stage](../assets/training/54stage.png)
 
-## What is a stage?:
+## What is a stage?
 ***In CMMN, a Stage provides a means to group plan items within the context of a case. A stage serves as building block for Case. A Stage contains plan items and sentries. Stages bundle other plan items. When creating our case models, sometimes we have plan items that are closely related and need to be grouped together. These items could be multiple tasks that must be completed before the case can proceed.***
 
 ***In the CaseFabric IDE, you can drag the Stage icon to the canvas and model its properties using the Properties Palette.***
