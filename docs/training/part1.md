@@ -4,7 +4,7 @@ title: Chapter 1: Create dossier
 sidebar_label: Chapter 1
 ---
 
-## Use Case Step
+### Use Case Step
 The first step will be for Lana to be able to start a dossier and enter client details.
 Lana needs to first register the client, and his base data. All the following steps that will be made to solve the issue for the client will be linked to this. Next to that Lana will hand out initial tasks to co-workers that need to act. Since this case is specific to this client, and his privacy needs to be taken care of, the people that are allowed to work on this must have the right authorization to do this.
 

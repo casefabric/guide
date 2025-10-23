@@ -3,7 +3,7 @@ id: part2
 title: Chapter 2: Dependencies
 sidebar_label: Chapter 2
 ---
-## Use Case Step
+### Use Case Step
 In the second part of the training, we will learn how to create dependencies in the case diagram.
 There are three global steps as part of the case that need to be taken to complete the job.
  
@@ -151,6 +151,7 @@ Now let's put all the tasks and milestones that have to do with accepting or rej
 
 ## What is a stage?:
 ***In CMMN, a Stage provides a means to group plan items within the context of a case. A stage serves as building block for Case. A Stage contains plan items and sentries. Stages bundle other plan items. When creating our case models, sometimes we have plan items that are closely related and need to be grouped together. These items could be multiple tasks that must be completed before the case can proceed.***
+
 ***In the CaseFabric IDE, you can drag the Stage icon to the canvas and model its properties using the Properties Palette.***
 
 For now the client can only accept the house if the search has been done and the house is offered to the client. The entry criterion is only linked to accepting the house. It should also be linked to rejecting the house. To make this process easy we can add an entry criterion to the entire 'acceptance' stage. This will make sure that all tasks in the stage will only be opened if the entry criterion is met.
