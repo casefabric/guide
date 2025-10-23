@@ -1,21 +1,21 @@
 /* your custom css */
 
 @font-face {
-  font-family: "SofiaProLight";
+  font-family: "IBMPlexSans-Light";
   font-weight: 300;
-  src: url(/fonts/SofiaProLight.woff2), url(/fonts/SofiaProLight.woff);
+  src: url(/fonts/IBMPlexSans-Light.woff2), url(/fonts/IBMPlexSans-Light.woff);
 }
 
 @font-face {
-  font-family: "SofiaProRegular";
+  font-family: "IBMPlexSans-Regular";
   font-weight: 400;
-  src: url(/fonts/SofiaProRegular.woff2), url(/fonts/SofiaProRegular.woff);
+  src: url(/fonts/IBMPlexSans-Regular.woff2), url(/fonts/IBMPlexSans-Regular.woff);
 }
 
 @font-face {
-  font-family: "SofiaProBold";
+  font-family: "IBMPlexSans-Bold";
   font-weight: 700;
-  src: url(/fonts/SofiaProBold.woff2), url(/fonts/SofiaProBold.woff);
+  src: url(/fonts/IBMPlexSans-Bold.woff2), url(/fonts/IBMPlexSans-Bold.woff);
 }
 
 .fixedHeaderContainer * {
@@ -28,7 +28,7 @@
 
 body {
   color: #24292e;
-  font-family: 'SofiaProRegular', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
+  font-family: 'IBMPlexSans-Regular', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
     sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 }
 
