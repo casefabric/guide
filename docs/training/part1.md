@@ -64,7 +64,7 @@ This is needed for the client, as a client has multiple fields, such as: name, p
 Note that when we first meet the client, we may not know more than a name or even the client refuses to give his real name.
 
 ## CaseFabric/CMMN explanation: CaseFile
-***While iteratively building the overall case model, the data in the model will become more complex and the case file will complete. The case model holds this information during the collaboration in building the case with the client.***
+***While iteratively building the overall case model, the data in the model will become more complex and the case more complete. The case model holds this information during the collaboration in building the case with the client.***
 
 ![lijn](../assets/training/lijn-steps.png) 
 
@@ -185,6 +185,7 @@ We see that the plan now also has the new task.
 ***Refreshing the current case can also be done by clicking update definition and refresh case in the details section of the screen. This is in fact a very powerful capability, because it means that when you have complex, long lived cases you can choose to update or not update the current definition of a running case. You might want to continue certain cases to be finalized in using the current definition. While new cases start to use the new definition. This gives excellent possibilities to design migration strategies with as minimal down time as possible.***
 
 ![newtask](../assets/training/27new-task.png)
+
 Note that we have not modified the case file to enter the details when the house is found.
 
 ![lijn](../assets/training/lijn-steps.png)
