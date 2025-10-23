@@ -10,7 +10,7 @@ The Mendix Dynamic Case Management Add-On is a marketplace module embedded into 
 Basically a set of java actions with supporting jar files are added to the App and by running 
 the startup action in a startup microflow, the case engine becomes operational. 
 
-![Architecture](assets/mendix/DCM_Architecture.jpg)
+![Architecture](assets/mendix/DCM_Architecture.png)
 
 The case engine as such is based on persistent actors using event sourcing. All supporting data is stored 
 in the configured mendix database prefixed by ```casemanagement$```.
