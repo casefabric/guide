@@ -69,6 +69,7 @@
       ],
       "Releases": [
          "release/overview",
+         "release/1.1.39",
          "release/1.1.38",
          "release/1.1.37",
          "release/1.1.36",
