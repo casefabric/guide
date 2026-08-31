@@ -11,7 +11,7 @@ sidebar_label: Design Case Models
 When you want to add a case model to your Application - go to the domain model and
 right-click on a persistent entity. That gives a context menu with starting the modeler.
 
-![Start Modeler](assets/mendix/start_modeler.png)
+![Start Modeler](assets/mendix/start_modeler.jpg)
 
 As you see at the end of the context menu, you are able to start the modeler with the 'Case Management'
 option or start the modeler with a specific Entity as root case file type.
@@ -72,7 +72,7 @@ Within the modeler, all created microflows are available to add to your case mod
 
 All input and output parameters are mapped to be used with the case file. 
 
-The mapping details of HumanTask and ProcessTask are found by clicking the 🔍 icon of the halo around the 
+The page or microflow for HumanTask and ProcessTask are found by clicking the 🔍 icon of the halo around the 
 task representation (hover over the task)
 
 ![Click Magnifier](assets/mendix/modeler_implementation.png)
@@ -95,7 +95,7 @@ For user interactions, create a nanoflow that calls the java action you want tod
 
 ![WaitFor Nanoflow](assets/mendix/waitfor_nanoflow.png)
 
-The WaitForMicroflow is a wrapper around the single WaitFor java action. 
+The WaitFor nanoflow is a wrapper around the single WaitFor java action. This needs to be a nanoflow to ensure transactions are seperately handled. 
 
 Note that waiting for direct feedback is only required when you need the outcome of the action in that same session. Starting a java action that ends up
 with new tasks for other team members dont need that feedback and you can skip waiting for the result, just fire and forget. 

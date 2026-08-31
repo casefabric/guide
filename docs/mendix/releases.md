@@ -4,6 +4,15 @@ title: DCM module releases
 sidebar_label: Releases
 ---
 
+## Release 11.12.0
+
+Fully upgraded version to use with Mendix 11.12.0 and higher. 
+
+ * Updated studio pro plugin to use the document structure
+ * Cases, Decisions are now Mendix documents
+ * Details of a human task or process task directly link to the page or microflow
+ * engine update to 1.1.40
+
 ## Release 1.0.2
 
 Release with fixes on ProcessTasks / Microflow 
