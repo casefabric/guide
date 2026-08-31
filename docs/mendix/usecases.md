@@ -18,7 +18,7 @@ of the case model deployed.
 
 When the case has started, there will be a WaitForTaskToken including a CaseInstanceId that allows you to interact with that specific case. 
 Next to that, it is possible to fetch and trigger possible available human tasks, milestones, discretionary items and user events.
-When you need direct (synchronous) interaction with the case, you can use the [WaitFor java action](designmodels#waitfor-java-action) to ensure all results are available. 
+When you need direct (synchronous) interaction with the case, you can use the [WaitFor java action] via a nanoflow (designmodels#waitfor-java-action) to ensure all results are available. 
 
 Normally a case instance completes because all required planitems within the case are completed but you have the
 possibility to terminate (stop) a task or a case. 
