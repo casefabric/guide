@@ -34,7 +34,7 @@ More information on the structure of the DCM module for mendix is found at the
 
 ## Availability
 
-The CaseFabric DCM module for Mendix is available as of Mendix 10.24 and currently only
+The CaseFabric DCM module for Mendix is available as of Mendix 11.12 and currently only
 available on request (it is limited available). Trying out DCM in development mode makes use
 of the same restrictions as Mendix (limited number of hours running) and for production
 applications, you need a DCM license. 
