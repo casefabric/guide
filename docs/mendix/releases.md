@@ -4,6 +4,15 @@ title: DCM module releases
 sidebar_label: Releases
 ---
 
+## Release 11.12.2
+
+Various fixes and Oracle support
+
+* Fixed issue with enumerations in the modeler
+* Fixed opening pages for Human Tasks with a HumanTask parameter
+  You don't need to map, it will be automatically filled with the Human Task details
+* Oracle support
+
 ## Release 11.12.0
 
 Fully upgraded version to use with Mendix 11.12.0 and higher. 
