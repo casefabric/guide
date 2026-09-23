@@ -6,7 +6,7 @@ sidebar_label: FAQ
 
 ## Supported databases
 
-In order to use the DCM module, you need to have Postgres (preferred) or MS SQL Server. 
+In order to use the DCM module, you need to have Postgres (preferred), MS SQL Server or Oracle. 
 
 ## Start Case cannot find my case
 
@@ -30,3 +30,8 @@ You have to use the WaitFor in a separate transaction. When you build user inter
 the microflow with the state changing action and another nanoflow that will execute the WaitFor action.
 
 The Testframework can be used in a way that it starts a separate transaction in a microflow. Take a look at the documentation on Unit Testing.
+
+## File uploads
+
+When using files with the case engine, it is highly adviced to use the Mendix structures to manage the files, keeping a reference (like a URL)
+inside the Case File. Case Files are not compatible with large BLOB storage. 

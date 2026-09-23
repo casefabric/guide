@@ -20,7 +20,11 @@ to start an instance of the designed model and interact with it down the line by
 Case Management actions. [Interact with cases](usecases.md) explains more on how to interact with the case
 model within your application.
 
-**IMPORTANT** The current release requires an external database setup for Postgres or Microsoft SQL Server. 
+## Required Mendix setup
+
+The current release requires an external database setup for Postgres, Microsoft SQL Server or Oracle.
+
+Next to that, the DCM module needs users to work with. This means that in your application security, you need to set the security level to demo or production. 
 
 ## Inside the Mendix Runtime
 
