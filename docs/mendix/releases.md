@@ -4,7 +4,7 @@ title: DCM module releases
 sidebar_label: Releases
 ---
 
-## Release 11.12.2
+## Release 1.1.2
 
 Various fixes and Oracle support
 
@@ -13,7 +13,7 @@ Various fixes and Oracle support
   You don't need to map, it will be automatically filled with the Human Task details
 * Oracle support
 
-## Release 11.12.0
+## Release 1.1.0
 
 Fully upgraded version to use with Mendix 11.12.0 and higher. 
 
