@@ -4,6 +4,10 @@ title: DCM module releases
 sidebar_label: Releases
 ---
 
+## Release 1.1.3
+
+Fix for type mapping between the mendix domain model and the case file items
+
 ## Release 1.1.2
 
 Various fixes and Oracle support
