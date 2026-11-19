@@ -10,6 +10,10 @@ sidebar_label: Overview
 CaseFabric introduces a [DCM Marketplace Add-On](https://marketplace.mendix.com/link/component/242816) that allows you to use CaseFabric 
 inside Mendix for designing and running Dynamic Case Management applications. 
 
+## Getting started
+
+The best way to get started with the DCM module is to do the [Introduction to Dynamic Case Management](https://academy.mendix.com/link/paths/179/Introduction-to-Dynamic-Case-Management) at the **Mendix Academy**
+
 ## What is available
 
 After installation of the DCM Marketplace Add-on, you will have the option to design case models 

@@ -4,6 +4,10 @@ title: DCM Frequently Asked Questions
 sidebar_label: FAQ
 ---
 
+## Getting started
+
+The best way to get started with the DCM module is to do the [Introduction to Dynamic Case Management](https://academy.mendix.com/link/paths/179/Introduction-to-Dynamic-Case-Management) at the **Mendix Academy**
+
 ## Supported databases
 
 In order to use the DCM module, you need to have Postgres (preferred), MS SQL Server or Oracle. 
